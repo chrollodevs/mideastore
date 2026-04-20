@@ -2,11 +2,13 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { API_BASE } from '../api/client';
+import { useLanguage } from '../context/LanguageContext';
 
 export default function AdminLogin() {
   const [error, setError] = useState('');
   const navigate = useNavigate();
   const { login } = useAuth();
+  const { t } = useLanguage();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -32,28 +34,28 @@ export default function AdminLogin() {
       <div className="surface-card" style={{ width: '100%', maxWidth: '440px', padding: 'var(--space-48)' }}>
         
         <div style={{ textAlign: 'center', marginBottom: 'var(--space-32)' }}>
-          <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: 'var(--space-8)' }}>System Authentication</h2>
-          <p className="t-body">Terminal access requires clearance.</p>
+          <h2 style={{ fontSize: '1.5rem', fontWeight: '700', marginBottom: 'var(--space-8)' }}>{t('admin.login.title')}</h2>
+          <p className="t-body">{t('admin.login.subtitle')}</p>
         </div>
         
         {error && (
-          <div style={{ color: 'var(--brand-arcodim)', fontSize: '0.875rem', marginBottom: 'var(--space-24)', padding: 'var(--space-12)', background: '#FEF2F2', border: '1px solid #FCA5A5', borderRadius: '4px' }}>
+          <div style={{ color: 'var(--brand-s-challenge)', fontSize: '0.875rem', marginBottom: 'var(--space-24)', padding: 'var(--space-12)', background: '#FEF2F2', border: '1px solid #FCA5A5', borderRadius: '4px' }}>
             {error}
           </div>
         )}
         
         <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-16)' }}>
           <div>
-            <label className="t-label" style={{ display: 'block', marginBottom: 'var(--space-8)' }}>AUTHORIZATION ID</label>
+            <label className="t-label" style={{ display: 'block', marginBottom: 'var(--space-8)' }}>{t('admin.login.email')}</label>
             <input name="email" type="email" className="input-field" style={{ marginBottom: 0 }} required placeholder="admin@system.com" />
           </div>
           <div>
-            <label className="t-label" style={{ display: 'block', marginBottom: 'var(--space-8)' }}>PASSPHRASE</label>
+            <label className="t-label" style={{ display: 'block', marginBottom: 'var(--space-8)' }}>{t('admin.login.password')}</label>
             <input name="password" type="password" className="input-field" style={{ marginBottom: 0 }} required placeholder="••••••••" />
           </div>
           
           <button type="submit" className="btn btn-primary" style={{ marginTop: 'var(--space-16)', width: '100%', padding: 'var(--space-16)' }}>
-            Establish Connection
+            {t('admin.login.button')}
           </button>
         </form>
       </div>

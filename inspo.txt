@@ -1,0 +1,2604 @@
+
+
+<!DOCTYPE HTML>
+<html lang="ar-EG" dir="rtl">
+<head>
+    
+    
+    <meta charset="UTF-8"/>
+    <!-- og -->
+        <meta property="og:site_name" content="Midea"/>
+    
+        <meta property="og:title" content="sa-ar"/>
+    
+        <meta property="og:description" content="تعرف على الأجهزة المنزلية المبتكرة من مايديا المملكة العربية السعودية تعرف على غسالات الملابس ومكيفات الهواء والثلاجات الموفرة للطاقة وأكثر من ذلك لتجهيز منزل ذكي وعصري."/>
+    
+        <meta property="og:image" content="https://www.midea.com/etc.clientlibs/midea-aem/clientlibs/clientlib-site/resources/img/common/midea-logo-share.png"/>
+    
+        <meta property="og:type" content="website"/>
+    
+        <meta property="og:url" content="https://www.midea.com/sa-ar"/>
+    
+        <meta property="twitter:title" content="sa-ar"/>
+    
+        <meta property="twitter:description" content="تعرف على الأجهزة المنزلية المبتكرة من مايديا المملكة العربية السعودية تعرف على غسالات الملابس ومكيفات الهواء والثلاجات الموفرة للطاقة وأكثر من ذلك لتجهيز منزل ذكي وعصري."/>
+    
+        <meta property="twitter:image" content="https://www.midea.com/etc.clientlibs/midea-aem/clientlibs/clientlib-site/resources/img/common/midea-logo-share.png"/>
+    
+        <meta property="twitter:card" content="summary"/>
+    
+    <!-- og end -->
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2,minimum-scale=1,user-scalable=yes"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+
+
+    
+    
+        <title>حلول ذكية وأجهزة منزلية مبتكرة |مايديا المملكة العربية السعودية</title>
+        <meta name="title" content='حلول ذكية وأجهزة منزلية مبتكرة |مايديا المملكة العربية السعودية'/>
+        <meta name="description" content='تعرف على الأجهزة المنزلية المبتكرة من مايديا المملكة العربية السعودية تعرف على غسالات الملابس ومكيفات الهواء والثلاجات الموفرة للطاقة وأكثر من ذلك لتجهيز منزل ذكي وعصري.'/>
+    
+
+    <meta name="keywords" content="مايديا المملكة العربية السعودية،,تسوق الآن، ,الأجهزة المنزلية من مايديا ,أجهزة المطبخ المملكة العربية السعودية،,ثلاجات في المملكة العربية السعودية،,أفضل الأجهزة المنزلية في المملكة العربية السعودية،,أجهزة كهربائية موفرة للطاقة،,ضمان ودعم مايديا،,خدمة عملاء مايديا المملكة العربية السعودية"/>
+    <meta name="template" content="page-site"/>
+    <meta name="home.properties" content="{&#34;viewMoreText&#34;:&#34;عرض المزيد&#34;,&#34;priceFormat&#34;:&#34;en&#34;,&#34;notifyMeToggle&#34;:&#34;0&#34;,&#34;pdpButtonDisplaySource&#34;:&#34;0&#34;,&#34;plpSortingSetting&#34;:&#34;&#34;,&#34;ecommercePlatform&#34;:&#34;null&#34;,&#34;plpButtonDisplaySource&#34;:&#34;0&#34;,&#34;viewLessText&#34;:&#34;عرض أقل&#34;,&#34;symbolFirst&#34;:&#34;false&#34;,&#34;notifyMeEmailPlatform&#34;:&#34;0&#34;,&#34;plpContentSource&#34;:&#34;bulletPoint&#34;,&#34;archiveLabel&#34;:&#34;المنتج لم يعد متوفرا&#34;,&#34;filterUnwind&#34;:&#34;&#34;}"/>
+
+    
+    
+    
+    
+    
+
+
+    <link rel="shortcut icon" href="//web-res.midea.com/etc.clientlibs/midea-aem/clientlibs/clientlib-site/resources/img/common/favicon.png" type="image/png"/>
+    
+    <link rel="canonical" href="https://www.midea.com/sa-ar"/>
+
+    <link rel="preconnect" href="https://www.googletagmanager.com"/>
+    <link rel="preconnect" href="https://www.google-analytics.com"/>
+    <link rel="preconnect" href="https://web-res.midea.com"/>
+    <link rel="preconnect" href="https://cdnjs.midea.com"/>
+    
+    
+        <!-- <link rel="preload" href="https://cdnjs.midea.com/aem-fe/igws-fe/dist/assets/fonts/midea/Gotham-Bold.otf"
+              as="font" type="font/otf" crossorigin="anonymous"> -->
+        <link rel="preload" href="https://cdnjs.midea.com/aem-fe/igws-fe/dist/assets/fonts/midea/Gotham-Book.woff" as="font" type="font/otf" crossorigin="anonymous"/>
+        <!-- <link rel="preload" href="https://cdnjs.midea.com/aem-fe/midea/dist/static/fonts/Gotham-Light_Web.woff2"
+              as="font" type="font/woff2" crossorigin="anonymous"> -->
+        <!-- <link rel="preload" href="https://cdnjs.midea.com/aem-fe/igws-fe/dist/assets/fonts/midea/Gotham-Medium.otf"
+              as="font" type="font/otf" crossorigin="anonymous"> -->
+    
+
+    
+
+    
+
+    
+
+
+
+    
+    <meta name="base.data" content='{"isPreview":false,"isEdit":false,"isAuthor":false,"isExperienceFragments":false,"isPublish":true,"v":"202604160934","ibosDataCenter":"EU"}'/>
+
+
+
+    
+        <link rel="stylesheet" href="https://cdnjs.midea.com/aem-fe/igws-fe/dist/styles/vendor.min.css?t=202604160934"/>
+    
+        <link rel="stylesheet" href="https://cdnjs.midea.com/aem-fe/igws-fe/dist/styles/midea.css?t=202604160934"/>
+    
+        <link rel="stylesheet" href="https://cdnjs.midea.com/aem-fe/csr-components/dist/css/midea.css?t=202604160934"/>
+    
+
+
+
+
+
+<style>
+    .auto-link{
+        color:#1f94d2;
+    }
+</style>
+
+
+    
+    
+    
+
+    
+
+    
+    
+    
+
+    
+    
+    
+    
+        
+        
+            <link rel="alternate" hreflang="x-default" href="https://www.midea.com/global"/>
+            <link rel="alternate" hreflang="en" href="https://www.midea.com/global"/>
+            <link rel="alternate" hreflang="en-us" href="https://www.midea.com/us"/>
+            <link rel="alternate" hreflang="en-gb" href="https://www.midea.com/uk"/>
+            <link rel="alternate" hreflang="en-au" href="https://www.midea.com/au"/>
+            <link rel="alternate" hreflang="en-ca" href="https://www.midea.com/ca"/>
+            <link rel="alternate" hreflang="en-sg" href="https://www.midea.com/sg"/>
+            <link rel="alternate" hreflang="en-za" href="https://www.midea.com/za"/>
+            <link rel="alternate" hreflang="en-ph" href="https://www.midea.com/ph"/>
+            <link rel="alternate" hreflang="en-id" href="https://www.midea.com/id-en"/>
+            <link rel="alternate" hreflang="en-my" href="https://www.midea.com/my"/>
+            <link rel="alternate" hreflang="en-eg" href="https://www.midea.com/eg"/>
+            <link rel="alternate" hreflang="en-ly" href="https://www.midea.com/ly"/>
+            <link rel="alternate" hreflang="en-in" href="https://www.midea.com/in"/>
+            <link rel="alternate" hreflang="en-nz" href="https://www.midea.com/nz"/>
+            <link rel="alternate" hreflang="en-sa" href="https://www.midea.com/sa"/>
+            <link rel="alternate" hreflang="es" href="https://www.midea.com/mx"/>
+            <link rel="alternate" hreflang="es-mx" href="https://www.midea.com/mx"/>
+            <link rel="alternate" hreflang="es-ar" href="https://www.midea.com/ar"/>
+            <link rel="alternate" hreflang="es-cl" href="https://www.midea.com/cl"/>
+            <link rel="alternate" hreflang="es-co" href="https://www.midea.com/co"/>
+            <link rel="alternate" hreflang="es-pe" href="https://www.midea.com/pe"/>
+            <link rel="alternate" hreflang="fr" href="https://www.midea.com/fr"/>
+            <link rel="alternate" hreflang="fr-fr" href="https://www.midea.com/fr"/>
+            <link rel="alternate" hreflang="fr-ca" href="https://www.midea.com/ca-fr"/>
+            <link rel="alternate" hreflang="de" href="https://www.midea.com/de"/>
+            <link rel="alternate" hreflang="ar" href="https://www.midea.com/sa-ar"/>
+            <link rel="alternate" hreflang="ar-sa" href="https://www.midea.com/sa-ar"/>
+            <link rel="alternate" hreflang="ar-eg" href="https://www.midea.com/eg-ar"/>
+            <link rel="alternate" hreflang="ar-ae" href="https://www.midea.com/me-ar"/>
+            <link rel="alternate" hreflang="ru" href="https://www.midea.com/ru"/>
+            <link rel="alternate" hreflang="ru-ru" href="https://www.midea.com/ru"/>
+            <link rel="alternate" hreflang="ko" href="https://www.midea.com/kr"/>
+            <link rel="alternate" hreflang="ko-kr" href="https://www.midea.com/kr"/>
+            <link rel="alternate" hreflang="th" href="https://www.midea.com/th"/>
+            <link rel="alternate" hreflang="th-th" href="https://www.midea.com/th"/>
+            <link rel="alternate" hreflang="vi" href="https://www.midea.com/vn"/>
+            <link rel="alternate" hreflang="vi-vn" href="https://www.midea.com/vn"/>
+            <link rel="alternate" hreflang="id" href="https://www.midea.com/id"/>
+            <link rel="alternate" hreflang="id-id" href="https://www.midea.com/id"/>
+        
+    
+
+    
+    
+    
+    
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@graph": [
+                    {
+                        "@type": "Organization",
+                        "@id": "https://www.midea.com/#org",
+                        "name": "Midea",
+                        "legalName": "Midea Group",
+                        "url": "https://www.midea.com/"
+                    },
+                    {
+                        "@type": "WebSite",
+                        "@id": "https://www.midea.com/#website",
+                        "url": "https://www.midea.com/",
+                        "name": "Midea",
+                        "publisher": { "@id": "https://www.midea.com/#org" }
+                    }
+                ]
+            }
+        </script>
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebPage",
+                "url": "https://www.midea.com/sa-ar",
+                "publisher": { "@id": "https://www.midea.com/#org" }
+            }
+        </script>
+    
+
+    
+        <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    // Default ad_storage to 'denied'.
+    gtag('consent', 'default', {
+        ad_storage: "denied",
+        analytics_storage: "denied",
+        functionality_storage: "denied",
+        personalization_storage: "denied",
+        security_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+    });
+</script>
+        
+
+
+
+
+    <style>
+div.main{
+    padding-top: 0;
+}
+</style>
+
+    <!-- OneTrust Cookies Consent Notice start for www.midea.com/sa-ar -->
+<script type="text/javascript" src="https://cdn-apac.onetrust.com/consent/a6be68a6-8a2d-4757-bd78-d4606b00f150/OtAutoBlock.js"></script>
+<script src="https://cdn-apac.onetrust.com/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="a6be68a6-8a2d-4757-bd78-d4606b00f150" data-language="ar"></script>
+<script type="text/javascript">
+function OptanonWrapper() { }
+</script>
+<!-- OneTrust Cookies Consent Notice end for www.midea.com/sa-ar -->
+
+
+
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-GCD56RRZNJ"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-GCD56RRZNJ'); </script>
+
+
+
+    <!-- 
+Start of global snippet: Please do not remove
+Place this snippet between the <head> and </head> tags on every page of your site.
+-->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=DC-16120889"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'DC-16120889');
+</script>
+<!-- End of global snippet: Please do not remove -->
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17762746195"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-17762746195');
+</script>
+
+    <script>
+  gtag('event', 'conversion', {'send_to': 'AW-17762746195/v_QuCNarosgbENP-95VC'});
+</script>
+
+    <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1345882763406200');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1345882763406200&ev=PageView&noscript=1"/></noscript>
+<!-- End Meta Pixel Code -->
+
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17763595246"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-17763595246'); </script> 
+
+    
+    
+</head>
+<body class="site page common-page basicpage page-v2 bg-white" id="site-105d6c8615" data-cmp-data-layer-enabled data-site="sa-ar" data-original-site="sa" data-language="ar" data-bazaarvoice="N" data-enableJudgeme="N" data-write-review-url="#">
+
+<script type="text/javascript">
+    window.__AEM_CONF__ = {
+        components: {
+
+        }
+    }
+</script>
+<h1 class="visibilityHidden">حلول ذكية وأجهزة منزلية مبتكرة |مايديا المملكة العربية السعودية </h1>
+
+    
+
+
+
+
+
+
+<script>
+    window.adobeDataLayer = window.adobeDataLayer || [];
+    adobeDataLayer.push({
+        page: JSON.parse("{\x22site\u002D105d6c8615\x22:{\x22@type\x22:\x22midea\u002Daem\/components\/structure\/site\x22,\x22repo:modifyDate\x22:\x222025\u002D12\u002D28T05:52:52Z\x22,\x22dc:title\x22:\x22sa\u002Dar\x22,\x22dc:description\x22:\x22تعرف على الأجهزة المنزلية المبتكرة من مايديا المملكة العربية السعودية تعرف على غسالات الملابس ومكيفات الهواء والثلاجات الموفرة للطاقة وأكثر من ذلك لتجهيز منزل ذكي وعصري.\x22,\x22xdm:template\x22:\x22\/conf\/midea\u002Dv2\u002Daem\/settings\/wcm\/templates\/page\u002Dsite\x22,\x22xdm:language\x22:\x22ar\u002DEG\x22,\x22xdm:tags\x22:[],\x22repo:path\x22:\x22\/content\/midea\u002Daem\/sa\u002Dar.html\x22}}"),
+        event:'cmp:show',
+        eventInfo: {
+            path: 'page.site\u002D105d6c8615'
+        }
+    });
+</script>
+
+
+    
+
+
+
+
+    
+
+
+
+    
+<div class="root container responsivegrid">
+
+    
+    <div id="container-5950916f4c" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    
+    
+    <div id="container-bcdd9e32b8" class="cmp-container">
+        
+        <div class="cmp_notificationbar">
+
+
+
+
+    
+</div>
+
+        
+    </div>
+
+</div>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-5af5ed8d27" class="cmp-experiencefragment cmp-experiencefragment--header">
+
+
+    
+    <div id="container-4abdfd7bd9" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="header aem-GridColumn aem-GridColumn--default--12">
+
+
+
+<header class="mdws-header" id="mdws-header-757eb4a4-f2be-4b6c-8d22-bfdce87fd84b" unidx>
+    <div class="mdws-header_inner-box">
+        <div class="mdws-header_logo-box"></div>
+        <a href="/sa-ar" target="_self" class="mdws-header_logo"><img src="//web-res.midea.com/content/dam/midea-aem/system/Midea-logo-2x.png/jcr:content/renditions/Midea-logo-2x.webp" alt="Midea SA-AR شعار الموقع الرسمي" class="brand_icon"/></a>
+        <div class="mdws-header_menu-wrap">
+            <div class="mdws-header_seach-box">
+                <div class="mdws-header_seach-mb">
+                    <svg aria-label="Search" class="mdws-header_seachIcon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" version="1.1" width="16" height="16" viewBox="0 0 16 16">
+                        <defs>
+                            <clipPath id="master_svg0_5394_033324">
+                                <rect x="0" y="0" width="16" height="16" rx="0"/>
+                            </clipPath>
+                        </defs>
+                        <g clip-path="url(#master_svg0_5394_033324)">
+                            <g>
+                                <g>
+                                    <path d="M0.6669921875,6.99983390625Q0.6669921875,5.71177390625,1.1649731875,4.53441390625Q1.6457511875000002,3.39773390625,2.5219921875,2.52150390625Q3.3982221875,1.6452629062500002,4.5349021875,1.16448490625Q5.7122621875,0.66650390625,7.0003321875,0.66650390625Q8.288392187500001,0.66650390625,9.4657421875,1.16448490625Q10.6024321875,1.6452629062500002,11.4786921875,2.52150390625Q12.3548921875,3.39773390625,12.8356921875,4.53441390625Q13.3336921875,5.71177390625,13.3336921875,6.99984390625Q13.3336921875,8.287903906250001,12.8356921875,9.46525390625Q12.3548921875,10.60194390625,11.4786921875,11.47820390625Q10.6024221875,12.35440390625,9.4657421875,12.83520390625Q8.288392187500001,13.33320390625,7.0003221875,13.33320390625Q5.7122621875,13.33320390625,4.5349021875,12.83520390625Q3.3982221875,12.35440390625,2.5219921875,11.47820390625Q1.6457511875000002,10.60194390625,1.1649731875,9.46525390625Q0.6669921875,8.287903906250001,0.6669921875,6.99983390625ZM2.0003221875,6.99983390625Q2.0003221875,9.07089390625,3.4647921875,10.53536390625Q4.9292721875,11.99980390625,7.0003221875,11.99980390625Q9.0713821875,11.99980390625,10.5358521875,10.53536390625Q12.0002921875,9.07089390625,12.0002921875,6.99984390625Q12.0002921875,4.92878390625,10.5358521875,3.46430390625Q9.0713821875,1.99983390625,7.0003321875,1.99983390625Q4.9292721875,1.99983390625,3.4647921875,3.46430390625Q2.0003221875,4.92878390625,2.0003221875,6.99983390625Z" fill-rule="evenodd" fill="#ADADAD" fill-opacity="1"/>
+                                </g>
+                                <g>
+                                    <path d="M13.4309265625,14.3737265625L13.4309265625,14.3737265625L10.6025685625,11.5453765625C10.4774644625,11.4202765625,10.4072265625,11.2507045625,10.4072265625,11.0738935625C10.4072265625,10.8970825625,10.4774644625,10.7275125625,10.6024885625,10.6024885625C10.7275125625,10.4774644625,10.8970825625,10.4072265625,11.0738935625,10.4072265625C11.2507045625,10.4072266022364,11.4202765625,10.4774645625,11.545296562499999,10.6024885625L14.3733865625,13.4305765625L14.3733865625,13.4305765625C14.498756562499999,13.5559465625,14.5689965625,13.725516562500001,14.5689965625,13.9023265625C14.5689965625,14.0791365625,14.498756562499999,14.2487065625,14.3737265625,14.3737265625C14.2487065625,14.498756562499999,14.0791365625,14.5689965625,13.9023265625,14.5689965625C13.725516562500001,14.5689965625,13.5559465625,14.498756562499999,13.4309265625,14.3737265625Z" fill-rule="evenodd" fill="#ADADAD" fill-opacity="1"/>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <input id="seach" data-drop-target="/sa-ar/search" class="mdws-header_seach-input" placeholder="Search" autocomplete="off"/>
+                    <div class="mdws-header_close"></div>
+                    <div class="mdws-header_search_associations">
+                        <ul class="mdws-header_search_associations_ul">
+                        </ul>
+                    </div>
+                </div>
+                <div class="mdws-header_history-box mdws-header_history-recommend">
+                    <div class="history-title-box">
+                    <span class="history-title">
+                    History
+                    </span>
+                        <ul>
+                        </ul>
+                        <div class="mdws-header_history-box-clear">
+                            <i></i>
+                            <span></span>
+                        </div>
+                    </div>
+                    <!-- 产品推荐 -->
+                    <div class="mdws-header_history-recommend-list mdws-header-hide">
+                        <div class='csr-cmp' id='search-recommend-list-v1-757eb4a4-f2be-4b6c-8d22-bfdce87fd84b' data-cmp='search-recommend-list-v1' data-conf='{"urlPrefix":"/content/experience-fragments/midea-aem/sa-ar/site/header/master/jcr:content/root/header", "recommendedTitle" : "", "target" : "_blank"}'>
+                            <div class="csr-cmp__content"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mdws-header_close_pc"></div>
+            </div>
+
+            <div class="mdws-header_links-box-scroll">
+                <div class="mdws-header_links-box-scroll-arrow-box mdws-header_links-box-scroll-arrow-left">
+                    <div class="mdws-header_links-box-scroll-arrow"></div>
+                    <div class="mdws-header_links-box-scroll-arrow-shadow"></div>
+                </div>
+                <div class="mdws-header_links-box-outer">
+                    <ul class="mdws-header_links-box">
+                        <li>
+                            <div class="link-title-arrow">
+                                
+                                
+                                    <a class="mdws-header_links-box-item-link">مطابخ</a>
+                                
+
+                                
+                                    <div class="link-arrow"></div>
+                                
+                            </div>
+                            
+                                <div class="menu-container">
+                                    <div class="menu-container_linkGroup-img-box">
+                                        
+                                        <div class="menu-container_linkGroup-img-box-inner">
+                                            <div class="menu-container_group">
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/refrigerators" target="_self">الثلاجات</a>
+                                                        
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/refrigerators/top-mount-refrigerator" target="_self">ثلاجة بمجمد علوي</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/refrigerators/single-door-refrigerator" target="_self">ثلاجة بباب واحد</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/refrigerators/upright-freezers" target="_self">مجمدات عمودية</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/refrigerators/side-by-side" target="_self">ببابين متجاورين</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/refrigerators/chest-freezers" target="_self"> مجمدات صندوقية</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/dishwashers" target="_self">غسالات أطباق</a>
+                                                        
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/dishwashers/freestanding-dishwasher" target="_self">غسالة أطباق مستقلة</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/dishwashers/builtin-dishwasher" target="_self">غسالة أطباق مدمجة</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/microwave-oven" target="_self">فرن ميكروويف</a>
+                                                        
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/microwave-oven/grill-microwave-oven" target="_self">فرن ميكروويف بشواية</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/microwave-oven/solo-microwave-oven" target="_self">فرن ميكروويف منفرد</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/microwave-oven/convection-oven" target="_self">فرن حراري</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/microwave-oven/built-in-grill-microwave-oven" target="_self"> فرن ميكروويف مدمج بشواية</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/cooking-range" target="_self">منتجات الطهي</a>
+                                                        
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/cooking-range/ceramic-cooking-range" target="_self">منتجات الطهي السيراميكية</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/cooking-range/gas-cooking-range" target="_self">منتجات الطهي بالغاز</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/cooking-range/ceramic-hobs" target="_self">مواقد سيراميك</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/water-treatment" target="_self">معالجة المياه</a>
+                                                        
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/water-treatment/topload-water-dispenser" target="_self">موزع مياه بتحميل علوي</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/water-treatment/bottom-load-water-dispenser" target="_self"> موزع مياه بتحميل سفلي</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="img-list-box ">
+                                                
+                                                    
+                                                        <img src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/header/refrigerator.jpg/jcr:content/renditions/refrigerator.webp"/>
+                                                    
+                                                
+                                                    
+                                                        <img src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/header/dishwasher.png/jcr:content/renditions/dishwasher.webp"/>
+                                                    
+                                                
+                                                    
+                                                        <img src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/head-and-footer/microwave.jpg/jcr:content/renditions/microwave.webp"/>
+                                                    
+                                                
+                                                    
+                                                        <img src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/header/cooking-range.png/jcr:content/renditions/cooking-range.webp"/>
+                                                    
+                                                
+                                                    
+                                                        <img src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/header/water-treatment.png/jcr:content/renditions/water-treatment.webp"/>
+                                                    
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                        
+                    
+                        <li>
+                            <div class="link-title-arrow">
+                                
+                                
+                                    <a class="mdws-header_links-box-item-link">غسيل الملابس</a>
+                                
+
+                                
+                                    <div class="link-arrow"></div>
+                                
+                            </div>
+                            
+                                <div class="menu-container">
+                                    <div class="menu-container_linkGroup-img-box">
+                                        
+                                        <div class="menu-container_linkGroup-img-box-inner">
+                                            <div class="menu-container_group">
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/laundry" target="_self">غسيل الملابس</a>
+                                                        
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/laundry/front-load-washer" target="_self">غسالة تحميل أمامي</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/laundry/front-load-washer-dryer" target="_self"> غسالة ومجفف ملابس تحميل أمامي</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/laundry/heat-pump-dryer" target="_self">مجفف ملابس بمضخة حرارية</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/laundry/top-load-washer" target="_self">غسالة تحميل علوي</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="img-list-box ">
+                                                
+                                                    
+                                                        <img src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/header/laundry.png/jcr:content/renditions/laundry.webp"/>
+                                                    
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                        
+                    
+                        <li>
+                            <div class="link-title-arrow">
+                                
+                                
+                                    <a class="mdws-header_links-box-item-link">الأجهزة المنزلية الصغيرة</a>
+                                
+
+                                
+                                    <div class="link-arrow"></div>
+                                
+                            </div>
+                            
+                                <div class="menu-container">
+                                    <div class="menu-container_linkGroup-img-box">
+                                        
+                                        <div class="menu-container_linkGroup-img-box-inner">
+                                            <div class="menu-container_group">
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/small-appliances" target="_self">الأجهزة المنزلية الصغيرة</a>
+                                                        
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/small-appliances/air-fryer" target="_self">مقلاة هوائية</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/small-appliances/hand-blender" target="_self">خلاط يدوي</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/small-appliances/kettle" target="_self">غلاية كهربائية</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/small-appliances/coffee-maker" target="_self">ماكينة تحضير القهوة</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/small-appliances/garment-steamer" target="_self">مكواة ملابس بالبخار</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="img-list-box ">
+                                                
+                                                    
+                                                        <img src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/small-appliances/air-fryers/mad-110d2apk-midea-dual-zone-air-fryer-digital-touch-control/id-image/mobile/MAD-110D2APK-mob-front.png/jcr:content/renditions/MAD-110D2APK-mob-front.webp"/>
+                                                    
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                        
+                    
+                        <li>
+                            <div class="link-title-arrow">
+                                
+                                
+                                    <a class="mdws-header_links-box-item-link">التدفئة والتبريد</a>
+                                
+
+                                
+                                    <div class="link-arrow"></div>
+                                
+                            </div>
+                            
+                                <div class="menu-container">
+                                    <div class="menu-container_linkGroup-img-box">
+                                        
+                                        <div class="menu-container_linkGroup-img-box-inner">
+                                            <div class="menu-container_group">
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/heating-and-cooling" target="_self">التدفئة والتبريد</a>
+                                                        
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/heating-and-cooling/stand-fan" target="_self">مروحة أرضية بقاعدة</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/heating-and-cooling/air-cooler" target="_self">مبرد هواء</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/heating-and-cooling/oil-filled-heater" target="_self">مدفأة زيتية</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="img-list-box ">
+                                                
+                                                    
+                                                        <img src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/header/heating-cooling.png/jcr:content/renditions/heating-cooling.webp"/>
+                                                    
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                        
+                    
+                        <li>
+                            <div class="link-title-arrow">
+                                
+                                
+                                    <a class="mdws-header_links-box-item-link">مكنسة كهربائية</a>
+                                
+
+                                
+                                    <div class="link-arrow"></div>
+                                
+                            </div>
+                            
+                                <div class="menu-container">
+                                    <div class="menu-container_linkGroup-img-box">
+                                        
+                                        <div class="menu-container_linkGroup-img-box-inner">
+                                            <div class="menu-container_group">
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/vacuum-cleaner" target="_self">مكنسة كهربائية</a>
+                                                        
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/vacuum-cleaner/drum-vacuum-cleaner" target="_self">مكنسة كهربائية أسطوانية</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/vacuum-cleaner/canister-vacuum-cleaner" target="_self"> مكنسة كهربائية وعائية</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="img-list-box ">
+                                                
+                                                    
+                                                        <img src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/header/vacuum-cleaner.png/jcr:content/renditions/vacuum-cleaner.webp"/>
+                                                    
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                        
+                    
+                        <li>
+                            <div class="link-title-arrow">
+                                
+                                
+                                    <a class="mdws-header_links-box-item-link">استكشاف</a>
+                                
+
+                                
+                                    <div class="link-arrow"></div>
+                                
+                            </div>
+                            
+                                <div class="menu-container">
+                                    <div class="menu-container_linkGroup-img-box">
+                                        
+                                        <div class="menu-container_linkGroup-img-box-inner">
+                                            <div class="menu-container_group">
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                        
+                                                            <a class="menu-container_group_item-title link-item">استكشاف القائمة</a>
+                                                        
+                                                        <ul>
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/about-midea" target="_self">حول ميديا</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/blog" target="_self">مدونة</a>
+                                                            </li>
+                                                        
+                                                            <li>
+                                                                <a class="link-item" href="/sa-ar/news" target="_self">أخبار</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="img-list-box isHidden">
+                                                
+                                                    
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                        
+                    
+                        <li>
+                            <div class="link-title-arrow">
+                                
+                                
+                                    <a class="mdws-header_links-box-item-link">الدعم</a>
+                                
+
+                                
+                                    <div class="link-arrow"></div>
+                                
+                            </div>
+                            
+                                <div class="menu-container">
+                                    <div class="menu-container_linkGroup-img-box">
+                                        
+                                        <div class="menu-container_linkGroup-img-box-inner">
+                                            <div class="menu-container_group">
+                                                
+                                                    <div class="menu-container_group_item">
+                                                        
+                                                            <a class="menu-container_group_item-title link-item" href="/sa-ar/support" target="_self">قائمة الدعم</a>
+                                                        
+                                                        
+                                                        
+                                                    </div>
+                                                
+                                            </div>
+                                            <div class="img-list-box isHidden">
+                                                
+                                                    
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div class="mdws-header_links-box-scroll-arrow-box mdws-header_links-box-scroll-arrow-right">
+                    <div class="mdws-header_links-box-scroll-arrow-shadow"></div>
+                    <div class="mdws-header_links-box-scroll-arrow"></div>
+                </div>
+            </div>
+
+            <!-- 国家选择器 -->
+            <div class="mdws-header_country-mb">
+                <span>البلد/المنطقة</span>
+                <div class="mdws-header_country-mb-current-country">
+                    <img src="//web-res.midea.com/content/dam/midea-aem/system/national-flag/KSA.png/jcr:content/renditions/cq5dam.compression.png" alt="alt"/>
+                    <span>Sa</span>
+                    <i></i>
+                </div>
+            </div>
+            <!-- 移动端语言选择器 -->
+            <div class="mdws-header_lang-mb">
+                <span>لغة</span>
+                <div class="mdws-header_lang-mb-current-lang">العربية</div>
+            </div>
+            <div class="mdws-header_cover"></div>
+        </div>
+        <div class="lan-cover-box">
+            <div class="mdws-header_lang-selector-box">
+                <div class="mdws-header_lang-selector-box-btns">
+                    <span class="lang-cancel-btn">يلغي</span>
+                    <span>لغة</span>
+                    <span class="lang-Confirm-btn">تأكيد</span>
+                </div>
+                <div class="mdws-header_lang-selector-box-swiper swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a data-lang-path="/sa-ar">
+                                العربية
+                            </a>
+                        </div>
+                    
+                        <div class="swiper-slide">
+                            <a data-lang-path="/sa">
+                                English
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class='csr-cmp' id='cart-reminder-757eb4a4-f2be-4b6c-8d22-bfdce87fd84b' data-cmp='cart-reminder'>
+            <div class="csr-cmp__content"></div>
+        </div>
+        <ul class="mdws-header_seach-language-etc">
+            <li aria-label="Search" class="seach-language-icons-box_item seach"></li>
+            <li class="seach-language-icons-box_item love"></li>
+            
+            
+            <!-- PC端选择国家 -->
+            <li aria-label="" class="seach-language-icons-box_item countrySel"></li>
+            <!-- PC端语言选择器 -->
+            <li class="seach-language-icons-box_item language">
+                <a></a>
+                <ul class="lang-box">
+                    <li class=" active-lang">
+                        <a class="link-item" href="/sa-ar" target="_self">العربية</a>
+                    </li>
+                
+                    <li>
+                        <a class="link-item" href="/sa" target="_self">English</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="header-more">
+            </li>
+        </ul>
+    </div>
+    
+        
+
+
+    
+    <div id="container-c500af10a5" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="languge aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="nav_lang_wraper" data-group="[{&#34;area&#34;:&#34;Global&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Global Midea&#34;,&#34;alt&#34;:&#34;Global Midea&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/pic-global.svg&#34;,&#34;url&#34;:&#34;https://www.midea.com/global/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Midea Group&#34;,&#34;alt&#34;:&#34;Midea Group&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_MideaGroup.jpg&#34;,&#34;url&#34;:&#34;https://www.midea.com.cn/en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Hiconics&#34;,&#34;alt&#34;:&#34;Hiconics&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/global/Hiconics.jpg&#34;,&#34;url&#34;:&#34;https://www.hiconics-global.com/&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Americas&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Argentina&#34;,&#34;alt&#34;:&#34;Argentina&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ar.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/ar&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Brazil&#34;,&#34;alt&#34;:&#34;Brazil&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_br.png&#34;,&#34;language&#34;:&#34;Português&#34;,&#34;url&#34;:&#34;https://www.midea.com.br/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Canada&#34;,&#34;alt&#34;:&#34;Canada&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ca.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/ca/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Canada&#34;,&#34;alt&#34;:&#34;Canada&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ca.png&#34;,&#34;language&#34;:&#34;Français&#34;,&#34;url&#34;:&#34;https://www.midea.com/ca-fr&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Central America&#34;,&#34;alt&#34;:&#34;Central America&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-mpa.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/centroamerica&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Chile&#34;,&#34;alt&#34;:&#34;Chile&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_cl.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/cl/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Colombia&#34;,&#34;alt&#34;:&#34;Colombia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_colombia.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/co&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Ecuador&#34;,&#34;alt&#34;:&#34;Ecuador&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Site-ec.jpg&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/ec&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Mexico&#34;,&#34;alt&#34;:&#34;Mexico&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_mx.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/mx/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Peru&#34;,&#34;alt&#34;:&#34;Peru&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/pe.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/pe&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;USA&#34;,&#34;alt&#34;:&#34;USA&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_usa.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/us/&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Africa&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Africa&#34;,&#34;alt&#34;:&#34;Africa&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Africa.svg&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/africa&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Egypt&#34;,&#34;alt&#34;:&#34;Egypt&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_eg.png&#34;,&#34;language&#34;:&#34;العربية&#34;,&#34;url&#34;:&#34;/eg-ar&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Egypt&#34;,&#34;alt&#34;:&#34;Egypt&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_eg.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/eg/&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Libya&#34;,&#34;alt&#34;:&#34;Libya&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-Ly.png&#34;,&#34;language&#34;:&#34;العربية&#34;,&#34;url&#34;:&#34;/ly&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Libya&#34;,&#34;alt&#34;:&#34;Libya&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-Ly.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;/ly-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Morocco&#34;,&#34;alt&#34;:&#34;Morocco&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Maroc.jpg&#34;,&#34;language&#34;:&#34;Français&#34;,&#34;url&#34;:&#34;https://www.midea.com/ma&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Morocco&#34;,&#34;alt&#34;:&#34;Morocco&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Maroc.jpg&#34;,&#34;language&#34;:&#34;العربية&#34;,&#34;url&#34;:&#34;https://www.midea.com/ma-ar&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Nigeria&#34;,&#34;alt&#34;:&#34;Nigeria&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/ng-flag.jpg&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;/ng&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;South Africa&#34;,&#34;alt&#34;:&#34;South Africa&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/south-africa.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;/za&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Asia Pacific&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Australia&#34;,&#34;alt&#34;:&#34;Australia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/au.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/au&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Cambodia&#34;,&#34;alt&#34;:&#34;Cambodia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-kh.png&#34;,&#34;language&#34;:&#34;ខ្មែរ&#34;,&#34;url&#34;:&#34;https://www.midea.com/kh&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;China&#34;,&#34;alt&#34;:&#34;China&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_cn.png&#34;,&#34;language&#34;:&#34;中文&#34;,&#34;url&#34;:&#34;https://www.midea.com/cn/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;India&#34;,&#34;alt&#34;:&#34;India&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_in.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/in/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Indonesia&#34;,&#34;alt&#34;:&#34;Indonesia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_id.png&#34;,&#34;language&#34;:&#34;Bahasa Indonesia&#34;,&#34;url&#34;:&#34;https://www.midea.com/id/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Indonesia&#34;,&#34;alt&#34;:&#34;Indonesia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_id.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/id-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Kazakhstan&#34;,&#34;alt&#34;:&#34;Kazakhstan&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-kz.png&#34;,&#34;language&#34;:&#34;Қазақстан&#34;,&#34;url&#34;:&#34;https://www.midea.com/kz&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Kazakhstan&#34;,&#34;alt&#34;:&#34;Kazakhstan&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-kz.png&#34;,&#34;language&#34;:&#34;Русский&#34;,&#34;url&#34;:&#34;https://www.midea.com/kz-ru&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Korea &#34;,&#34;alt&#34;:&#34;Korea &#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_kr.jpg&#34;,&#34;language&#34;:&#34;한국어&#34;,&#34;url&#34;:&#34;https://www.midea.com/kr&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Malaysia&#34;,&#34;alt&#34;:&#34;Malaysia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_my.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/my/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;New Zealand&#34;,&#34;alt&#34;:&#34;New Zealand&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/nz-flag.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/nz&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Philippines&#34;,&#34;alt&#34;:&#34;Philippines&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ph.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/ph/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Singapore&#34;,&#34;alt&#34;:&#34;Singapore&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_sg.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/sg/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Thailand&#34;,&#34;alt&#34;:&#34;Thailand&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/thailand-2.png&#34;,&#34;language&#34;:&#34;ภาษา ไทย&#34;,&#34;url&#34;:&#34;https://www.midea.com/th/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Thailand&#34;,&#34;alt&#34;:&#34;Thailand&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/thailand-2.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/th-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Vietnam&#34;,&#34;alt&#34;:&#34;Vietnam&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_vn.png&#34;,&#34;language&#34;:&#34;Tiếng Việt&#34;,&#34;url&#34;:&#34;https://www.midea.com/vn/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Vietnam&#34;,&#34;alt&#34;:&#34;Vietnam&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_vn.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/vn-en&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Europe&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Bulgaria&#34;,&#34;alt&#34;:&#34;Bulgaria&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-bg.png&#34;,&#34;language&#34;:&#34;български&#34;,&#34;url&#34;:&#34;https://www.midea.com/bg&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Czech &#34;,&#34;alt&#34;:&#34;Czech Republic&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-Czech.png&#34;,&#34;language&#34;:&#34;Česká&#34;,&#34;url&#34;:&#34;https://www.midea.com/cz&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;France&#34;,&#34;alt&#34;:&#34;France&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_fr.jpg&#34;,&#34;language&#34;:&#34;Français&#34;,&#34;url&#34;:&#34;/fr&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Germany&#34;,&#34;alt&#34;:&#34;Germany&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_de.png&#34;,&#34;language&#34;:&#34;Deutsch&#34;,&#34;url&#34;:&#34;https://www.midea.com/de/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Greece&#34;,&#34;alt&#34;:&#34;Greece&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Flag-of-Greece-16-9-1-.png&#34;,&#34;language&#34;:&#34;Ελλάδα&#34;,&#34;url&#34;:&#34;https://www.midea.com/gr&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Italy&#34;,&#34;alt&#34;:&#34;Italy&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_it.png&#34;,&#34;language&#34;:&#34;Italiano&#34;,&#34;url&#34;:&#34;https://www.midea.com/it/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Poland&#34;,&#34;alt&#34;:&#34;Poland&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_pl.jpg&#34;,&#34;language&#34;:&#34;Polski&#34;,&#34;url&#34;:&#34;https://www.midea.com/pl&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Romania&#34;,&#34;alt&#34;:&#34;Romania&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-ro.png&#34;,&#34;language&#34;:&#34;română&#34;,&#34;url&#34;:&#34;https://www.midea.com/ro&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Russia&#34;,&#34;alt&#34;:&#34;Russia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ru.png&#34;,&#34;language&#34;:&#34;Русский&#34;,&#34;url&#34;:&#34;https://www.midea.com/ru/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Spain&#34;,&#34;alt&#34;:&#34;Spain&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_es.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.es/&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;UK&#34;,&#34;alt&#34;:&#34;UK&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uk.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/uk/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Portugal&#34;,&#34;alt&#34;:&#34;Portugal&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-pt.png&#34;,&#34;language&#34;:&#34;Português&#34;,&#34;url&#34;:&#34;https://www.midea.com/pt&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Netherlands&#34;,&#34;alt&#34;:&#34;Netherlands&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Netherlands-30.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/nl-en&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Middle East&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Iraq&#34;,&#34;alt&#34;:&#34;Iraq&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Iraq.png&#34;,&#34;language&#34;:&#34;العربية&#34;,&#34;url&#34;:&#34;https://www.midea.com/iq&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Iraq&#34;,&#34;alt&#34;:&#34;Iraq&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Iraq.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/iq-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Georgia&#34;,&#34;alt&#34;:&#34;Georgia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-ge.svg&#34;,&#34;language&#34;:&#34;ქართული&#34;,&#34;url&#34;:&#34;https://www.midea.com/ge&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Georgia&#34;,&#34;alt&#34;:&#34;Georgia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-ge.svg&#34;,&#34;language&#34;:&#34;Englsih&#34;,&#34;url&#34;:&#34;https://www.midea.com/ge-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Middle East&#34;,&#34;alt&#34;:&#34;Middle East&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uae.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/me&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Middle East&#34;,&#34;alt&#34;:&#34;Middle East&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uae.png&#34;,&#34;language&#34;:&#34;العَرَبِية&#34;,&#34;url&#34;:&#34;https://www.midea.com/me-ar&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;KSA&#34;,&#34;alt&#34;:&#34;KSA&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/KSA.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/sa&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;KSA&#34;,&#34;alt&#34;:&#34;KSA&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/KSA.png&#34;,&#34;language&#34;:&#34;العَرَبِية&#34;,&#34;url&#34;:&#34;https://www.midea.com/sa-ar&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;UAE&#34;,&#34;alt&#34;:&#34;UAE&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uae.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/gulf/&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;UAE&#34;,&#34;alt&#34;:&#34;UAE&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uae.png&#34;,&#34;language&#34;:&#34;العَرَبِية&#34;,&#34;url&#34;:&#34;/gulf-ar&#34;,&#34;target&#34;:&#34;_self&#34;}]}]">
+    <div class="md_close nav_lang_wraper_close"></div>
+    <div class="nav_lang_wraper_content"></div>
+</div>
+
+
+    
+
+
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+
+    
+
+</header>
+
+
+
+
+<script type="text/javascript">
+    if (!window.__AEM_CONF__) {
+        window.__AEM_CONF__ = {
+            components: {}
+        }
+    }
+
+    window.__AEM_CONF__.components["mdws-header-757eb4a4-f2be-4b6c-8d22-bfdce87fd84b"] = {
+        "urlPrefix":"\/content\/experience\u002Dfragments\/midea\u002Daem\/sa\u002Dar\/site\/header\/master\/jcr:content\/root\/header",
+        "myAccountPath": "#",
+        "loginPath": "",
+        "homePagePath": "\/sa\u002Dar",
+        "wishListUrl": "",
+        "favouriteIconAltText": "Favoritos",
+        "wishListOpen": "false",
+        "viewAllText": "عرض الكل",
+        }
+</script>
+
+<script type="text/javascript">
+    window.COMMON_HEADER_CONFIG = Object.freeze({
+        homePageUrl: "\/sa\u002Dar",
+        loginPageUrl: "",
+        accountUrl: "",
+        orderUrlUrl: "",
+        myProductUrl: "",
+        searchUrl:"\/sa\u002Dar\/search",
+        cartUrl:"",
+        productInfoUrl: "",
+        b2bflag: "النشاط التجاري",
+
+   });
+</script>
+
+<script type="text/javascript">
+    window.__AEM_CONF__.components["cart-reminder-757eb4a4-f2be-4b6c-8d22-bfdce87fd84b"] = {
+        "urlPrefix": "",
+        "addToCartPopup": "0",
+        "cartReminderPopup": "0",
+        "yourCartIsWaitingText": "سلة التسوق بانتظارك",
+        "itemAddedToYourCartText": "تمت إضافة العنصر لسلتك",
+        "viewCartText": "عرض السلة",
+        "checkoutText": "إتمام الشراء",
+        "shoppingCartPath": "",
+        "removeDelistedProductText": "يرجى إزالة المنتج الملغى من القائمة",
+    }
+</script>
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+</div>
+
+    
+</div>
+<div class="container responsivegrid aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div id="container-08c8200886" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="gws-carousel-style s-within-image aem-GridColumn aem-GridColumn--default--12">
+<div class="gws-carousel cmp-tabs" data-cmp-panelcontainer-id="/content/midea-aem/sa-ar/jcr:content/root/container/carousel" data-cmp-is="carousel" data-swiper-auto-play="true" data-switching-time="3000">
+    <div class="gws-carousel__container">
+        <div class="gws-carousel__swiper swiper">
+            <div class="gws-carousel__swiper__wrapper swiper-wrapper">
+                <div id="carousel-a71e811e7e-item-95a61a32f3-tabpanel" class="swiper-slide cmp-tabs__tabpanel cmp-tabs__tabpanel--active" data-cmp-data-layer="{&#34;carousel-a71e811e7e-item-95a61a32f3&#34;:{&#34;@type&#34;:&#34;oversea-base/components/core/carousel/v1/carousel/item&#34;,&#34;repo:modifyDate&#34;:&#34;2025-12-14T06:13:25Z&#34;}}" data-cmp-hook-tabs="tabpanel"><div class="gws-bannerV2_styles c-full-screen c-gap-bottom c-text-position-left-center c-text-align-left">
+<div class="gws-bannerV2 ">
+    
+    
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" lazyload="auto" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAAGklEQVR4AdzLMQ0AAACDsGX+RaOBl/79pEIAAAD//0wumHcAAAAGSURBVAMABrMAC8PDrXMAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/master-space/Spacemaster-Arabic-banner-pc.png/jcr:content/renditions/Spacemaster-Arabic-banner-pc.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/sa/master-space/Spacemaster-Arabic-banner-pc.png/jcr:content/renditions/Spacemaster-Arabic-banner-pc.webp" alt="Spacemaster-Arabic-banner-pc" lazyload="auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAAGklEQVR4AdzLMQ0AAACDsGX+RaOBl/79pEIAAAD//0wumHcAAAAGSURBVAMABrMAC8PDrXMAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+    
+    
+    <div class="gws-bannerV2__content">
+        <div class="gws-bannerV2__content__container ">
+            <div class="gws-bannerV2__content__wrapper">
+                
+                
+                
+                    
+                    
+                
+                
+                
+                <div class="gws-bannerV2__content__actions">
+                    
+                        
+                            <a class="gws-bannerV2__content__link " href="/sa-ar/spacemaster" target="_self" rel="noopener noreferrer" arial-abel="اعرف أكثر">اعرف أكثر</a>
+                            
+                            
+                        
+                    
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="mask">
+    </div>
+
+</div>
+
+
+    
+
+</div>
+</div>
+<div id="carousel-a71e811e7e-item-105f5462e2-tabpanel" class="swiper-slide cmp-tabs__tabpanel" data-cmp-data-layer="{&#34;carousel-a71e811e7e-item-105f5462e2&#34;:{&#34;@type&#34;:&#34;oversea-base/components/core/carousel/v1/carousel/item&#34;,&#34;repo:modifyDate&#34;:&#34;2025-08-20T09:14:40Z&#34;}}" data-cmp-hook-tabs="tabpanel"><div class="gws-bannerV2_styles c-text-position-right-center c-m-text-position-right-bottom">
+<div class="gws-bannerV2" data-type="video">
+    
+    
+    <div class="gws-video" data-mount-parent-class="gws-bannerV2">
+        <div class="gws-video__container c-video-autoplay c-video-mobile-inline-play">
+            
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" lazyload="auto" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAAAXNSR0IArs4c6QAAABNJREFUGFdjZCARMJKonmEQagAAA9QABiFBFnIAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/video/Dishwasher-Video-PC.jpg/jcr:content/renditions/Dishwasher-Video-PC.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/video/Dishwasher-Video-PC.jpg/jcr:content/renditions/Dishwasher-Video-PC.webp" alt="Dishwasher-Video-PC" lazyload="auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAAAXNSR0IArs4c6QAAABNJREFUGFdjZCARMJKonmEQagAAA9QABiFBFnIAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+            <i class=" gws-video__play"></i>
+            <div class="gws-video__content" data-init-muted="true">
+                
+                    <video class="gws-video__asset" controlslist="nodownload noplaybackrate" disablepictureinpicture data-pc-video="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/video/Dishwasher-Video.mp4" webkit-playsinline="true" playsinline="true" data-mobile-video="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/video/Dishwasher-Video.mp4" controls="true" muted="true" loop="true"></video>
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="gws-bannerV2__content">
+        <div class="gws-bannerV2__content__container ">
+            <div class="gws-bannerV2__content__wrapper">
+                
+                
+                
+                    
+                    
+                
+                
+                
+                <div class="gws-bannerV2__content__actions">
+                    
+                        
+                            <a class="gws-bannerV2__content__link " href="/sa-ar/dishwashers" target="_self" rel="noopener noreferrer" arial-abel="اعرف المزيد">اعرف المزيد</a>
+                            
+                            
+                        
+                    
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="mask">
+    </div>
+
+</div>
+
+    
+
+</div>
+</div>
+<div id="carousel-a71e811e7e-item-fc072b1514-tabpanel" class="swiper-slide cmp-tabs__tabpanel" data-cmp-data-layer="{&#34;carousel-a71e811e7e-item-fc072b1514&#34;:{&#34;@type&#34;:&#34;oversea-base/components/core/carousel/v1/carousel/item&#34;,&#34;repo:modifyDate&#34;:&#34;2025-08-20T09:14:58Z&#34;}}" data-cmp-hook-tabs="tabpanel"><div class="gws-bannerV2_styles c-text-position-right-center c-m-text-position-right-bottom">
+<div class="gws-bannerV2" data-type="video">
+    
+    
+    <div class="gws-video" data-mount-parent-class="gws-bannerV2">
+        <div class="gws-video__container c-video-autoplay c-video-mobile-inline-play">
+            
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" lazyload="auto" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAAAXNSR0IArs4c6QAAABNJREFUGFdjZCARMJKonmEQagAAA9QABiFBFnIAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/video/Dispenser-Video-PC.jpg/jcr:content/renditions/Dispenser-Video-PC.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/video/Dispenser-Video-PC.jpg/jcr:content/renditions/Dispenser-Video-PC.webp" alt="Dispenser-Video-PC" lazyload="auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAAAXNSR0IArs4c6QAAABNJREFUGFdjZCARMJKonmEQagAAA9QABiFBFnIAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+            <i class=" gws-video__play"></i>
+            <div class="gws-video__content" data-init-muted="true">
+                
+                    <video class="gws-video__asset" controlslist="nodownload noplaybackrate" disablepictureinpicture data-pc-video="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/video/YLSPO1-Full1920x800.mp4" webkit-playsinline="true" playsinline="true" data-mobile-video="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/video/YLSPO1-Full1920x800.mp4" controls="true" muted="true" loop="true"></video>
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="gws-bannerV2__content">
+        <div class="gws-bannerV2__content__container ">
+            <div class="gws-bannerV2__content__wrapper">
+                
+                
+                
+                    
+                    
+                
+                
+                
+                <div class="gws-bannerV2__content__actions">
+                    
+                        
+                            <a class="gws-bannerV2__content__link " href="/sa-ar/water-treatment" target="_self" rel="noopener noreferrer" arial-abel="اعرف المزيد">اعرف المزيد</a>
+                            
+                            
+                        
+                    
+                </div>
+
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="mask">
+    </div>
+
+</div>
+
+    
+
+</div>
+</div>
+<div id="carousel-a71e811e7e-item-f80687c1c6-tabpanel" class="swiper-slide cmp-tabs__tabpanel" data-cmp-data-layer="{&#34;carousel-a71e811e7e-item-f80687c1c6&#34;:{&#34;@type&#34;:&#34;oversea-base/components/core/carousel/v1/carousel/item&#34;,&#34;repo:modifyDate&#34;:&#34;2025-08-20T09:15:14Z&#34;,&#34;xdm:linkURL&#34;:&#34;/sa-ar/about-midea.html&#34;}}" data-cmp-hook-tabs="tabpanel"><div class="gws-bannerV2_styles c-full-screen c-gap-bottom c-text-position-left-center c-text-align-left">
+<div class="gws-bannerV2 ">
+    
+    
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" lazyload="auto" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAACCAYAAACQahZdAAAAAXNSR0IArs4c6QAAAA9JREFUGFdjZMACGLEJAgAAaQADwelpCgAAAABJRU5ErkJggg==" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/banner/Midea-No1-Banner-pc.jpg/jcr:content/renditions/Midea-No1-Banner-pc.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/banner/Midea-No1-Banner-pc.jpg/jcr:content/renditions/Midea-No1-Banner-pc.webp" alt="Midea-No1-Banner-pc" lazyload="auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAACCAYAAACQahZdAAAAAXNSR0IArs4c6QAAAA9JREFUGFdjZMACGLEJAgAAaQADwelpCgAAAABJRU5ErkJggg==" class="lazyload"/>
+        </picture>
+    </div>
+
+    <a class="gws-bannerV2__asset-link" href="/sa-ar/about-midea" target="_self"></a>
+    
+    <div class="gws-bannerV2__content">
+        <div class="gws-bannerV2__content__container ">
+            <div class="gws-bannerV2__content__wrapper">
+                
+                
+                
+                    
+                    
+                
+                
+                
+                
+
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="mask">
+    </div>
+
+</div>
+
+
+    
+
+</div>
+</div>
+
+            </div>
+            <div class="swiper-button-prev hide"></div>
+            <div class="swiper-button-next hide"></div>
+
+            <div class="swiper-pagination hide"></div>
+        </div>
+    </div>
+    
+</div>
+
+    
+</div>
+<div class="gws-section-title-v1__styles mdws-gap-top aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div class="gws-section-title-v1" data-anchor="Y" data-anchor-tvcp="N" data-anchor-tvcp-title="كافة الأجهزة المنزلية لتلبية الاحتياجات اليومية">
+        <div class="gws-section-title-v1__main ">كافة الأجهزة المنزلية لتلبية الاحتياجات اليومية</div>
+        
+        
+        
+    </div>
+
+
+
+    
+
+
+
+
+
+</div>
+<div class="mdws-preferred-six-cards_style mdws-gap-bottom mdws-gap-top aem-GridColumn aem-GridColumn--default--12">
+
+<div class="mdws-preferred-six-cards">
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    <div class="mdws-preferred-six-cards-list">
+        <div class="mdws-preferred-six-cards-list-item">
+            <div class="mdws-preferred-six-cards-list-item-top">
+                <a href="/sa-ar/refrigerators" target="_self">
+                    
+                    
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/refrigerators/side-by-side-refrigerator/mdrs791myu46d/id/MDRS791MYU46D-id1-pc.png/jcr:content/renditions/MDRS791MYU46D-id1-pc.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/refrigerators/side-by-side-refrigerator/mdrs791myu46d/id/MDRS791MYU46D-id1-pc.png/jcr:content/renditions/MDRS791MYU46D-id1-pc.webp" alt="ثلاجات" lazyload="1/1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+                </a>
+
+                <p>ثلاجات</p>
+            </div>
+            <a href="/sa-ar/refrigerators" target="_self" class="mdws-btn mdws-btn--primary">اعرف المزيد</a>
+        </div>
+    
+        <div class="mdws-preferred-six-cards-list-item">
+            <div class="mdws-preferred-six-cards-list-item-top">
+                <a href="/sa-ar/cooking-range" target="_self">
+                    
+                    
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/cooking-range/36lmg5g022/36lmg5g022-1.png/jcr:content/renditions/36lmg5g022-1.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/cooking-range/36lmg5g022/36lmg5g022-1.png/jcr:content/renditions/36lmg5g022-1.webp" alt="منتجات الطهي" lazyload="1/1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+                </a>
+
+                <p>منتجات الطهي</p>
+            </div>
+            <a href="/sa-ar/cooking-range" target="_self" class="mdws-btn mdws-btn--primary">اعرف المزيد</a>
+        </div>
+    
+        <div class="mdws-preferred-six-cards-list-item">
+            <div class="mdws-preferred-six-cards-list-item-top">
+                <a href="/sa-ar/dishwashers" target="_self">
+                    
+                    
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/dishwasher/freestanding-dishwasher/wqp15-wu7633g-ss---wqp15-wu7633gur-bs/wqp15-wu7633g-ss-1-pc.png/jcr:content/renditions/wqp15-wu7633g-ss-1-pc.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/dishwasher/freestanding-dishwasher/wqp15-wu7633g-ss---wqp15-wu7633gur-bs/wqp15-wu7633g-ss-1-pc.png/jcr:content/renditions/wqp15-wu7633g-ss-1-pc.webp" alt="غسالات الأطباق" lazyload="1/1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+                </a>
+
+                <p>غسالات الأطباق</p>
+            </div>
+            <a href="/sa-ar/dishwashers" target="_self" class="mdws-btn mdws-btn--primary">اعرف المزيد</a>
+        </div>
+    
+        <div class="mdws-preferred-six-cards-list-item">
+            <div class="mdws-preferred-six-cards-list-item-top">
+                <a href="/sa-ar/laundry" target="_self">
+                    
+                    
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/laundry/heat-pump-dryer/id/MD200H100WDBT-SA-front.png/jcr:content/renditions/MD200H100WDBT-SA-front.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/laundry/heat-pump-dryer/id/MD200H100WDBT-SA-front.png/jcr:content/renditions/MD200H100WDBT-SA-front.webp" alt="غسيل الملابس" lazyload="1/1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+                </a>
+
+                <p>غسيل الملابس</p>
+            </div>
+            <a href="/sa-ar/laundry" target="_self" class="mdws-btn mdws-btn--primary">اعرف المزيد</a>
+        </div>
+    
+        <div class="mdws-preferred-six-cards-list-item">
+            <div class="mdws-preferred-six-cards-list-item-top">
+                <a href="/sa-ar/microwave-oven" target="_self">
+                    
+                    
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/microwave-oven/grill/eg131bs/product-image/eg131bs-1.png/jcr:content/renditions/eg131bs-1.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/sa/microwave-oven/grill/eg131bs/product-image/eg131bs-1.png/jcr:content/renditions/eg131bs-1.webp" alt="فرن ميكروويف" lazyload="1/1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+                </a>
+
+                <p>فرن ميكروويف</p>
+            </div>
+            <a href="/sa-ar/microwave-oven" target="_self" class="mdws-btn mdws-btn--primary">اعرف المزيد</a>
+        </div>
+    
+        <div class="mdws-preferred-six-cards-list-item">
+            <div class="mdws-preferred-six-cards-list-item-top">
+                <a href="/sa-ar/small-appliances" target="_self">
+                    
+                    
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/small-appliances/air-fryers/mad-110d2apk-midea-dual-zone-air-fryer-digital-touch-control/id-image/MAD-110D2APK-PC-front.png/jcr:content/renditions/MAD-110D2APK-PC-front.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/small-appliances/air-fryers/mad-110d2apk-midea-dual-zone-air-fryer-digital-touch-control/id-image/MAD-110D2APK-PC-front.png/jcr:content/renditions/MAD-110D2APK-PC-front.webp" alt=" الأجهزة المنزلية الصغيرة" lazyload="1/1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+                </a>
+
+                <p> الأجهزة المنزلية الصغيرة</p>
+            </div>
+            <a href="/sa-ar/small-appliances" target="_self" class="mdws-btn mdws-btn--primary">اعرف المزيد</a>
+        </div>
+    </div>
+</div>
+
+
+
+    
+
+
+
+
+
+</div>
+<div class="gws-bannerV2_styles c-full-screen c-gap-bottom c-text-position-left c-text-align-left aem-GridColumn aem-GridColumn--default--12">
+<div class="gws-bannerV2" data-type="video">
+    
+    
+    <div class="gws-video" data-mount-parent-class="gws-bannerV2">
+        <div class="gws-video__container c-video-autoplay c-video-mobile-inline-play">
+            
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" lazyload="auto" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAFCAYAAABirU3bAAAAAXNSR0IArs4c6QAAAA9JREFUGFdjZEADjFQQAAABVAAGXmiSowAAAABJRU5ErkJggg==" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/hands-video/clean-version/Halannd-Video-Clean-Version-Cover.jpg/jcr:content/renditions/Halannd-Video-Clean-Version-Cover.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/hands-video/Halannd-Video-PC.jpg/jcr:content/renditions/Halannd-Video-PC.webp" alt="Halannd-Video-PC" lazyload="auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAECAYAAABCxiV9AAAAAXNSR0IArs4c6QAAAA9JREFUGFdjZMADGGkjCQABlgAFFZ4PMQAAAABJRU5ErkJggg==" class="lazyload"/>
+        </picture>
+    </div>
+
+            <i class=" gws-video__play"></i>
+            <div class="gws-video__content" data-init-muted="true">
+                
+                    <video class="gws-video__asset" controlslist="nodownload noplaybackrate" disablepictureinpicture data-pc-video="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/hands-video/clean-version/A-Little-Helping-Hand-Hero-30s-Cold-Clean-16x9.mp4" webkit-playsinline="true" playsinline="true" data-mobile-video="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/hands-video/clean-version/A-Little-Helping-Hand-Hero-30s-Cold-Clean-4x5.mp4" controls="true" muted="true" loop="true"></video>
+                
+                
+                
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="gws-bannerV2__content">
+        <div class="gws-bannerV2__content__container ">
+            <div class="gws-bannerV2__content__wrapper">
+                
+                
+                
+                    
+                    
+                
+                
+                
+                
+
+                
+
+            </div>
+        </div>
+    </div>
+    <div class="mask">
+    </div>
+
+</div>
+
+    
+
+</div>
+<div class="cmp_categorytabs aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="mdws-category-tabs mdws-category-tabs__white">
+    <div class="mdws-category-tabs_header-wrap">
+        <h2 class="mdws-category-tabs_title">
+            ثلاجات
+        </h2>
+        <div class="mdws-category-tabs_tabList">
+            <div class="mdws-category-tabs_tabList_main">
+                <div class="mdws-category-tabs_tabList_btn tabList-btn_prev hidden">
+                    <em class="arrow_btn"></em>
+                </div>
+                <div class="mdws-category-tabs_tabList_container">
+                    <ul>
+                        <li class="mdws-category-tabs_active-tab">
+                            <span>ببابين متجاورين</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    
+                        <li>
+                            <span>ثلاجة بمجمد علوي</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    
+                        <li>
+                            <span>ثلاجة بباب واحد</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    
+                        <li>
+                            <span>مجمدات عمودية</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    
+                        <li>
+                            <span>مجمدات صندوقية</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdws-category-tabs_tabList_btn tabList-btn_next">
+                    <em class="arrow_btn"></em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdws-category-tabs_container swiper">
+        <div class="mdws-category-tabs_wrapper swiper-wrapper">
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">ببابين متجاورين</h2>
+                            <div class="mdws-category-tabs_desc">
+                                حافظ على الإمدادات الغذائية لعائلتك في مكان آمن وصحي بفضل ثلاجات بُمجمد علوي من مايديا. تصميماتنا الأنيقة تبدو رائعة في أي مكان!
+                            </div>
+                            <a target="_self" href="/sa-ar/refrigerators/side-by-side" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/categories-tab/side-by-side-refrigerator-banner-pc.png/jcr:content/renditions/side-by-side-refrigerator-banner-pc.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/refrigerators/side-by-side-refrigerator-banner-pc1.png/jcr:content/renditions/side-by-side-refrigerator-banner-pc1.webp" alt="ببابين متجاورين" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">ثلاجة بمجمد علوي</h2>
+                            <div class="mdws-category-tabs_desc">
+                                اكتشف مجموعة الثلاجات بمجمد علوي المقدمة من مايديا بتصميمات أنيقة تبدو مذهلة في أي مكان.
+                            </div>
+                            <a target="_self" href="/sa-ar/refrigerators/top-mount-refrigerator" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/refrigerators/top-mount-banner-mob.jpg/jcr:content/renditions/top-mount-banner-mob.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/refrigerators/top-mount-banner-pc.jpg/jcr:content/renditions/top-mount-banner-pc.webp" alt="ثلاجة بمجمد علوي" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">ثلاجة بباب واحد</h2>
+                            <div class="mdws-category-tabs_desc">
+                                تعد ثلاجة الباب الواحد خياراً رائعاً للأماكن الضيقة والصغيرة كالمكاتب وغرف النوم، حيث أنها لا تستهلك مساحة كبيرة بينما تلبي لك احتياجاتك في تخزين وحفظ الأطعمة ومشروباتك المفضلة. إنّ ثلاجة الباب الواحد من مايديا صغيرة وسهلة الحمل، حيث أنها مصممة على نحو يتناسب مع الأماكن الصغيرة، وتتميز بصندوق محكم الإغلاق، وخاصية التحكم في الرطوبة، ورف زجاجات 2 لتر.
+                            </div>
+                            <a target="_self" href="/sa-ar/refrigerators/single-door-refrigerator" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/refrigerators/single-door-banner-mob.jpg/jcr:content/renditions/single-door-banner-mob.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/refrigerators/single-door-banner-pc.jpg/jcr:content/renditions/single-door-banner-pc.webp" alt="ثلاجة بباب واحد" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">مجمدات عمودية</h2>
+                            <div class="mdws-category-tabs_desc">
+                                اكتشف الثلاجات العمودية المقدمة من مايديا، والتي تتميز بأنها قابلة للتحول إلى مجمد والعكس عن طريق ضغطة زر واحدة. تتميز هذه الثلاجات العمودية بالابتكار الذي يوفر لك أقصى درجات الراحة والعملية، خاصة وأنها تتميز بوضع التجمد السريع، وتقنية الإذابة التلقائية للثلج، واختلاف سعات التخزين لتلائم متعدد الاحتياجات.
+                            </div>
+                            <a target="_self" href="/sa-ar/refrigerators/upright-freezers" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/categories-tab/refrigerator-banner-pc.png/jcr:content/renditions/refrigerator-banner-pc.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/banner/refrigerator/refrigerator-banner-pc.png/jcr:content/renditions/refrigerator-banner-pc.webp" alt="مجمدات عمودية" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">مجمدات صندوقية</h2>
+                            <div class="mdws-category-tabs_desc">
+                                 يمكنك تخزين أطعمة أكثر باستخدام المجمدات الصندوقية المقدمة من مايديا.
+                            </div>
+                            <a target="_self" href="/sa-ar/refrigerators/chest-freezers" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/homepage/B-chest-freezers-banner-mob.jpg/jcr:content/renditions/B-chest-freezers-banner-mob.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/homepage/C-1chest-freezers-banner-pc.png/jcr:content/renditions/C-1chest-freezers-banner-pc.webp" alt="C-1chest-freezers-banner-pc" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+</div>
+<div class="space__styles aem-GridColumn aem-GridColumn--default--12"><div class="gws-space"></div></div>
+<div class="cmp_categorytabs aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="mdws-category-tabs mdws-category-tabs__white">
+    <div class="mdws-category-tabs_header-wrap">
+        <h2 class="mdws-category-tabs_title">
+             غسيل الملابس
+        </h2>
+        <div class="mdws-category-tabs_tabList">
+            <div class="mdws-category-tabs_tabList_main">
+                <div class="mdws-category-tabs_tabList_btn tabList-btn_prev hidden">
+                    <em class="arrow_btn"></em>
+                </div>
+                <div class="mdws-category-tabs_tabList_container">
+                    <ul>
+                        <li class="mdws-category-tabs_active-tab">
+                            <span>غسالة تحميل أمامي</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    
+                        <li>
+                            <span>غسالة ومجفف بتحميل أمامي</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    
+                        <li>
+                            <span>مجفف ملابس بمضخة حرارية</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    
+                        <li>
+                            <span>غسالة تحميل علوي</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdws-category-tabs_tabList_btn tabList-btn_next">
+                    <em class="arrow_btn"></em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdws-category-tabs_container swiper">
+        <div class="mdws-category-tabs_wrapper swiper-wrapper">
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">غسالة تحميل أمامي</h2>
+                            <div class="mdws-category-tabs_desc">
+                                استكشف غسالات التحميل الأمامي المقدمة من مايديا
+                            </div>
+                            <a target="_self" href="/sa-ar/laundry/front-load-washer" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/laundry/categories-tab/Front-Load-Washer-banner-mob.png/jcr:content/renditions/Front-Load-Washer-banner-mob.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/laundry/Front-Load-Washer-banner-pc.png/jcr:content/renditions/Front-Load-Washer-banner-pc.webp" alt="غسالة تحميل أمامي" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">غسالة ومجفف بتحميل أمامي</h2>
+                            <div class="mdws-category-tabs_desc">
+                                غسالة تجمع بين خاصية الغسيل والتجفيف في آنٍ واحدٍ، وذلك لتوفير مساحة وتقديم تجربة غسيل أكثر كفاءة.
+                            </div>
+                            <a target="_self" href="/sa-ar/laundry/front-load-washer-dryer" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/plp-page/laundry/front-load-washer-dryer-mob.jpg/jcr:content/renditions/front-load-washer-dryer-mob.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/plp-page/laundry/front-load-washer-dryer-pc.jpg/jcr:content/renditions/front-load-washer-dryer-pc.webp" alt="front-load-washer-dryer-pc" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">مجفف ملابس بمضخة حرارية</h2>
+                            <div class="mdws-category-tabs_desc">
+                                
+                            </div>
+                            <a target="_self" href="/sa-ar/laundry/heat-pump-dryer" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/laundry/heat-pump-dryer/banner/MD200H100WDBT-SA-banner-mob.jpg/jcr:content/renditions/MD200H100WDBT-SA-banner-mob.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/laundry/heat-pump-dryer/banner/MD200H100WDBT-SA-banner-pc.png/jcr:content/renditions/MD200H100WDBT-SA-banner-pc.webp" alt="MD200H100WDBT-SA-banner-pc" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">غسالة تحميل علوي</h2>
+                            <div class="mdws-category-tabs_desc">
+                                استكشف مجموعة غسالات التحميل العلوي المقدمة من مايديا
+                            </div>
+                            <a target="_self" href="/sa-ar/laundry/top-load-washer" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/laundry/categories-tab/top-load-washer-banner-mob.png/jcr:content/renditions/top-load-washer-banner-mob.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/laundry/top-load-washer-banner-pc.png/jcr:content/renditions/top-load-washer-banner-pc.webp" alt="غسالة تحميل علوي" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+</div>
+<div class="space__styles aem-GridColumn aem-GridColumn--default--12"><div class="gws-space"></div></div>
+<div class="cmp_categorytabs aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="mdws-category-tabs mdws-category-tabs__white">
+    <div class="mdws-category-tabs_header-wrap">
+        <h2 class="mdws-category-tabs_title">
+            غسالات الصحون
+        </h2>
+        <div class="mdws-category-tabs_tabList">
+            <div class="mdws-category-tabs_tabList_main">
+                <div class="mdws-category-tabs_tabList_btn tabList-btn_prev hidden">
+                    <em class="arrow_btn"></em>
+                </div>
+                <div class="mdws-category-tabs_tabList_container">
+                    <ul>
+                        <li class="mdws-category-tabs_active-tab">
+                            <span>غسالات أطباق ذاتية القوام</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    
+                        <li>
+                            <span>غسالة أطباق صغيرة</span>
+                            <div class="mdws-category-tabs_item-line"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdws-category-tabs_tabList_btn tabList-btn_next">
+                    <em class="arrow_btn"></em>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mdws-category-tabs_container swiper">
+        <div class="mdws-category-tabs_wrapper swiper-wrapper">
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">غسالات أطباق ذاتية القوام</h2>
+                            <div class="mdws-category-tabs_desc">
+                                اكتشف مجموعة واسعة من غسالات الأطباق ذاتية القوام المقدمة من مايديا
+                            </div>
+                            <a target="_self" href="/sa-ar/dishwashers/freestanding-dishwasher" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/dishwashers/freestanding-dishwasher/wqp14-w5233c-s/banner/WQP14-W5233C-S-Banner-Mobile.jpg/jcr:content/renditions/WQP14-W5233C-S-Banner-Mobile.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/dishwashers/freestanding-dishwasher/wqp14-w5233c-s/banner/WQP14-W5233C-S-Banner-PC.png/jcr:content/renditions/WQP14-W5233C-S-Banner-PC.webp" alt="غسالات أطباق ذاتية القوام" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="mdws-category-tabs_slide swiper-slide" data-is-white="1">
+                <div class="mdws-category-tabs_slide-inner">
+                    <div class="mdws-category-tabs_text-wrap">
+                        <div class="mdws-category-tabs_text-wrap-content">
+                            <h2 class="mdws-category-tabs_headline">غسالة أطباق صغيرة</h2>
+                            <div class="mdws-category-tabs_desc">
+                                تناسب الغسالة الصغيرة المقدمة من مايديا غسل عدد أقل من الأطباق
+                            </div>
+                            <a target="_self" href="/sa-ar/dishwashers/builtin-dishwasher" class="mdws-category-tabs_btn mdws-btn mdws-btn--primary">اعرف المزيد</a>
+                        </div>
+                    </div>
+                    <div class="mdws-category-tabs_img-wrap">
+                        <picture>
+                            <source media="(max-width:767px)" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/homepage/categories-tab/dishwasher-banner-pc.png/jcr:content/renditions/dishwasher-banner-pc.webp"/>
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAFCAYAAABxeg0vAAAADElEQVR42mNgGIEAAAD1AAGmjtWYAAAAAElFTkSuQmCC" data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/banner/dishwasher/dishwasher-banner-pc.png/jcr:content/renditions/dishwasher-banner-pc.webp" alt="غسالة أطباق صغيرة" class="lazyload"/>
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+</div>
+<div class="gws-section-title-v1__styles mdws-gap-bottom mdws-gap-top aem-GridColumn aem-GridColumn--default--12">
+
+    
+    <div class="gws-section-title-v1" data-anchor="Y" data-anchor-tvcp="N" data-anchor-tvcp-title="الأخبار / الأحداث">
+        <div class="gws-section-title-v1__main ">الأخبار / الأحداث</div>
+        
+        
+        
+    </div>
+
+
+
+    
+
+
+
+
+
+</div>
+<div class="gws-carousel-style s-below-image aem-GridColumn aem-GridColumn--default--12">
+<div class="gws-carousel cmp-tabs" data-cmp-panelcontainer-id="/content/midea-aem/sa-ar/jcr:content/root/container/carousel_301221401" data-cmp-is="carousel" data-swiper-auto-play="true" data-switching-time="3000">
+    <div class="gws-carousel__container">
+        <div class="gws-carousel__swiper swiper">
+            <div class="gws-carousel__swiper__wrapper swiper-wrapper">
+                <div id="carousel-5324093e58-item-5bfc043d38-tabpanel" class="swiper-slide cmp-tabs__tabpanel cmp-tabs__tabpanel--active" data-cmp-data-layer="{&#34;carousel-5324093e58-item-5bfc043d38&#34;:{&#34;@type&#34;:&#34;oversea-base/components/core/carousel/v1/carousel/item&#34;,&#34;repo:modifyDate&#34;:&#34;2025-09-10T07:28:52Z&#34;,&#34;dc:title&#34;:&#34;7&#34;}}" data-cmp-hook-tabs="tabpanel"><div class="gws-teaserV3__styles s-card-Them c-flex-row mdws-gap-bottom mdws-gap-top"><div class="gws-teaserV3">
+    <div class="gws-teaserV3-asset  ">
+        
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" lazyload="auto" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAADklEQVR4AWJiQAIoHAAAAAD//8PeGNkAAAAGSURBVAMAAGgABYDMBXkAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/A-IFA-news-1-718x495.jpg/jcr:content/renditions/A-IFA-news-1-718x495.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/gulf/gulf-new-asssets/A-IFA-news-1-718x495.jpg/jcr:content/renditions/A-IFA-news-1-718x495.webp" alt="ميديا تعرض شعار &#34;أتقن منزلك&#34; في معرض IFA 2025" lazyload="auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAADklEQVR4AWJiQAIoHAAAAAD//8PeGNkAAAAGSURBVAMAAGgABYDMBXkAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+        
+        <!-- toshiba的图片，若勾选了actionsEnabled，并且填写了link，则可以跳转link。currentContentPolicyProperties是模版里边的配置。 -->
+        
+        
+    </div>
+    
+        <div class="gws-teaserV3-content">
+    
+    <div class="gws-teaserV3-title"><p>ميديا تعرض شعار &quot;أتقن منزلك&quot; في معرض IFA 2025</p>
+</div>
+    
+    <div class="gws-teaserV3-desc"><p>&quot;برلين، ألمانيا، 5 سبتمبر 2025 – كشفت شركة ميديا، التابعة لمجموعة ميديا وإحدى شركات قائمة فورتشن 500 لعام 2025، عن شعار جناحها في معرض IFA 2025 تحت عنوان &quot;&quot;أتقن منزلك&quot;&quot;، وذلك من خلال استعراض أحدث ابتكاراتها التي تمكّن المستخدمين بشكل متكامل من الاستمتاع بتجربة منزلية متفردة. ويعني ذلك تمكينهم من إدارة مساحتهم وطاقتهم وجماليات منازلهم بسهولة تامة.</p>
+<p>وبعد أن وصلت منتجات ميديا بالفعل إلى أكثر من 500 مليون مستخدم في أكثر من 200 دولة ومنطقة حول العالم، تواصل الشركة مهمتها في جعل الحياة اليومية أكثر ذكاءً وكفاءة وراحة.&quot;</p>
+</div>
+    
+    <div class="gws-teaserV3-operate">
+        
+        <a class="gws-teaserV3-action" href="/sa-ar/news/midea-showcases-master-your-home-at-ifa-2025-with-transformative-innovations" target="_self">يتعلم أكثر</a>
+    </div>
+
+
+    
+
+</div>
+    
+
+</div>
+
+
+    
+</div>
+</div>
+<div id="carousel-5324093e58-item-73616748ff-tabpanel" class="swiper-slide cmp-tabs__tabpanel" data-cmp-data-layer="{&#34;carousel-5324093e58-item-73616748ff&#34;:{&#34;@type&#34;:&#34;oversea-base/components/core/carousel/v1/carousel/item&#34;,&#34;repo:modifyDate&#34;:&#34;2025-09-10T07:27:57Z&#34;,&#34;dc:title&#34;:&#34;1&#34;}}" data-cmp-hook-tabs="tabpanel"><div class="gws-teaserV3__styles s-card-Them"><div class="gws-teaserV3">
+    <div class="gws-teaserV3-asset  ">
+        
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" lazyload="auto" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAADklEQVR4AWJiQAIoHAAAAAD//8PeGNkAAAAGSURBVAMAAGgABYDMBXkAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/ng/news/midea-fc/B-Midea-to-Become-New-FC-Barcelona-Main-Partner-718x495-v1.png/jcr:content/renditions/B-Midea-to-Become-New-FC-Barcelona-Main-Partner-718x495-v1.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/ng/news/midea-fc/B-Midea-to-Become-New-FC-Barcelona-Main-Partner-718x495-v1.png/jcr:content/renditions/B-Midea-to-Become-New-FC-Barcelona-Main-Partner-718x495-v1.webp" alt="شركة Midea الراعي الرسمي الجديد لنادي برشلونة" lazyload="auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAADklEQVR4AWJiQAIoHAAAAAD//8PeGNkAAAAGSURBVAMAAGgABYDMBXkAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+        
+        <!-- toshiba的图片，若勾选了actionsEnabled，并且填写了link，则可以跳转link。currentContentPolicyProperties是模版里边的配置。 -->
+        
+        
+    </div>
+    
+        <div class="gws-teaserV3-content">
+    
+    <div class="gws-teaserV3-title"><p>شركة Midea الراعي الرسمي الجديد لنادي برشلونة</p>
+</div>
+    
+    <div class="gws-teaserV3-desc"><p><i>العلامة التجارية رقم 1 عالميًا في مجال صناعة الأجهزة المنزلية الذكية توقّع عقدًا يمتد لمدة 5 مواسم لتظهر على أكمام قمصان نادي برشلونة بدءًا من موسم 2026/2027</i></p>
+</div>
+    
+    <div class="gws-teaserV3-operate">
+        
+        <a class="gws-teaserV3-action" href="/sa-ar/news/midea-to-become-new-fc-barcelona-main-partner" target="_self">يتعلم أكثر</a>
+    </div>
+
+
+    
+
+</div>
+    
+
+</div>
+
+
+    
+</div>
+</div>
+<div id="carousel-5324093e58-item-951185dce9-tabpanel" class="swiper-slide cmp-tabs__tabpanel" data-cmp-data-layer="{&#34;carousel-5324093e58-item-951185dce9&#34;:{&#34;@type&#34;:&#34;oversea-base/components/core/carousel/v1/carousel/item&#34;,&#34;repo:modifyDate&#34;:&#34;2025-08-21T06:18:53Z&#34;}}" data-cmp-hook-tabs="tabpanel"><div class="gws-teaserV3__styles s-card-Them"><div class="gws-teaserV3">
+    <div class="gws-teaserV3-asset  ">
+        
+    <div class="gws-img">
+        <picture>
+            
+            <source media="(max-width:767px)" lazyload="auto" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAADklEQVR4AWJiQAIoHAAAAAD//8PeGNkAAAAGSURBVAMAAGgABYDMBXkAAAAASUVORK5CYII=" data-srcset="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/blogs/news-banner.jpg/jcr:content/renditions/news-banner.webp"/>
+            <img data-src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/blogs/news-banner.jpg/jcr:content/renditions/news-banner.webp" alt="ميديا ومانشستر سيتي – شراكة ترتقي إلى العالمية" lazyload="auto" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAACCAYAAACddGYaAAAADklEQVR4AWJiQAIoHAAAAAD//8PeGNkAAAAGSURBVAMAAGgABYDMBXkAAAAASUVORK5CYII=" class="lazyload"/>
+        </picture>
+    </div>
+
+        
+        <!-- toshiba的图片，若勾选了actionsEnabled，并且填写了link，则可以跳转link。currentContentPolicyProperties是模版里边的配置。 -->
+        
+        
+    </div>
+    
+        <div class="gws-teaserV3-content">
+    
+    <div class="gws-teaserV3-title"><p>ميديا ومانشستر سيتي – شراكة ترتقي إلى العالمية</p>
+</div>
+    
+    <div class="gws-teaserV3-desc"><p>ميديا ونادي مانشستر سيتي يبدآن شراكة رسمية تهدف إلى إدخال المزيد من</p>
+<p> السعادة والمفاجآت إلى حياة الناس</p>
+</div>
+    
+    <div class="gws-teaserV3-operate">
+        
+        <a class="gws-teaserV3-action" href="/sa-ar/sponsorship" target="_self">اعرف المزيد</a>
+    </div>
+
+
+    
+
+</div>
+    
+
+</div>
+
+
+    
+</div>
+</div>
+
+            </div>
+            <div class="swiper-button-prev hide"></div>
+            <div class="swiper-button-next hide"></div>
+
+            <div class="swiper-pagination hide"></div>
+        </div>
+    </div>
+    
+</div>
+
+    
+</div>
+<div class="space__styles aem-GridColumn aem-GridColumn--default--12"><div class="gws-space"></div></div>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-4b142101ed" class="cmp-experiencefragment cmp-experiencefragment--support-list">
+
+
+    
+    <div id="container-ab6b4a6536" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="cmp-supportlist unidx aem-GridColumn aem-GridColumn--default--12">
+
+<div class="mdws-support-list-box mdws-support-col-3  mdws-support-center  ">
+    <ul>
+        <li data-jump-type="jumpLink">
+            <span class="title">دعم العملاء</span>
+            <div class="img-text-box">
+                <div class="img-box">
+                    <img class="lazyload cursor-normal" src="//web-res.midea.com/content/dam/midea-aem/sa/sa-new-assests/support/12-20-2024-customer-support-icon.png/jcr:content/renditions/12-20-2024-customer-support-icon.webp" alt="Midea SA-AR دعم العملاء"/>
+                    <img class="lazyload cursor-active" alt="Midea SA-AR دعم العملاء"/>
+                </div>
+                <div class="text-box">
+                    <span class="title">دعم العملاء</span>
+                    <div class="desc-btn-box">
+                        <span class="desc">هل لديك أسئلة حول منتج Midea الخاص بك؟
+خدمة عملاء Midea هنا لمساعدتك!</span>
+                            <a href="/sa-ar/support" target="_self" class="mdws-btn mdws-btn--black">احصل على المساعدة</a>
+                            
+                            
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+</div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+<div class="experiencefragment aem-GridColumn aem-GridColumn--default--12">
+<div id="experiencefragment-b9560fa7a4" class="cmp-experiencefragment cmp-experiencefragment--footer">
+
+
+    
+    <div id="container-50ae0ddef9" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="mdws-footer-box aem-GridColumn aem-GridColumn--default--12">
+
+<footer class="mdws-footer" unidx>
+    <div class="mdws-footer__main">
+        <div class="mdws-footer__main-list">
+            
+
+
+
+
+
+
+    
+    
+
+    <div class="gws-links-v1__styles footer-list-item-box mdws-footer-links">
+    
+
+<div class="gws-links">
+    <div class="gws-links__title">المنتجات</div>
+    <ul>
+        
+            <li>
+                <a href="/sa-ar/refrigerators" rel="noopener noreferrer">ثلاجات</a>
+            </li>
+        
+            <li>
+                <a href="/sa-ar/dishwashers" rel="noopener noreferrer">غسالات الأطباق</a>
+            </li>
+        
+            <li>
+                <a href="/sa-ar/laundry" rel="noopener noreferrer">غسيل الملابس</a>
+            </li>
+        
+            <li>
+                <a href="/sa-ar/cooking-range" rel="noopener noreferrer">منتجات الطهي</a>
+            </li>
+        
+            <li>
+                <a href="/sa-ar/microwave-oven" rel="noopener noreferrer">فرن ميكروويف</a>
+            </li>
+        
+            <li>
+                <a href="/sa-ar/water-treatment" rel="noopener noreferrer">معالجة المياه</a>
+            </li>
+        
+            <li>
+                <a href="/sa-ar/small-appliances" rel="noopener noreferrer">الأجهزة المنزلية الصغيرة</a>
+            </li>
+        
+            <li>
+                <a href="/sa-ar/heating-and-cooling" rel="noopener noreferrer">التدفئة والتبريد</a>
+            </li>
+        
+            <li>
+                <a href="/sa-ar/vacuum-cleaner" rel="noopener noreferrer">مكنسة كهربائية</a>
+            </li>
+        
+    </ul>
+</div>
+
+</div>
+
+
+    
+    
+
+    <div class="gws-links-v1__styles footer-list-item-box mdws-footer-links">
+    
+
+<div class="gws-links">
+    <div class="gws-links__title">دعم العملاء</div>
+    <ul>
+        
+            <li>
+                <a href="/sa-ar/support" rel="noopener noreferrer">دعم العملاء</a>
+            </li>
+        
+    </ul>
+</div>
+
+</div>
+
+
+    
+    
+
+    <div class="gws-links-v1__styles footer-list-item-box mdws-footer-links">
+    
+
+<div class="gws-links">
+    <div class="gws-links__title">حول</div>
+    <ul>
+        
+            <li>
+                <a href="/sa-ar/about-midea" rel="noopener noreferrer">حول ميديا</a>
+            </li>
+        
+    </ul>
+</div>
+
+</div>
+
+
+
+        </div>
+        <div class="mdws-footer__social-email">
+            
+
+
+
+
+
+
+    
+    
+
+    <div class="mdws--footer-badges-v1__styles footer-list-item-box">
+
+<div class="mdws-badges-box">
+    <div class="mdws-badges__title">الرعاية العالمية</div>
+    <ul>
+        <li>
+            <a href="/sa-ar/sponsorship" target="_self">
+                <img src="//web-res.midea.com/content/dam/midea-aem/global/logos/202506_midea_mancity_joint_logo/midea-mancity-logo-1736x640-v3.png/jcr:content/renditions/midea-mancity-logo-1736x640-v3.webp"/>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+
+    
+
+
+
+
+
+</div>
+
+
+    
+    
+
+    <div class="mdws--footer-social-media">
+    
+
+<div class="mdws-social-media-box">
+    <div class="mdws-social-media__title">اتصل بنا</div>
+    <ul>
+        <li>
+            <a class="facebook" rel="nofollow" href="https://www.facebook.com/people/Midea-Saudi-Arabia/61575990987783/" target="_blank">
+                <picture>
+                    <source media="(max-width:640px), (max-aspect-ratio:1/1) and (max-width: 1200px)" srcset="//web-res.midea.com/content/dam/midea-aem/system/social-icon/facebook-mobile.png/jcr:content/renditions/facebook-mobile.webp"/>
+                    <img class="lazyload blur-up" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" data-src="//web-res.midea.com/content/dam/midea-aem/system/social-icon/facebook.png/jcr:content/renditions/facebook.webp" alt="Facebook"/>
+                </picture>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+        </li>
+    
+        <li>
+            
+            <a class="instagram" rel="nofollow" href="https://www.instagram.com/mideasaudiarabia/" target="_blank">
+                <picture>
+                    <source media="(max-width:640px), (max-aspect-ratio:1/1) and (max-width: 1200px)" srcset="//web-res.midea.com/content/dam/midea-aem/system/social-icon/instagram-mobile.png/jcr:content/renditions/instagram-mobile.webp"/>
+                    <img class="lazyload blur-up" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" data-src="//web-res.midea.com/content/dam/midea-aem/system/social-icon/instagram.png/jcr:content/renditions/instagram.webp" alt="Ins"/>
+                </picture>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+        </li>
+    
+        <li>
+            
+            
+            
+            
+            <a class="tiktok" rel="nofollow" href="https://www.tiktok.com/@midea_saudi?_t=ZS-8yU4hBEcNm8&_r=1" target="_blank">
+                <picture>
+                    <source media="(max-width:640px), (max-aspect-ratio:1/1) and (max-width: 1200px)" srcset="//web-res.midea.com/content/dam/midea-aem/system/social-icon/tiktok-mobile.png/jcr:content/renditions/tiktok-mobile.webp"/>
+                    <img class="lazyload blur-up" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAC0lEQVR42mNgAAIAAAUAAen63NgAAAAASUVORK5CYII=" data-src="//web-res.midea.com/content/dam/midea-aem/system/social-icon/tiktok.png/jcr:content/renditions/tiktok.webp" alt="TikTok"/>
+                </picture>
+            </a>
+            
+            
+            
+            
+            
+            
+            
+            
+
+            
+        </li>
+    </ul>
+</div>
+
+
+
+</div>
+
+
+
+        </div>
+        <div class="mdws-footer__badges">
+            
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <div class="mdws-footer__separateLine-box">
+        <span class="mdws-footer__separateLine"></span>
+        <span class="mdws-footer__separateLineIcon"></span>
+    </div>
+
+    <!-- 底部合规栏 -->
+    <div class="mdws-footer__copyRight-otherInfo">
+        <div class="mdws-footer__sub">
+            <div class="mdws--footer-copyright-notice">
+                <div class="mdws-copyright-box">
+                    حقوق النشر © 2026 مايديا. جميع الحقوق محفوظة.
+                </div>
+            </div>
+            <div class="mdws-footer-other-box">
+                <div class="mdws--footer-legal-information">
+                    
+    
+
+<div class="mdws-legal-information-box">
+    
+        <a target="_self" href="/sa-ar/privacy-policy">سياسة الخصوصية</a>
+    
+        <a target="_self" href="/sa-ar/terms-of-use">شروط الاستخدام</a>
+    
+    <a href="javascript:;" onclick="Optanon.ToggleInfoDisplay()" style="cursor: default;">الموافقة على استخدام ملفات تعريف الارتباط</a>
+</div>
+
+
+
+
+                </div>
+                <div class="mdws-footer-country-box">
+                    <div class="mdws-footer__country-slector">
+                        <img src="//web-res.midea.com/content/dam/midea-aem/system/national-flag/KSA.png/jcr:content/renditions/cq5dam.compression.png" alt="المملكة العربية السعودية"/>
+                        <span>المملكة العربية السعودية</span>
+                        <i></i>
+                    </div>
+                    
+                        
+
+
+    
+    <div id="container-1c5b04cfb5" class="cmp-container">
+        
+
+
+<div class="aem-Grid aem-Grid--12 aem-Grid--default--12 ">
+    
+    <div class="languge aem-GridColumn aem-GridColumn--default--12">
+
+
+<div class="nav_lang_wraper" data-group="[{&#34;area&#34;:&#34;Global&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Global Midea&#34;,&#34;alt&#34;:&#34;Global Midea&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/pic-global.svg&#34;,&#34;url&#34;:&#34;https://www.midea.com/global/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Midea Group&#34;,&#34;alt&#34;:&#34;Midea Group&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_MideaGroup.jpg&#34;,&#34;url&#34;:&#34;https://www.midea.com.cn/en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Hiconics&#34;,&#34;alt&#34;:&#34;Hiconics&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/global/Hiconics.jpg&#34;,&#34;url&#34;:&#34;https://www.hiconics-global.com/&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Americas&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Argentina&#34;,&#34;alt&#34;:&#34;Argentina&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ar.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/ar&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Brazil&#34;,&#34;alt&#34;:&#34;Brazil&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_br.png&#34;,&#34;language&#34;:&#34;Português&#34;,&#34;url&#34;:&#34;https://www.midea.com.br/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Canada&#34;,&#34;alt&#34;:&#34;Canada&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ca.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/ca/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Canada&#34;,&#34;alt&#34;:&#34;Canada&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ca.png&#34;,&#34;language&#34;:&#34;Français&#34;,&#34;url&#34;:&#34;https://www.midea.com/ca-fr&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Central America&#34;,&#34;alt&#34;:&#34;Central America&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-mpa.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/centroamerica&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Chile&#34;,&#34;alt&#34;:&#34;Chile&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_cl.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/cl/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Colombia&#34;,&#34;alt&#34;:&#34;Colombia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_colombia.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/co&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Ecuador&#34;,&#34;alt&#34;:&#34;Ecuador&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Site-ec.jpg&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/ec&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Mexico&#34;,&#34;alt&#34;:&#34;Mexico&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_mx.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/mx/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Peru&#34;,&#34;alt&#34;:&#34;Peru&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/pe.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.com/pe&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;USA&#34;,&#34;alt&#34;:&#34;USA&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_usa.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/us/&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Africa&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Africa&#34;,&#34;alt&#34;:&#34;Africa&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Africa.svg&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/africa&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Egypt&#34;,&#34;alt&#34;:&#34;Egypt&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_eg.png&#34;,&#34;language&#34;:&#34;العربية&#34;,&#34;url&#34;:&#34;/eg-ar&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Egypt&#34;,&#34;alt&#34;:&#34;Egypt&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_eg.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/eg/&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Libya&#34;,&#34;alt&#34;:&#34;Libya&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-Ly.png&#34;,&#34;language&#34;:&#34;العربية&#34;,&#34;url&#34;:&#34;/ly&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Libya&#34;,&#34;alt&#34;:&#34;Libya&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-Ly.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;/ly-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Morocco&#34;,&#34;alt&#34;:&#34;Morocco&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Maroc.jpg&#34;,&#34;language&#34;:&#34;Français&#34;,&#34;url&#34;:&#34;https://www.midea.com/ma&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Morocco&#34;,&#34;alt&#34;:&#34;Morocco&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Maroc.jpg&#34;,&#34;language&#34;:&#34;العربية&#34;,&#34;url&#34;:&#34;https://www.midea.com/ma-ar&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Nigeria&#34;,&#34;alt&#34;:&#34;Nigeria&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/ng-flag.jpg&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;/ng&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;South Africa&#34;,&#34;alt&#34;:&#34;South Africa&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/south-africa.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;/za&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Asia Pacific&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Australia&#34;,&#34;alt&#34;:&#34;Australia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/au.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/au&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Cambodia&#34;,&#34;alt&#34;:&#34;Cambodia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-kh.png&#34;,&#34;language&#34;:&#34;ខ្មែរ&#34;,&#34;url&#34;:&#34;https://www.midea.com/kh&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;China&#34;,&#34;alt&#34;:&#34;China&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_cn.png&#34;,&#34;language&#34;:&#34;中文&#34;,&#34;url&#34;:&#34;https://www.midea.com/cn/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;India&#34;,&#34;alt&#34;:&#34;India&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_in.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/in/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Indonesia&#34;,&#34;alt&#34;:&#34;Indonesia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_id.png&#34;,&#34;language&#34;:&#34;Bahasa Indonesia&#34;,&#34;url&#34;:&#34;https://www.midea.com/id/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Indonesia&#34;,&#34;alt&#34;:&#34;Indonesia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_id.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/id-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Kazakhstan&#34;,&#34;alt&#34;:&#34;Kazakhstan&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-kz.png&#34;,&#34;language&#34;:&#34;Қазақстан&#34;,&#34;url&#34;:&#34;https://www.midea.com/kz&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Kazakhstan&#34;,&#34;alt&#34;:&#34;Kazakhstan&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-kz.png&#34;,&#34;language&#34;:&#34;Русский&#34;,&#34;url&#34;:&#34;https://www.midea.com/kz-ru&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Korea &#34;,&#34;alt&#34;:&#34;Korea &#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_kr.jpg&#34;,&#34;language&#34;:&#34;한국어&#34;,&#34;url&#34;:&#34;https://www.midea.com/kr&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Malaysia&#34;,&#34;alt&#34;:&#34;Malaysia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_my.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/my/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;New Zealand&#34;,&#34;alt&#34;:&#34;New Zealand&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/nz-flag.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/nz&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Philippines&#34;,&#34;alt&#34;:&#34;Philippines&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ph.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/ph/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Singapore&#34;,&#34;alt&#34;:&#34;Singapore&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_sg.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/sg/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Thailand&#34;,&#34;alt&#34;:&#34;Thailand&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/thailand-2.png&#34;,&#34;language&#34;:&#34;ภาษา ไทย&#34;,&#34;url&#34;:&#34;https://www.midea.com/th/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Thailand&#34;,&#34;alt&#34;:&#34;Thailand&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/thailand-2.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/th-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Vietnam&#34;,&#34;alt&#34;:&#34;Vietnam&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_vn.png&#34;,&#34;language&#34;:&#34;Tiếng Việt&#34;,&#34;url&#34;:&#34;https://www.midea.com/vn/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Vietnam&#34;,&#34;alt&#34;:&#34;Vietnam&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_vn.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/vn-en&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Europe&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Bulgaria&#34;,&#34;alt&#34;:&#34;Bulgaria&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-bg.png&#34;,&#34;language&#34;:&#34;български&#34;,&#34;url&#34;:&#34;https://www.midea.com/bg&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Czech &#34;,&#34;alt&#34;:&#34;Czech Republic&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-Czech.png&#34;,&#34;language&#34;:&#34;Česká&#34;,&#34;url&#34;:&#34;https://www.midea.com/cz&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;France&#34;,&#34;alt&#34;:&#34;France&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_fr.jpg&#34;,&#34;language&#34;:&#34;Français&#34;,&#34;url&#34;:&#34;/fr&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Germany&#34;,&#34;alt&#34;:&#34;Germany&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_de.png&#34;,&#34;language&#34;:&#34;Deutsch&#34;,&#34;url&#34;:&#34;https://www.midea.com/de/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Greece&#34;,&#34;alt&#34;:&#34;Greece&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Flag-of-Greece-16-9-1-.png&#34;,&#34;language&#34;:&#34;Ελλάδα&#34;,&#34;url&#34;:&#34;https://www.midea.com/gr&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Italy&#34;,&#34;alt&#34;:&#34;Italy&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_it.png&#34;,&#34;language&#34;:&#34;Italiano&#34;,&#34;url&#34;:&#34;https://www.midea.com/it/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Poland&#34;,&#34;alt&#34;:&#34;Poland&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_pl.jpg&#34;,&#34;language&#34;:&#34;Polski&#34;,&#34;url&#34;:&#34;https://www.midea.com/pl&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Romania&#34;,&#34;alt&#34;:&#34;Romania&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-ro.png&#34;,&#34;language&#34;:&#34;română&#34;,&#34;url&#34;:&#34;https://www.midea.com/ro&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Russia&#34;,&#34;alt&#34;:&#34;Russia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_ru.png&#34;,&#34;language&#34;:&#34;Русский&#34;,&#34;url&#34;:&#34;https://www.midea.com/ru/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Spain&#34;,&#34;alt&#34;:&#34;Spain&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_es.png&#34;,&#34;language&#34;:&#34;Español&#34;,&#34;url&#34;:&#34;https://www.midea.es/&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;UK&#34;,&#34;alt&#34;:&#34;UK&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uk.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/uk/&#34;,&#34;target&#34;:&#34;_blank&#34;},{&#34;name&#34;:&#34;Portugal&#34;,&#34;alt&#34;:&#34;Portugal&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-pt.png&#34;,&#34;language&#34;:&#34;Português&#34;,&#34;url&#34;:&#34;https://www.midea.com/pt&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Netherlands&#34;,&#34;alt&#34;:&#34;Netherlands&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Netherlands-30.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/nl-en&#34;,&#34;target&#34;:&#34;_self&#34;}]},{&#34;area&#34;:&#34;Middle East&#34;,&#34;children&#34;:[{&#34;name&#34;:&#34;Iraq&#34;,&#34;alt&#34;:&#34;Iraq&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Iraq.png&#34;,&#34;language&#34;:&#34;العربية&#34;,&#34;url&#34;:&#34;https://www.midea.com/iq&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Iraq&#34;,&#34;alt&#34;:&#34;Iraq&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/Iraq.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/iq-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Georgia&#34;,&#34;alt&#34;:&#34;Georgia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-ge.svg&#34;,&#34;language&#34;:&#34;ქართული&#34;,&#34;url&#34;:&#34;https://www.midea.com/ge&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Georgia&#34;,&#34;alt&#34;:&#34;Georgia&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site-ge.svg&#34;,&#34;language&#34;:&#34;Englsih&#34;,&#34;url&#34;:&#34;https://www.midea.com/ge-en&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Middle East&#34;,&#34;alt&#34;:&#34;Middle East&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uae.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/me&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;Middle East&#34;,&#34;alt&#34;:&#34;Middle East&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uae.png&#34;,&#34;language&#34;:&#34;العَرَبِية&#34;,&#34;url&#34;:&#34;https://www.midea.com/me-ar&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;KSA&#34;,&#34;alt&#34;:&#34;KSA&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/KSA.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/sa&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;KSA&#34;,&#34;alt&#34;:&#34;KSA&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/KSA.png&#34;,&#34;language&#34;:&#34;العَرَبِية&#34;,&#34;url&#34;:&#34;https://www.midea.com/sa-ar&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;UAE&#34;,&#34;alt&#34;:&#34;UAE&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uae.png&#34;,&#34;language&#34;:&#34;English&#34;,&#34;url&#34;:&#34;https://www.midea.com/gulf/&#34;,&#34;target&#34;:&#34;_self&#34;},{&#34;name&#34;:&#34;UAE&#34;,&#34;alt&#34;:&#34;UAE&#34;,&#34;logo&#34;:&#34;/content/dam/midea-aem/system/national-flag/site_uae.png&#34;,&#34;language&#34;:&#34;العَرَبِية&#34;,&#34;url&#34;:&#34;/gulf-ar&#34;,&#34;target&#34;:&#34;_self&#34;}]}]">
+    <div class="md_close nav_lang_wraper_close"></div>
+    <div class="nav_lang_wraper_content"></div>
+</div>
+
+
+    
+
+
+
+
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+    
+
+</div>
+<div class="ip-popup aem-GridColumn aem-GridColumn--default--12">
+
+
+
+
+    <div class="ip_notice_popup popup_container" data-site="sa-ar">
+        <div class="popup_cover"></div>
+        <div class="popup_content">
+            <div class="popup_content_inBox">
+                
+                <div class="popup_content_inBox_title">اختر بلدًا أو منطقة أخرى لمشاهدة المحتوى المخصص لموقعك والتسوق عبر الإنترنت.
+                </div>
+                <div class="popup_content_inBox_flex">
+                    <div class="popup_content_inBox_selectBox">
+                        <span class="popup_content_inBox_selectBox_value">Saudi Arabia</span>
+                        <i class="icon iconfont i-selected"></i>
+                        <div class="popup_content_inBox-mask"></div>
+                        <div class="fake-option-container">
+                            <ul class="fake-option popup_content_inBox_selectBox_tab">
+                                <li class="fake-option-unit">
+                                    <label class="fake-option-box active">
+                                    <span class="fake-radio-outer">
+                                        <span class="fake-radio-inner"></span>
+                                    </span>
+                                        <span class="radio-text">Saudi Arabia</span>
+                                    </label>
+                                </li>
+                                <li class="fake-option-unit">
+                                    <label class="fake-option-box">
+                                    <span class="fake-radio-outer">
+                                        <span class="fake-radio-inner"></span>
+                                    </span>
+                                        <span class="radio-text">موقع أو لغة أخرى</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <button class="popup_content_inBox_confirm">يكمل</button>
+                </div>
+            </div>
+            <i class="popup_content_close"></i>
+        </div>
+    </div>
+
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+
+</div>
+
+    
+</div>
+
+    
+</div>
+
+    </div>
+
+    
+</div>
+
+
+    
+    
+    
+
+
+    
+    
+        
+        <script data-ot-ignore type="text/javascript" src="https://cdnjs.midea.com/aem-fe/igws-fe/dist/scripts/vendor.min.js?t=202604160934"></script>
+    
+        
+        <script data-ot-ignore type="text/javascript" src="https://cdnjs.midea.com/aem-fe/igws-fe/dist/scripts/midea.js?t=202604160934"></script>
+    
+        
+        <script data-ot-ignore type="text/javascript" src="https://cdnjs.midea.com/aem-fe/csr-components/dist/js/midea.js?t=202604160934"></script>
+    
+
+    
+
+
+
+
+
+
+
+    
+
+    
+
+    
+    
+<script src="/etc.clientlibs/core/wcm/components/commons/datalayer/v1/clientlibs/core.wcm.components.commons.datalayer.v1.min.js"></script>
+
+
+
+    
+    
+
+    
+
+
+
+    
+
+
+
+
+    <!--
+Event snippet for Midea_AllPages on : Please do not remove.
+Place this snippet on pages with events you’re tracking. 
+Creation date: 11/27/2025
+-->
+<script>
+  gtag('event', 'conversion', {
+    'allow_custom_scripts': true,
+    'u1': '[pageurl]',
+    'send_to': 'DC-16120889/all/midea0+standard'
+  });
+</script>
+<noscript>
+<img src="https://ad.doubleclick.net/ddm/activity/src=16120889;type=all;cat=midea0;u1=[pageurl];dc_lat=;dc_rdid=;tag_for_child_directed_treatment=;tfua=;npa=;gdpr=${GDPR};gdpr_consent=${GDPR_CONSENT_755};ord=1?" width="1" height="1" alt=""/>
+</noscript>
+<!-- End of event snippet: Please do not remove -->
+
+
+
+
+</body>
+</html>

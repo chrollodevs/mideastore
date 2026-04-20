@@ -7,6 +7,7 @@ import productsRoutes from './routes/products.js';
 import brandsRoutes from './routes/brands.js';
 import requestsRoutes from './routes/requests.js';
 import adminRoutes from './routes/admin.js';
+import messagesRoutes from './routes/messages.js';
 
 import multer from 'multer';
 import path from 'path';
@@ -58,6 +59,7 @@ app.use('/api/products', productsRoutes);
 app.use('/api/brands', brandsRoutes);
 app.use('/api/requests', requestsRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/messages', messagesRoutes);
 
 // Image Upload Endpoint
 app.post('/api/upload', upload.single('image'), (req, res) => {

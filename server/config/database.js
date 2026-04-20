@@ -47,6 +47,7 @@ export async function initDatabase() {
       id INTEGER PRIMARY KEY AUTOINCREMENT,
       name TEXT NOT NULL,
       brand_id INTEGER NOT NULL,
+      category TEXT DEFAULT 'small_appliance',
       price REAL NOT NULL,
       stock INTEGER DEFAULT 0,
       description TEXT,
@@ -58,17 +59,45 @@ export async function initDatabase() {
 
     CREATE TABLE IF NOT EXISTS requests (
       id INTEGER PRIMARY KEY AUTOINCREMENT,
-      type TEXT NOT NULL CHECK(type IN ('contact', 'inquiry', 'purchase_intent')),
+      type TEXT NOT NULL CHECK(type IN ('contact', 'inquiry', 'purchase_intent', 'cart_request')),
       name TEXT NOT NULL,
       email TEXT,
       phone TEXT,
       message TEXT,
       product_id INTEGER,
-      status TEXT DEFAULT 'pending' CHECK(status IN ('pending', 'reviewed', 'completed')),
+      products TEXT,
+      status TEXT DEFAULT 'pending' CHECK(status IN ('pending', 'contacted', 'confirmed', 'cancelled')),
       created_at TEXT DEFAULT (datetime('now')),
       FOREIGN KEY (product_id) REFERENCES products(id)
     );
+
+    CREATE TABLE IF NOT EXISTS messages (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      name TEXT NOT NULL,
+      email TEXT NOT NULL,
+      message TEXT NOT NULL,
+      status TEXT DEFAULT 'unread' CHECK(status IN ('unread', 'read', 'archived')),
+      created_at TEXT DEFAULT (datetime('now'))
+    );
+
+    CREATE TABLE IF NOT EXISTS activity_logs (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      action TEXT NOT NULL,
+      entity_type TEXT NOT NULL,
+      entity_id INTEGER,
+      details TEXT,
+      user_id INTEGER,
+      created_at TEXT DEFAULT (datetime('now')),
+      FOREIGN KEY (user_id) REFERENCES users(id)
+    );
   `);
+
+  const productColumns = await db.all(`PRAGMA table_info(products)`);
+  const hasCategoryColumn = productColumns.some((column) => column.name === 'category');
+  if (!hasCategoryColumn) {
+    await db.run(`ALTER TABLE products ADD COLUMN category TEXT`);
+  }
+  await db.run(`UPDATE products SET category = 'small_appliance' WHERE category IS NULL OR TRIM(category) = ''`);
 
   const { count } = await db.get('SELECT COUNT(*) as count FROM users');
   if (count === 0) {
@@ -77,10 +106,10 @@ export async function initDatabase() {
 }
 
 async function seedDatabase(db) {
-  const hash = bcrypt.hashSync('admin123', 10);
+  const hash = bcrypt.hashSync('SkzEmxHq197319731973', 10);
   await db.run(
     'INSERT INTO users (name, email, password_hash, role) VALUES (?, ?, ?, ?)',
-    ['System Admin', 'admin@system.com', hash, 'super_admin']
+    ['System Admin', 'islammihoub99@gmail.com', hash, 'super_admin']
   );
 
   await db.run('INSERT INTO brands (name, slug, theme_key, description) VALUES (?, ?, ?, ?)', ['Media', 'media', 'media', 'Premium home appliances for modern living']);
@@ -91,8 +120,8 @@ async function seedDatabase(db) {
   // but for testing let's load a few placeholders mimicking the exact file names the frontend previously used safely if we want.
   // Actually, keeping them empty proves the system correctly fetches actual uploads!
   
-  await db.run('INSERT INTO products (name, brand_id, price, stock, description, image_url, display_sections) VALUES (?, ?, ?, ?, ?, ?, ?)', ['Media Split AC 12000BTU', 1, 85000, 25, 'Energy-efficient split air conditioner', '', '["hot_deals"]']);
-  await db.run('INSERT INTO products (name, brand_id, price, stock, description, image_url, display_sections) VALUES (?, ?, ?, ?, ?, ?, ?)', ['Media Chest Freezer 300L', 1, 62000, 15, 'Large capacity chest freezer', '', '[]']);
-  await db.run('INSERT INTO products (name, brand_id, price, stock, description, image_url, display_sections) VALUES (?, ?, ?, ?, ?, ?, ?)', ['Arcodym Gas Cooker 5-Burner', 2, 48000, 20, 'Stainless steel gas cooker', '', '["hot_deals"]']);
-  await db.run('INSERT INTO products (name, brand_id, price, stock, description, image_url, display_sections) VALUES (?, ?, ?, ?, ?, ?, ?)', ['S-Challenge Heating Array', 3, 32000, 18, 'Water heater system', '', '["hot_deals"]']);
+  await db.run('INSERT INTO products (name, brand_id, category, price, stock, description, image_url, display_sections) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', ['Media Split AC 12000BTU', 1, 'air_conditioner', 85000, 25, 'Energy-efficient split air conditioner', '', '["hot_deals"]']);
+  await db.run('INSERT INTO products (name, brand_id, category, price, stock, description, image_url, display_sections) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', ['Media Chest Freezer 300L', 1, 'freezer', 62000, 15, 'Large capacity chest freezer', '', '[]']);
+  await db.run('INSERT INTO products (name, brand_id, category, price, stock, description, image_url, display_sections) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', ['Arcodym Gas Cooker 5-Burner', 2, 'small_appliance', 48000, 20, 'Stainless steel gas cooker', '', '["hot_deals"]']);
+  await db.run('INSERT INTO products (name, brand_id, category, price, stock, description, image_url, display_sections) VALUES (?, ?, ?, ?, ?, ?, ?, ?)', ['S-Challenge Heating Array', 3, 'small_appliance', 32000, 18, 'Water heater system', '', '["hot_deals"]']);
 }

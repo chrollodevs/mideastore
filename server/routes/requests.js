@@ -8,6 +8,7 @@ router.post('/', requestsController.create);
 
 // Protected routes
 router.get('/', authenticate, authorize('admin', 'super_admin'), requestsController.getAll);
+router.get('/:id', authenticate, authorize('admin', 'super_admin'), requestsController.getById);
 router.put('/:id', authenticate, authorize('admin', 'super_admin'), requestsController.updateStatus);
 
 export default router;

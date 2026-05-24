@@ -11,7 +11,13 @@
     "subtitle": "Quality appliances, fair prices, and reliable support you can trust. Contact us to check availability or visit our store in El Hamiz.",
     "call": "Call Us",
     "whatsapp": "WhatsApp",
-    "viewProducts": "View Products"
+    "viewProducts": "View Products",
+    "availableAt": "Available at El Hamiz",
+    "exploreMidea": "Explore Midea",
+    "authorizedDealer": "Authorized Dealer",
+    "officialWarranty": "Official Warranty",
+    "fastSupport": "Fast Support",
+    "deliveryAvailable": "Delivery Available"
   },
   "deals": {
     "top": "Top Deals",
@@ -52,11 +58,16 @@
   },
   "reviews": {
     "title": "What Our Customers Say",
+    "subtitle": "Trusted by thousands of customers across Algeria",
     "review1": "Very good prices and helpful service. I found exactly what I needed.",
     "review2": "We contacted them before visiting, and everything was ready.",
-    "review3": "Reliable store with good after-sales support."
+    "review3": "Reliable store with good after-sales support.",
+    "review4": "Bought an air conditioner for our living room. Installation was smooth and the team guided us through the settings.",
+    "review5": "The prices are competitive and the products are genuine. Recommended for families looking for trusted appliances.",
+    "review6": "Fast response when we called. They confirmed stock availability and we picked it up the same day."
   },
   "product": {
+    "noImage": "No Image Available",
     "addToCart": "Add to Cart",
     "addedToCart": "Added!",
     "description": "Description",
@@ -97,21 +108,48 @@
     "infoTitle": "Information",
     "about": "About Us",
     "contact": "Contact Us",
-    "admin": "Manager Access"
+    "admin": "Manager Access",
+    "whatsappTitle": "Chat on WhatsApp",
+    "quickContact": "Quick Contact",
+    "messageWhatsapp": "Message us on WhatsApp",
+    "callStore": "Call Store Directly",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
   },
   "products": {
     "pageTitle": "All Our Products",
     "count": "items",
-    "loading": "Loading catalog..."
+    "loading": "Loading catalog...",
+    "searchPlaceholder": "Search appliances...",
+    "anyPrice": "Any Price",
+    "priceUnder30": "Under 30,000 DZD",
+    "price30to60": "30,000 - 60,000 DZD",
+    "price60to100": "60,000 - 100,000 DZD",
+    "price100plus": "100,000+ DZD",
+    "sortNewest": "Newest First",
+    "sortPriceAsc": "Price: Low to High",
+    "sortPriceDesc": "Price: High to Low",
+    "sortNameAsc": "Name: A to Z",
+    "brandsLabel": "Brands:",
+    "allBrands": "All Brands",
+    "noProductsFound": "No products found",
+    "noProductsSubtitle": "Try adjusting your filters or search query.",
+    "clearFilters": "Clear All Filters",
+    "lowStock": "Low Stock"
   },
   "contactPage": {
     "title": "Contact Us",
     "subtitle": "Have a question about a product or price? Contact us directly and we'll be happy to help.",
     "formName": "Your Name",
     "formEmail": "Email Address",
+    "formPhone": "Phone Number",
     "formMessage": "Your Message",
     "formSubmit": "Send Message",
-    "formSuccess": "Message sent successfully! We'll contact you soon."
+    "formSuccess": "Message sent successfully! We'll contact you soon.",
+    "formError": "Failed to send message. Please try again.",
+    "validationError": "Name and message are required.",
+    "sending": "Sending..."
   },
   "aboutPage": {
     "title": "About Us"
@@ -183,6 +221,7 @@
       "dashboard": "Dashboard",
       "products": "Products",
       "requests": "Requests",
+      "messages": "Messages",
       "logout": "Logout"
     },
     "dashboard": {

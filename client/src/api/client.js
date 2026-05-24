@@ -19,6 +19,15 @@ export async function fetchApi(endpoint, options = {}) {
 
   if (!response.ok) {
     const error = await response.json().catch(() => ({}));
+    
+    // Auto-logout interceptor for expired tokens
+    if (response.status === 401 && (error.error === 'Invalid or expired token' || error.error === 'Authentication required')) {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+      window.location.href = '/admin/login';
+      throw new Error('Session expired. Redirecting to login...');
+    }
+
     throw new Error(error.error || 'API Request Failed');
   }
 

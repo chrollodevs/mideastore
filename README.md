@@ -23,8 +23,10 @@ npm run dev
 
 ## Default Admin Login
 
-- Email: `admin@system.com`
-- Password: `admin123`
+Configured via your `.env` file (`SEED_ADMIN_EMAIL` and `SEED_ADMIN_PASSWORD`).
+If using the default `.env.example`:
+- Email: `admin@yourdomain.com`
+- Password: `change_this_before_first_run`
 
 ## Structure
 

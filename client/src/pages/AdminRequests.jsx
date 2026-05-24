@@ -2,6 +2,8 @@ import { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { fetchApi } from '../api/client';
 import { useLanguage } from '../context/LanguageContext';
+import { useToast } from '../context/ToastContext';
+import { usePolling } from '../hooks/usePolling';
 
 export default function AdminRequests() {
   const [requests, setRequests] = useState([]);
@@ -9,44 +11,46 @@ export default function AdminRequests() {
   const [filterType, setFilterType] = useState('all');
   const [searchQuery, setSearchQuery] = useState('');
   const { t } = useLanguage();
-
-  useEffect(() => {
-    loadRequests();
-  }, []);
+  const { showToast } = useToast();
 
   const loadRequests = async () => {
-    try {
-      const params = new URLSearchParams();
-      if (filterStatus !== 'all') params.append('status', filterStatus);
-      if (filterType !== 'all') params.append('type', filterType);
-      if (searchQuery) params.append('search', searchQuery);
-
-      const data = await fetchApi(`/requests?${params.toString()}`);
-      setRequests(data);
-    } catch (err) {
-      console.error(err);
-    }
+    const params = new URLSearchParams();
+    if (filterStatus !== 'all') params.append('status', filterStatus);
+    if (filterType !== 'all') params.append('type', filterType);
+    if (searchQuery) params.append('search', searchQuery);
+    return await fetchApi(`/requests?${params.toString()}`);
   };
 
+  const { data: polledRequests } = usePolling(loadRequests, 15000);
+
   useEffect(() => {
-    loadRequests();
+    if (polledRequests) setRequests(polledRequests);
+  }, [polledRequests]);
+
+  // Initial load or filter change load
+  useEffect(() => {
+    loadRequests().then(setRequests).catch(console.error);
   }, [filterStatus, filterType, searchQuery]);
 
   const handleStatusChange = async (id, status) => {
+    // Optimistic Update
+    const previousRequests = [...requests];
+    setRequests(requests.map(r => r.id === id ? { ...r, status } : r));
+    
     try {
       await fetchApi(`/requests/${id}`, { method: 'PUT', body: JSON.stringify({ status }) });
-      loadRequests();
+      showToast(t('admin.requests.statusUpdated') || 'Status updated', 'success');
     } catch (err) {
-      alert(t('admin.requests.statusUpdateFailed'));
+      // Revert on failure
+      setRequests(previousRequests);
+      showToast(t('admin.requests.statusUpdateFailed') || 'Failed to update status', 'error');
     }
   };
 
   const parseProducts = (productsStr) => {
     if (!productsStr) return null;
-    try {
-      const parsed = JSON.parse(productsStr);
-      return Array.isArray(parsed) && parsed.length > 0 ? parsed : null;
-    } catch { return null; }
+    try { const parsed = JSON.parse(productsStr); return Array.isArray(parsed) && parsed.length > 0 ? parsed : null; }
+    catch { return null; }
   };
 
   const getStatusLabel = (status) => {
@@ -59,8 +63,9 @@ export default function AdminRequests() {
     }
   };
 
-  const getTypeLabel = (type) => {
-    return type.replace('_', ' ').toUpperCase();
+  const getTypeLabel = (type) => type.replace('_', ' ').toUpperCase();
+  const getStatusVariant = (status) => {
+    switch(status) { case 'pending': return 'pending'; case 'contacted': return 'reviewed'; case 'confirmed': return 'completed'; case 'cancelled': return 'cancelled'; default: return 'cancelled'; }
   };
 
   const filteredRequests = useMemo(() => {
@@ -83,122 +88,115 @@ export default function AdminRequests() {
 
   return (
     <div>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-48)' }}>
+      <div className="admin-page-header">
         <div>
-          <h1 className="t-page-title" style={{ marginBottom: 'var(--space-8)' }}>{t('admin.dashboard.pipeline')}</h1>
-          <p className="t-body">{stats.total} {t('admin.requests.total')}</p>
+          <h1 className="admin-page-title">{t('admin.dashboard.pipeline')}</h1>
+          <p className="admin-page-subtitle">{stats.total} {t('admin.requests.total')}</p>
         </div>
       </div>
 
-      {/* Stats Bar */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 'var(--space-16)', marginBottom: 'var(--space-32)' }}>
-        <div style={{ padding: 'var(--space-16)', background: 'var(--bg-surface)', borderRadius: '8px', border: '1px solid var(--border-subtle)' }}>
-          <span className="t-label">{t('admin.requests.statTotal')}</span>
-          <p style={{ fontSize: '1.5rem', fontWeight: '700' }}>{stats.total}</p>
+      {/* Stats */}
+      <div className="admin-stat-grid" style={{ marginBottom: 'var(--space-24)' }}>
+        <div className="admin-stat-card">
+          <div className="admin-stat-label">{t('admin.requests.statTotal')}</div>
+          <div className="admin-stat-value">{stats.total}</div>
         </div>
-        <div style={{ padding: 'var(--space-16)', background: 'var(--bg-surface)', borderRadius: '8px', borderLeft: '3px solid var(--status-pending)' }}>
-          <span className="t-label" style={{ color: 'var(--status-pending)' }}>{t('admin.requests.statPending')}</span>
-          <p style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--status-pending)' }}>{stats.pending}</p>
+        <div className="admin-stat-card admin-stat-card--pending">
+          <div className="admin-stat-label" style={{ color: 'var(--status-pending)' }}>{t('admin.requests.statPending')}</div>
+          <div className="admin-stat-value">{stats.pending}</div>
         </div>
-        <div style={{ padding: 'var(--space-16)', background: 'var(--bg-surface)', borderRadius: '8px', borderLeft: '3px solid var(--status-reviewed)' }}>
-          <span className="t-label" style={{ color: 'var(--status-reviewed)' }}>{t('admin.requests.statContacted')}</span>
-          <p style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--status-reviewed)' }}>{stats.contacted}</p>
+        <div className="admin-stat-card admin-stat-card--reviewed">
+          <div className="admin-stat-label" style={{ color: 'var(--status-reviewed)' }}>{t('admin.requests.statContacted')}</div>
+          <div className="admin-stat-value">{stats.contacted}</div>
         </div>
-        <div style={{ padding: 'var(--space-16)', background: 'var(--bg-surface)', borderRadius: '8px', borderLeft: '3px solid var(--status-completed)' }}>
-          <span className="t-label" style={{ color: 'var(--status-completed)' }}>{t('admin.requests.statConfirmed')}</span>
-          <p style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--status-completed)' }}>{stats.confirmed}</p>
+        <div className="admin-stat-card admin-stat-card--completed">
+          <div className="admin-stat-label" style={{ color: 'var(--status-completed)' }}>{t('admin.requests.statConfirmed')}</div>
+          <div className="admin-stat-value">{stats.confirmed}</div>
         </div>
-        <div style={{ padding: 'var(--space-16)', background: 'var(--bg-surface)', borderRadius: '8px', borderLeft: '3px solid #6B7280' }}>
-          <span className="t-label" style={{ color: '#6B7280' }}>{t('admin.requests.statCancelled')}</span>
-          <p style={{ fontSize: '1.5rem', fontWeight: '700', color: '#6B7280' }}>{stats.cancelled}</p>
+        <div className="admin-stat-card admin-stat-card--cancelled">
+          <div className="admin-stat-label" style={{ color: '#6B7280' }}>{t('admin.requests.statCancelled')}</div>
+          <div className="admin-stat-value">{stats.cancelled}</div>
         </div>
       </div>
 
       {/* Filters */}
-      <div className="surface-card" style={{ padding: 'var(--space-16) var(--space-24)', marginBottom: 'var(--space-24)', display: 'flex', flexWrap: 'wrap', gap: 'var(--space-16)', alignItems: 'center' }}>
-        <div style={{ flex: '1 1 300px' }}>
-          <input
-            type="text"
-            className="input-field"
-            placeholder={t("admin.requests.search")}
-            value={searchQuery}
-            onChange={e => setSearchQuery(e.target.value)}
-          />
+      <div className="admin-filter-bar">
+        <div className="admin-search-input">
+          <svg className="admin-search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          <input type="text" className="input-field" placeholder={t("admin.requests.search")} value={searchQuery} onChange={e => setSearchQuery(e.target.value)} />
         </div>
-        <select className="input-field" style={{ flex: '0 0 180px' }} value={filterStatus} onChange={e => setFilterStatus(e.target.value)}>
-          <option value="all">{t('admin.requests.allStatus')}</option>
-          <option value="pending">{t('admin.requests.statPending')}</option>
-          <option value="contacted">{t('admin.requests.statContacted')}</option>
-          <option value="confirmed">{t('admin.requests.statConfirmed')}</option>
-          <option value="cancelled">{t('admin.requests.statCancelled')}</option>
-        </select>
-        <select className="input-field" style={{ flex: '0 0 180px' }} value={filterType} onChange={e => setFilterType(e.target.value)}>
-          <option value="all">{t('admin.requests.allTypes')}</option>
-          <option value="cart_request">Cart Requests</option>
-          <option value="purchase_intent">Purchase Intent</option>
-          <option value="inquiry">Inquiry</option>
-          <option value="contact">Contact</option>
-        </select>
-        <button onClick={loadRequests} className="btn btn-ghost" style={{ padding: 'var(--space-8) var(--space-16)' }}>
-          Refresh
-        </button>
+        <div className="admin-filter-select">
+          <select className="input-field" value={filterStatus} onChange={e => setFilterStatus(e.target.value)}>
+            <option value="all">{t('admin.requests.allStatus')}</option>
+            <option value="pending">{t('admin.requests.statPending')}</option>
+            <option value="contacted">{t('admin.requests.statContacted')}</option>
+            <option value="confirmed">{t('admin.requests.statConfirmed')}</option>
+            <option value="cancelled">{t('admin.requests.statCancelled')}</option>
+          </select>
+        </div>
+        <div className="admin-filter-select">
+          <select className="input-field" value={filterType} onChange={e => setFilterType(e.target.value)}>
+            <option value="all">{t('admin.requests.allTypes')}</option>
+            <option value="cart_request">Cart Requests</option>
+            <option value="purchase_intent">Purchase Intent</option>
+            <option value="inquiry">Inquiry</option>
+            <option value="contact">Contact</option>
+          </select>
+        </div>
+        <button onClick={loadRequests} className="admin-btn-sm">Refresh</button>
       </div>
 
-      {/* Requests List */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-24)' }}>
+      {/* Requests */}
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-16)' }}>
         {filteredRequests.map(req => {
           const cartProducts = parseProducts(req.products);
+          const variant = getStatusVariant(req.status);
 
           return (
-            <div key={req.id} className="surface-card" style={{ borderLeft: `6px solid var(--status-${req.status})`, padding: 'var(--space-24)' }}>
+            <div key={req.id} className="admin-card" style={{ padding: 'var(--space-24)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 'var(--space-24)' }}>
-
                 <div style={{ flex: 1, minWidth: '280px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-12)', marginBottom: 'var(--space-16)', flexWrap: 'wrap' }}>
-                    <span className="t-label" style={{ padding: 'var(--space-4) var(--space-12)', background: `var(--status-${req.status})`, color: 'var(--bg-surface)', borderRadius: '99px', fontSize: '0.75rem', fontWeight: '600' }}>
+                  {/* Status + Type + Date */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-8)', marginBottom: 'var(--space-12)', flexWrap: 'wrap' }}>
+                    <span className={`admin-badge admin-badge--${variant}`}>
+                      <span className={`admin-badge-dot admin-badge-dot--${variant}`}></span>
                       {getStatusLabel(req.status)}
                     </span>
-                    <span className="t-label" style={{ padding: 'var(--space-4) var(--space-12)', background: 'var(--border-subtle)', color: 'var(--text-secondary)', borderRadius: '99px', fontSize: '0.75rem' }}>
-                      {getTypeLabel(req.type)}
-                    </span>
-                    <span className="t-body" style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)' }}>
+                    <span className="admin-badge">{getTypeLabel(req.type)}</span>
+                    <span style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', fontFamily: 'var(--admin-font-display)' }}>
                       {new Date(req.created_at).toLocaleString()}
                     </span>
                   </div>
 
-                  <h3 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: 'var(--space-8)' }}>{req.name}</h3>
-                  <div className="t-body" style={{ display: 'flex', gap: 'var(--space-24)', flexWrap: 'wrap', marginBottom: 'var(--space-16)' }}>
-                    {req.email && <span>Email: <strong style={{ color: 'var(--text-primary)', fontWeight: '500' }}>{req.email}</strong></span>}
-                    {req.phone && <span>Phone: <strong style={{ color: 'var(--text-primary)', fontWeight: '500' }}>{req.phone}</strong></span>}
+                  <h3 style={{ fontSize: '1.125rem', fontWeight: 600, marginBottom: 'var(--space-8)' }}>{req.name}</h3>
+                  <div style={{ display: 'flex', gap: 'var(--space-16)', flexWrap: 'wrap', marginBottom: 'var(--space-12)', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>
+                    {req.email && <span>Email: <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>{req.email}</strong></span>}
+                    {req.phone && <span>Phone: <strong style={{ color: 'var(--text-primary)', fontWeight: 500 }}>{req.phone}</strong></span>}
                   </div>
 
                   {req.product_name && (
-                    <div style={{ padding: 'var(--space-12) var(--space-16)', background: 'var(--bg-base)', border: '1px solid var(--border-subtle)', borderRadius: '8px', marginBottom: 'var(--space-16)', display: 'inline-flex', alignItems: 'center', gap: 'var(--space-8)' }}>
-                      <span className="t-label">Product:</span>
-                      <strong style={{ color: 'var(--text-primary)' }}>{req.product_name}</strong>
+                    <div style={{ padding: 'var(--space-8) var(--space-12)', background: '#F8FAFC', border: '1px solid var(--admin-border-light)', borderRadius: 'var(--admin-radius-xs)', marginBottom: 'var(--space-12)', display: 'inline-flex', alignItems: 'center', gap: 'var(--space-8)' }}>
+                      <span style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Product:</span>
+                      <strong style={{ fontSize: '0.875rem' }}>{req.product_name}</strong>
                     </div>
                   )}
 
                   {cartProducts && (
-                    <div style={{ background: 'var(--bg-base)', border: '1px solid var(--border-subtle)', borderRadius: '8px', padding: 'var(--space-16)', marginBottom: 'var(--space-16)' }}>
-                      <div className="t-label" style={{ marginBottom: 'var(--space-12)', fontSize: '0.8rem' }}>{t('admin.requests.cartProducts')} ({cartProducts.length})</div>
-                      <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-8)' }}>
+                    <div style={{ background: '#F8FAFC', border: '1px solid var(--admin-border-light)', borderRadius: 'var(--admin-radius-xs)', padding: 'var(--space-16)', marginBottom: 'var(--space-12)' }}>
+                      <div style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: 'var(--space-8)' }}>{t('admin.requests.cartProducts')} ({cartProducts.length})</div>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                         {cartProducts.map((item, idx) => (
-                          <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 'var(--space-8) var(--space-12)', background: 'var(--bg-surface)', borderRadius: '6px', border: '1px solid var(--border-subtle)' }}>
-                            <span style={{ fontWeight: 500, color: 'var(--text-primary)', fontSize: '0.95rem' }}>{item.name}</span>
-                            <div style={{ display: 'flex', gap: 'var(--space-16)', alignItems: 'center' }}>
-                              <span className="t-label">x{item.quantity}</span>
-                              {item.price && (
-                                <span style={{ fontWeight: 600, color: 'var(--brand-media)', fontSize: '0.875rem' }}>
-                                  {(item.price * item.quantity).toLocaleString()} DZD
-                                </span>
-                              )}
+                          <div key={idx} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 'var(--space-8) var(--space-12)', background: '#fff', borderRadius: '6px', border: '1px solid var(--admin-border-light)' }}>
+                            <span style={{ fontWeight: 500, fontSize: '0.875rem' }}>{item.name}</span>
+                            <div style={{ display: 'flex', gap: 'var(--space-12)', alignItems: 'center' }}>
+                              <span style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', fontWeight: 600 }}>x{item.quantity}</span>
+                              {item.price && <span style={{ fontFamily: 'var(--admin-font-display)', fontWeight: 600, color: 'var(--brand-media)', fontSize: '0.875rem' }}>{(item.price * item.quantity).toLocaleString()} DZD</span>}
                             </div>
                           </div>
                         ))}
                       </div>
-                      <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'var(--space-12)', paddingTop: 'var(--space-8)', borderTop: '1px solid var(--border-subtle)' }}>
-                        <span style={{ fontWeight: 700, fontSize: '1rem', color: 'var(--text-primary)' }}>
+                      <div style={{ display: 'flex', justifyContent: 'flex-end', marginTop: 'var(--space-8)', paddingTop: 'var(--space-8)', borderTop: '1px solid var(--admin-border-light)' }}>
+                        <span style={{ fontFamily: 'var(--admin-font-display)', fontWeight: 700, fontSize: '0.9375rem' }}>
                           Total: {cartProducts.reduce((s, i) => s + (i.price || 0) * (i.quantity || 1), 0).toLocaleString()} DZD
                         </span>
                       </div>
@@ -206,37 +204,33 @@ export default function AdminRequests() {
                   )}
 
                   {req.message && (
-                    <div style={{ background: 'var(--bg-base)', padding: 'var(--space-16)', borderLeft: '3px solid var(--border-strong)', borderRadius: '0 4px 4px 0' }}>
-                      <p className="t-body" style={{ margin: 0, fontStyle: 'italic' }}>"{req.message}"</p>
+                    <div style={{ background: '#F8FAFC', padding: 'var(--space-12) var(--space-16)', borderLeft: '3px solid var(--admin-border)', borderRadius: '0 var(--admin-radius-xs) var(--admin-radius-xs) 0' }}>
+                      <p style={{ margin: 0, fontStyle: 'italic', fontSize: '0.875rem', color: 'var(--text-secondary)' }}>"{req.message}"</p>
                     </div>
                   )}
                 </div>
 
-                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-12)', minWidth: '200px' }}>
-                  <label className="t-label">{t('admin.requests.updateStatus')}</label>
-                  <select
-                    value={req.status}
-                    onChange={(e) => handleStatusChange(req.id, e.target.value)}
-                    className="input-field"
-                    style={{ padding: 'var(--space-12)', fontSize: '0.95rem' }}
-                  >
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-8)', minWidth: '180px' }}>
+                  <label style={{ fontSize: '0.75rem', fontWeight: 600, color: 'var(--text-tertiary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>{t('admin.requests.updateStatus')}</label>
+                  <select value={req.status} onChange={(e) => handleStatusChange(req.id, e.target.value)} className="input-field" style={{ fontSize: '0.875rem' }}>
                     <option value="pending">{t('admin.requests.statPending')}</option>
                     <option value="contacted">{t('admin.requests.statContacted')}</option>
                     <option value="confirmed">{t('admin.requests.statConfirmed')}</option>
                     <option value="cancelled">{t('admin.requests.statCancelled')}</option>
                   </select>
-                  <Link to={`/admin/requests/${req.id}`} className="btn btn-ghost" style={{ fontSize: '0.875rem', textAlign: 'center' }}>
+                  <Link to={`/admin/requests/${req.id}`} className="admin-btn-sm" style={{ textAlign: 'center', textDecoration: 'none' }}>
                     View Details
                   </Link>
                 </div>
-
               </div>
             </div>
           );
         })}
         {filteredRequests.length === 0 && (
-          <div className="surface-card" style={{ textAlign: 'center', padding: 'var(--space-64)' }}>
-            <p className="t-body" style={{ color: 'var(--text-tertiary)', fontSize: '1.125rem' }}>{t('admin.requests.empty')}</p>
+          <div className="admin-card">
+            <div className="admin-empty-state">
+              <p className="admin-empty-text">{t('admin.requests.empty')}</p>
+            </div>
           </div>
         )}
       </div>

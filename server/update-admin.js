@@ -12,7 +12,7 @@ async function updateSuperAdmin(newEmail, newPassword) {
     const hash = bcrypt.hashSync(newPassword, 10);
     
     // Check if the super_admin exists
-    const admin = await db.get('SELECT * FROM users WHERE role = ?', ['super_admin']);
+    const admin = await db.get('SELECT * FROM users WHERE role = $1', ['super_admin']);
     
     if (!admin) {
       console.error('No super_admin found in the database!');
@@ -20,7 +20,7 @@ async function updateSuperAdmin(newEmail, newPassword) {
     }
     
     await db.run(
-      'UPDATE users SET email = ?, password_hash = ? WHERE role = ?',
+      'UPDATE users SET email = $1, password_hash = $2 WHERE role = $3',
       [newEmail, hash, 'super_admin']
     );
     

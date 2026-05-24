@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import { fetchApi } from '../api/client';
 import { useLanguage } from '../context/LanguageContext';
 import { useAuth } from '../context/AuthContext';
+import { useToast } from '../context/ToastContext';
+import { useDialog } from '../context/DialogContext';
+import { usePolling } from '../hooks/usePolling';
 
 export default function AdminDashboard() {
   const [stats, setStats] = useState(null);
@@ -10,6 +13,8 @@ export default function AdminDashboard() {
   const [error, setError] = useState('');
   const { t } = useLanguage();
   const { user } = useAuth();
+  const { showToast } = useToast();
+  const dialog = useDialog();
   
   const [admins, setAdmins] = useState([]);
   const [newAdmin, setNewAdmin] = useState({ name: '', email: '', password: '', role: 'admin' });
@@ -28,177 +33,209 @@ export default function AdminDashboard() {
       const res = await fetchApi('/admin/users', { method: 'POST', body: JSON.stringify(newAdmin) });
       setAdmins([...admins, { id: res.id, name: res.name, email: res.email, role: res.role, created_at: new Date().toISOString() }]);
       setNewAdmin({ name: '', email: '', password: '', role: 'admin' });
-      alert('Admin created successfully');
+      showToast('Admin created successfully', 'success');
     } catch (error) {
-      alert(error.message || 'Error creating admin');
+      showToast(error.message || 'Error creating admin', 'error');
     }
   };
 
   const handleDeleteAdmin = async (id) => {
-    if (!window.confirm('Are you sure you want to delete this admin?')) return;
+    const confirmed = await dialog.confirm({
+      title: 'Delete Admin',
+      message: 'Are you sure you want to revoke this admin access? They will no longer be able to log in.',
+      confirmText: 'Delete',
+      isDestructive: true
+    });
+    
+    if (!confirmed) return;
+
     try {
       await fetchApi(`/admin/users/${id}`, { method: 'DELETE' });
       setAdmins(admins.filter(a => a.id !== id));
+      showToast('Admin access revoked', 'success');
     } catch (error) {
-      alert(error.message || 'Error deleting admin');
+      showToast(error.message || 'Error deleting admin', 'error');
     }
   };
 
+  const fetchDashboardData = async () => {
+    const payload = await fetchApi('/admin/dashboard');
+    return payload?.stats || payload;
+  };
+
+  const { data: polledStats, error: pollError, loading: pollLoading, refetch } = usePolling(fetchDashboardData, 30000);
+
   useEffect(() => {
-    let cancelled = false;
-    setLoading(true);
-    setError('');
+    if (polledStats) setStats(polledStats);
+    if (pollError) setError(pollError.message || 'Failed to load dashboard data.');
+    setLoading(pollLoading && !stats); // Only show global loading if we don't have stale stats
+  }, [polledStats, pollError, pollLoading]);
 
-    const timeout = setTimeout(() => {
-      if (!cancelled) {
-        setError('Dashboard request timed out. Please refresh and try again.');
-        setLoading(false);
-      }
-    }, 12000);
+  /* Loading skeleton */
+  if (loading) return (
+    <div>
+      <div className="admin-page-header">
+        <div>
+          <div className="admin-skeleton admin-skeleton-title" style={{ width: '200px' }}></div>
+          <div className="admin-skeleton admin-skeleton-text" style={{ width: '280px' }}></div>
+        </div>
+      </div>
+      <div className="admin-stat-grid" style={{ marginBottom: 'var(--space-32)' }}>
+        {[1,2,3,4].map(i => <div key={i} className="admin-skeleton admin-skeleton-card"></div>)}
+      </div>
+      <div className="admin-stat-grid">
+        {[1,2,3,4].map(i => <div key={i} className="admin-skeleton admin-skeleton-card"></div>)}
+      </div>
+    </div>
+  );
 
-    fetchApi('/admin/dashboard')
-      .then((payload) => {
-        if (cancelled) return;
-        setStats(payload?.stats || payload);
-      })
-      .catch((err) => {
-        if (cancelled) return;
-        setError(err.message || 'Failed to load dashboard data.');
-      })
-      .finally(() => {
-        if (cancelled) return;
-        clearTimeout(timeout);
-        setLoading(false);
-      });
-
-    return () => {
-      cancelled = true;
-      clearTimeout(timeout);
-    };
-  }, []);
-
-  if (loading) return <div className="t-body">{t('admin.dashboard.loading')}</div>;
   if (error) {
     return (
-      <div className="surface-card" style={{ maxWidth: '720px' }}>
-        <h2 style={{ fontSize: '1.25rem', marginBottom: 'var(--space-12)' }}>Dashboard unavailable</h2>
-        <p className="t-body" style={{ marginBottom: 'var(--space-16)' }}>{error}</p>
-        <button className="btn btn-primary" type="button" onClick={() => window.location.reload()}>
-          Retry
-        </button>
+      <div className="admin-card" style={{ maxWidth: '720px', margin: 'var(--space-48) auto' }}>
+        <h2 style={{ fontSize: '1.25rem', marginBottom: 'var(--space-12)', color: 'var(--brand-s-challenge)', fontFamily: 'var(--admin-font-display)' }}>Dashboard unavailable</h2>
+        <p style={{ color: 'var(--text-tertiary)', marginBottom: 'var(--space-24)' }}>{error}</p>
+        <div style={{ display: 'flex', gap: 'var(--space-12)' }}>
+          <button className="btn btn-primary" type="button" onClick={() => window.location.reload()} style={{ borderRadius: 'var(--admin-radius-xs)' }}>
+            Retry Connection
+          </button>
+          {error.toLowerCase().includes('token') || error.toLowerCase().includes('session') ? (
+            <button className="btn btn-ghost" type="button" onClick={() => {
+              localStorage.removeItem('token');
+              localStorage.removeItem('user');
+              window.location.href = '/admin/login';
+            }}>
+              Return to Login
+            </button>
+          ) : null}
+        </div>
       </div>
     );
   }
-  if (!stats) return <div className="t-body">No dashboard data available.</div>;
-
-  const statusCard = (title, count, status, subtitle) => (
-    <div className="surface-card" style={{ borderBottom: `4px solid var(--status-${status})` }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-        <div>
-          <h3 className="t-label" style={{ color: `var(--status-${status})`, marginBottom: 'var(--space-8)' }}>{title}</h3>
-          <p style={{ fontSize: '2.5rem', fontWeight: '700', lineHeight: 1, color: `var(--status-${status})` }}>{count}</p>
-          {subtitle && <p className="t-body" style={{ fontSize: '0.875rem', marginTop: 'var(--space-8)', color: 'var(--text-tertiary)' }}>{subtitle}</p>}
-        </div>
-      </div>
-    </div>
-  );
-
-  const timeCard = (title, count, subtitle) => (
-    <div className="surface-card">
-      <h3 className="t-label" style={{ marginBottom: 'var(--space-8)' }}>{title}</h3>
-      <p style={{ fontSize: '2rem', fontWeight: '700', lineHeight: 1 }}>{count}</p>
-      {subtitle && <p className="t-body" style={{ fontSize: '0.875rem', marginTop: 'var(--space-8)', color: 'var(--text-tertiary)' }}>{subtitle}</p>}
-    </div>
-  );
+  if (!stats) return <div className="admin-empty-state"><p className="admin-empty-text">No dashboard data available.</p></div>;
 
   return (
-    <div style={{ maxWidth: '1400px' }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-48)' }}>
+    <div>
+      {/* Page Header */}
+      <div className="admin-page-header">
         <div>
-          <h1 className="t-page-title" style={{ marginBottom: 'var(--space-8)' }}>{t('admin.dashboard.title')}</h1>
-          <p className="t-body">{t('admin.dashboard.subtitle')}</p>
+          <h1 className="admin-page-title">{t('admin.dashboard.title')}</h1>
+          <p className="admin-page-subtitle">{t('admin.dashboard.subtitle')}</p>
         </div>
-        <div style={{ display: 'flex', gap: 'var(--space-12)' }}>
-          <span className="badge">{t('admin.dashboard.lastUpdated')} {new Date().toLocaleTimeString()}</span>
+        <span className="badge" style={{ alignSelf: 'center' }}>
+          {t('admin.dashboard.lastUpdated')} {new Date().toLocaleTimeString()}
+        </span>
+      </div>
+
+      {/* Request Timeline */}
+      <div style={{ marginBottom: 'var(--space-32)' }}>
+        <h2 className="admin-card-title" style={{ marginBottom: 'var(--space-16)' }}>{t('admin.dashboard.requestTimeline')}</h2>
+        <div className="admin-stat-grid">
+          <div className="admin-stat-card admin-stat-card--accent">
+            <div className="admin-stat-label">{t('admin.dashboard.time.today')}</div>
+            <div className="admin-stat-value">{stats.todayRequests}</div>
+            <div className="admin-stat-sub">{t('admin.dashboard.time.todaySubtitle')}</div>
+          </div>
+          <div className="admin-stat-card">
+            <div className="admin-stat-label">{t('admin.dashboard.time.thisWeek')}</div>
+            <div className="admin-stat-value">{stats.weekRequests}</div>
+            <div className="admin-stat-sub">{t('admin.dashboard.time.weekSubtitle')}</div>
+          </div>
+          <div className="admin-stat-card">
+            <div className="admin-stat-label">{t('admin.dashboard.time.thisMonth')}</div>
+            <div className="admin-stat-value">{stats.monthRequests}</div>
+            <div className="admin-stat-sub">{t('admin.dashboard.time.monthSubtitle')}</div>
+          </div>
+          <div className="admin-stat-card">
+            <div className="admin-stat-label">{t('admin.dashboard.time.allTime')}</div>
+            <div className="admin-stat-value">{stats.requests}</div>
+            <div className="admin-stat-sub">{t('admin.dashboard.time.allTimeSubtitle')}</div>
+          </div>
         </div>
       </div>
 
-      {/* Time-based Overview */}
-      <div style={{ marginBottom: 'var(--space-48)' }}>
-        <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: 'var(--space-24)' }}>{t('admin.dashboard.requestTimeline')}</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--space-24)' }}>
-          {timeCard(t('admin.dashboard.time.today'), stats.todayRequests, t('admin.dashboard.time.todaySubtitle'))}
-          {timeCard(t('admin.dashboard.time.thisWeek'), stats.weekRequests, t('admin.dashboard.time.weekSubtitle'))}
-          {timeCard(t('admin.dashboard.time.thisMonth'), stats.monthRequests, t('admin.dashboard.time.monthSubtitle'))}
-          {timeCard(t('admin.dashboard.time.allTime'), stats.requests, t('admin.dashboard.time.allTimeSubtitle'))}
+      {/* Pipeline Status */}
+      <div style={{ marginBottom: 'var(--space-32)' }}>
+        <h2 className="admin-card-title" style={{ marginBottom: 'var(--space-16)' }}>{t('admin.dashboard.pipelineStatus')}</h2>
+        <div className="admin-stat-grid">
+          <div className="admin-stat-card admin-stat-card--pending">
+            <div className="admin-stat-label" style={{ color: 'var(--status-pending)' }}>{t('admin.requests.status.pending')}</div>
+            <div className="admin-stat-value">{stats.pendingRequests}</div>
+            <div className="admin-stat-sub">{t('admin.dashboard.status.pendingSub')}</div>
+          </div>
+          <div className="admin-stat-card admin-stat-card--reviewed">
+            <div className="admin-stat-label" style={{ color: 'var(--status-reviewed)' }}>{t('admin.dashboard.status.contacted')}</div>
+            <div className="admin-stat-value">{stats.contactedRequests}</div>
+            <div className="admin-stat-sub">{t('admin.dashboard.status.contactedSub')}</div>
+          </div>
+          <div className="admin-stat-card admin-stat-card--completed">
+            <div className="admin-stat-label" style={{ color: 'var(--status-completed)' }}>{t('admin.dashboard.status.confirmed')}</div>
+            <div className="admin-stat-value">{stats.confirmedRequests}</div>
+            <div className="admin-stat-sub">{t('admin.dashboard.status.confirmedSub')}</div>
+          </div>
+          <div className="admin-stat-card admin-stat-card--cancelled">
+            <div className="admin-stat-label" style={{ color: '#6B7280' }}>{t('admin.dashboard.status.cancelled')}</div>
+            <div className="admin-stat-value">{stats.cancelledRequests}</div>
+            <div className="admin-stat-sub">{t('admin.dashboard.status.cancelledSub')}</div>
+          </div>
         </div>
       </div>
 
-      {/* Status Breakdown */}
-      <div style={{ marginBottom: 'var(--space-48)' }}>
-        <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: 'var(--space-24)' }}>{t('admin.dashboard.pipelineStatus')}</h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 'var(--space-24)' }}>
-          {statusCard(t('admin.requests.status.pending'), stats.pendingRequests, 'pending', t('admin.dashboard.status.pendingSub'))}
-          {statusCard(t('admin.dashboard.status.contacted'), stats.contactedRequests, 'reviewed', t('admin.dashboard.status.contactedSub'))}
-          {statusCard(t('admin.dashboard.status.confirmed'), stats.confirmedRequests, 'completed', t('admin.dashboard.status.confirmedSub'))}
-          {statusCard(t('admin.dashboard.status.cancelled'), stats.cancelledRequests, 'pending', t('admin.dashboard.status.cancelledSub'))}
+      {/* Main Stats */}
+      <div className="admin-stat-grid" style={{ marginBottom: 'var(--space-32)' }}>
+        <div className="admin-stat-card">
+          <div className="admin-stat-label">{t('admin.dashboard.stats.products')}</div>
+          <div className="admin-stat-value" style={{ fontSize: '2.5rem' }}>{stats.products}</div>
         </div>
-      </div>
-
-      {/* Main Stats Grid */}
-      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 'var(--space-24)', marginBottom: 'var(--space-48)' }}>
-        <div className="surface-card">
-          <h3 className="t-label" style={{ marginBottom: 'var(--space-8)' }}>{t('admin.dashboard.stats.products')}</h3>
-          <p style={{ fontSize: '3rem', fontWeight: '700', lineHeight: 1 }}>{stats.products}</p>
+        <div className="admin-stat-card">
+          <div className="admin-stat-label">{t('admin.dashboard.stats.brands')}</div>
+          <div className="admin-stat-value" style={{ fontSize: '2.5rem' }}>{stats.brands}</div>
         </div>
-        <div className="surface-card">
-          <h3 className="t-label" style={{ marginBottom: 'var(--space-8)' }}>{t('admin.dashboard.stats.brands')}</h3>
-          <p style={{ fontSize: '3rem', fontWeight: '700', lineHeight: 1 }}>{stats.brands}</p>
-        </div>
-        <div className="surface-card" style={{ borderColor: 'var(--brand-media)', borderWidth: '0 0 4px 0' }}>
-          <h3 className="t-label" style={{ marginBottom: 'var(--space-8)' }}>{t('admin.dashboard.messages')}</h3>
-          <p style={{ fontSize: '3rem', fontWeight: '700', lineHeight: 1 }}>{stats.totalMessages}</p>
+        <div className="admin-stat-card admin-stat-card--accent">
+          <div className="admin-stat-label">{t('admin.dashboard.messages')}</div>
+          <div className="admin-stat-value" style={{ fontSize: '2.5rem' }}>{stats.totalMessages}</div>
           {stats.unreadMessages > 0 && (
-            <span style={{ fontSize: '0.75rem', color: 'var(--brand-media)', fontWeight: '600' }}>
+            <span className="admin-badge admin-badge--info" style={{ marginTop: 'var(--space-8)' }}>
               {stats.unreadMessages} {t('admin.dashboard.messagesUnread')}
             </span>
           )}
         </div>
       </div>
 
-      {/* Two Column Layout */}
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 'var(--space-32)' }}>
-        {/* Requests per Brand */}
-        <div className="surface-card">
-          <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: 'var(--space-24)' }}>{t('admin.dashboard.requestsByBrand')}</h3>
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-16)' }}>
+      {/* Two Column: Brand Requests + Low Stock */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: 'var(--space-24)', marginBottom: 'var(--space-32)' }}>
+        <div className="admin-card">
+          <div className="admin-card-header">
+            <h3 className="admin-card-title">{t('admin.dashboard.requestsByBrand')}</h3>
+          </div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-12)' }}>
             {stats.brandRequests.map(brand => (
-              <div key={brand.slug} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                <span className="t-label" style={{ textTransform: 'capitalize' }}>{brand.name}</span>
-                <span style={{ fontSize: '1.25rem', fontWeight: '700' }}>{brand.count}</span>
+              <div key={brand.slug} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 'var(--space-8) var(--space-12)', borderRadius: 'var(--admin-radius-xs)', background: '#F8FAFC' }}>
+                <span style={{ fontSize: '0.875rem', fontWeight: 500, textTransform: 'capitalize' }}>{brand.name}</span>
+                <span style={{ fontFamily: 'var(--admin-font-display)', fontSize: '1.125rem', fontWeight: 700 }}>{brand.count}</span>
               </div>
             ))}
           </div>
         </div>
 
-        {/* {t('admin.dashboard.lowStockAlerts')} */}
-        <div className="surface-card" style={{ borderColor: 'var(--brand-s-challenge)', borderWidth: '0 0 4px 0' }}>
-          <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: 'var(--space-24)' }}>
-            {t('admin.dashboard.lowStockAlerts')}
+        <div className="admin-card">
+          <div className="admin-card-header">
+            <h3 className="admin-card-title">
+              {t('admin.dashboard.lowStockAlerts')}
+            </h3>
             {stats.lowStockProducts.length > 0 && (
-              <span style={{ marginLeft: 'var(--space-8)', fontSize: '0.75rem', background: 'var(--brand-s-challenge)', color: '#fff', padding: '2px 8px', borderRadius: '99px' }}>
+              <span className="admin-badge admin-badge--danger">
                 {stats.lowStockProducts.length} {t('admin.dashboard.items')}
               </span>
             )}
-          </h3>
+          </div>
           {stats.lowStockProducts.length === 0 ? (
-            <p className="t-body" style={{ color: 'var(--text-tertiary)' }}>{t('admin.dashboard.allStocked')}</p>
+            <p style={{ color: 'var(--text-tertiary)', fontSize: '0.9375rem' }}>{t('admin.dashboard.allStocked')}</p>
           ) : (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-12)' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-8)' }}>
               {stats.lowStockProducts.map(product => (
-                <div key={product.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 'var(--space-8)', background: '#FEF3C7', borderRadius: '6px' }}>
-                  <span style={{ fontSize: '0.875rem', fontWeight: '500' }}>{product.name}</span>
-                  <span style={{ fontSize: '0.875rem', fontWeight: '700', color: '#D97706' }}>{product.stock} {t('admin.dashboard.left')}</span>
+                <div key={product.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 'var(--space-8) var(--space-12)', background: '#FFFBEB', borderRadius: 'var(--admin-radius-xs)' }}>
+                  <span style={{ fontSize: '0.875rem', fontWeight: 500 }}>{product.name}</span>
+                  <span className="admin-badge admin-badge--pending">{product.stock} {t('admin.dashboard.left')}</span>
                 </div>
               ))}
             </div>
@@ -207,17 +244,19 @@ export default function AdminDashboard() {
       </div>
 
       {/* Top Products */}
-      <div className="surface-card" style={{ marginTop: 'var(--space-32)' }}>
-        <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: 'var(--space-24)' }}>{t('admin.dashboard.topProducts')}</h3>
+      <div className="admin-card" style={{ marginBottom: 'var(--space-32)' }}>
+        <div className="admin-card-header">
+          <h3 className="admin-card-title">{t('admin.dashboard.topProducts')}</h3>
+        </div>
         {stats.topProducts.length === 0 ? (
-          <p className="t-body" style={{ color: 'var(--text-tertiary)' }}>{t('admin.dashboard.noProductRequests')}</p>
+          <p style={{ color: 'var(--text-tertiary)', fontSize: '0.9375rem' }}>{t('admin.dashboard.noProductRequests')}</p>
         ) : (
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--space-16)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 'var(--space-16)' }}>
             {stats.topProducts.map((product, idx) => (
-              <div key={product.id} style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-12)' }}>
-                <span style={{ fontSize: '1.5rem', fontWeight: '700', color: 'var(--text-tertiary)' }}>#{idx + 1}</span>
+              <div key={product.id} style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-12)', padding: 'var(--space-12)', borderRadius: 'var(--admin-radius-xs)', background: '#F8FAFC' }}>
+                <span style={{ fontFamily: 'var(--admin-font-display)', fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-tertiary)', width: '32px', textAlign: 'center' }}>#{idx + 1}</span>
                 <div>
-                  <p style={{ fontWeight: '500', fontSize: '0.95rem' }}>{product.name}</p>
+                  <p style={{ fontWeight: 500, fontSize: '0.9375rem' }}>{product.name}</p>
                   <p style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)' }}>{product.request_count} {t('admin.dashboard.requests')}</p>
                 </div>
               </div>
@@ -226,17 +265,21 @@ export default function AdminDashboard() {
         )}
       </div>
 
-      {/* {t('admin.dashboard.recentActivity')} */}
-      <div className="surface-card" style={{ marginTop: 'var(--space-32)' }}>
-        <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: 'var(--space-24)' }}>{t('admin.dashboard.recentActivity')}</h3>
+      {/* Recent Activity */}
+      <div className="admin-card" style={{ marginBottom: 'var(--space-32)' }}>
+        <div className="admin-card-header">
+          <h3 className="admin-card-title">{t('admin.dashboard.recentActivity')}</h3>
+        </div>
         {stats.recentActivity.length === 0 ? (
-          <p className="t-body" style={{ color: 'var(--text-tertiary)' }}>{t('admin.dashboard.noRecentActivity')}</p>
+          <p style={{ color: 'var(--text-tertiary)', fontSize: '0.9375rem' }}>{t('admin.dashboard.noRecentActivity')}</p>
         ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-8)' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
             {stats.recentActivity.map(log => (
-              <div key={log.id} style={{ display: 'flex', justifyContent: 'space-between', padding: 'var(--space-8) var(--space-12)', background: 'var(--bg-base)', borderRadius: '6px' }}>
-                <span style={{ fontSize: '0.875rem' }}>{log.action}</span>
-                <span style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)' }}>
+              <div key={log.id} style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 'var(--space-8) var(--space-12)', borderRadius: 'var(--admin-radius-xs)', transition: 'background var(--admin-transition)' }}
+                   onMouseEnter={e => e.currentTarget.style.background = '#F8FAFC'}
+                   onMouseLeave={e => e.currentTarget.style.background = 'transparent'}>
+                <span style={{ fontSize: '0.875rem', color: 'var(--text-secondary)' }}>{log.action}</span>
+                <span style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', fontFamily: 'var(--admin-font-display)' }}>
                   {new Date(log.created_at).toLocaleString()}
                 </span>
               </div>
@@ -246,71 +289,71 @@ export default function AdminDashboard() {
       </div>
 
       {/* Quick Actions */}
-      <div style={{ marginTop: 'var(--space-48)', display: 'flex', gap: 'var(--space-16)' }}>
-        <Link to="/admin/requests" className="btn btn-primary">{t('admin.dashboard.viewAllRequests')}</Link>
-        <Link to="/admin/products" className="btn btn-ghost">{t('admin.dashboard.manageProducts')}</Link>
+      <div style={{ display: 'flex', gap: 'var(--space-12)', marginBottom: 'var(--space-48)' }}>
+        <Link to="/admin/requests" className="btn btn-primary" style={{ borderRadius: 'var(--admin-radius-xs)' }}>{t('admin.dashboard.viewAllRequests')}</Link>
+        <Link to="/admin/products" className="btn btn-ghost" style={{ borderRadius: 'var(--admin-radius-xs)' }}>{t('admin.dashboard.manageProducts')}</Link>
       </div>
 
-      {/* {t('admin.dashboard.superAdmin.title')} */}
+      {/* Super Admin Section */}
       {user?.role === 'super_admin' && (
-        <div className="surface-card" style={{ marginTop: 'var(--space-48)', borderTop: '4px solid #DC2626' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 'var(--space-24)' }}>
-            <h2 style={{ fontSize: '1.5rem', fontWeight: '700', color: '#DC2626' }}>{t('admin.dashboard.superAdmin.title')}</h2>
-            <span className="badge" style={{ background: '#FEE2E2', color: '#991B1B' }}>{t('admin.dashboard.superAdmin.restricted')}</span>
+        <div className="admin-card" style={{ borderTop: '3px solid var(--admin-sidebar-accent)' }}>
+          <div className="admin-card-header">
+            <h2 style={{ fontFamily: 'var(--admin-font-display)', fontSize: '1.25rem', fontWeight: 700, color: 'var(--text-primary)' }}>{t('admin.dashboard.superAdmin.title')}</h2>
+            <span className="admin-badge admin-badge--danger">{t('admin.dashboard.superAdmin.restricted')}</span>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'minmax(300px, 1fr) 2fr', gap: 'var(--space-32)' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'minmax(280px, 1fr) 2fr', gap: 'var(--space-32)' }}>
             {/* Create Admin Form */}
-            <div style={{ background: 'var(--bg-base)', padding: 'var(--space-24)', borderRadius: '8px' }}>
-              <h3 style={{ fontSize: '1.125rem', fontWeight: '600', marginBottom: 'var(--space-16)' }}>{t('admin.dashboard.superAdmin.createAdmin')}</h3>
+            <div className="admin-form-section">
+              <h3 className="admin-form-section-title">{t('admin.dashboard.superAdmin.createAdmin')}</h3>
               <form onSubmit={handleCreateAdmin} style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-12)' }}>
                 <div>
-                  <label className="t-label">{t('admin.dashboard.superAdmin.name')}</label>
+                  <label className="t-label" style={{ display: 'block', marginBottom: '4px', fontSize: '0.8125rem' }}>{t('admin.dashboard.superAdmin.name')}</label>
                   <input className="input-field" required value={newAdmin.name} onChange={e => setNewAdmin({...newAdmin, name: e.target.value})} placeholder="Admin Name" />
                 </div>
                 <div>
-                  <label className="t-label">{t('admin.dashboard.superAdmin.email')}</label>
+                  <label className="t-label" style={{ display: 'block', marginBottom: '4px', fontSize: '0.8125rem' }}>{t('admin.dashboard.superAdmin.email')}</label>
                   <input type="email" className="input-field" required value={newAdmin.email} onChange={e => setNewAdmin({...newAdmin, email: e.target.value})} placeholder="admin@example.com" />
                 </div>
                 <div>
-                  <label className="t-label">{t('admin.dashboard.superAdmin.password')}</label>
+                  <label className="t-label" style={{ display: 'block', marginBottom: '4px', fontSize: '0.8125rem' }}>{t('admin.dashboard.superAdmin.password')}</label>
                   <input type="password" className="input-field" required value={newAdmin.password} onChange={e => setNewAdmin({...newAdmin, password: e.target.value})} placeholder="Secure password" />
                 </div>
                 <div>
-                  <label className="t-label">{t('admin.dashboard.superAdmin.role')}</label>
+                  <label className="t-label" style={{ display: 'block', marginBottom: '4px', fontSize: '0.8125rem' }}>{t('admin.dashboard.superAdmin.role')}</label>
                   <select className="input-field" value={newAdmin.role} onChange={e => setNewAdmin({...newAdmin, role: e.target.value})}>
                     <option value="admin">{t('admin.dashboard.superAdmin.adminOpt')}</option>
                     <option value="super_admin">{t('admin.dashboard.superAdmin.superAdminOpt')}</option>
                   </select>
                 </div>
-                <button type="submit" className="btn btn-primary" style={{ marginTop: 'var(--space-8)' }}>{t('admin.dashboard.superAdmin.createBtn')}</button>
+                <button type="submit" className="btn btn-primary" style={{ marginTop: 'var(--space-4)', borderRadius: 'var(--admin-radius-xs)', fontSize: '0.875rem' }}>{t('admin.dashboard.superAdmin.createBtn')}</button>
               </form>
             </div>
 
-            {/* Admins List */}
-            <div style={{ overflowX: 'auto' }}>
-              <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+            {/* Admins Table */}
+            <div className="admin-table-wrap">
+              <table className="admin-table">
                 <thead>
-                  <tr style={{ background: 'var(--bg-base)', textAlign: 'left' }}>
-                    <th style={{ padding: 'var(--space-12)', borderBottom: '2px solid var(--border-subtle)' }}>{t('admin.dashboard.superAdmin.name')}</th>
-                    <th style={{ padding: 'var(--space-12)', borderBottom: '2px solid var(--border-subtle)' }}>{t('admin.dashboard.superAdmin.email')}</th>
-                    <th style={{ padding: 'var(--space-12)', borderBottom: '2px solid var(--border-subtle)' }}>{t('admin.dashboard.superAdmin.role')}</th>
-                    <th style={{ padding: 'var(--space-12)', borderBottom: '2px solid var(--border-subtle)' }}>{t('admin.dashboard.table.actions')}</th>
+                  <tr>
+                    <th>{t('admin.dashboard.superAdmin.name')}</th>
+                    <th>{t('admin.dashboard.superAdmin.email')}</th>
+                    <th>{t('admin.dashboard.superAdmin.role')}</th>
+                    <th>{t('admin.dashboard.table.actions')}</th>
                   </tr>
                 </thead>
                 <tbody>
                   {admins.map(admin => (
-                    <tr key={admin.id} style={{ borderBottom: '1px solid var(--border-subtle)' }}>
-                      <td style={{ padding: 'var(--space-12)', fontWeight: '500' }}>{admin.name}</td>
-                      <td style={{ padding: 'var(--space-12)', color: 'var(--text-secondary)' }}>{admin.email}</td>
-                      <td style={{ padding: 'var(--space-12)' }}>
-                        <span className="badge" style={{ background: admin.role === 'super_admin' ? '#FEE2E2' : '#DBEAFE', color: admin.role === 'super_admin' ? '#991B1B' : '#1E40AF' }}>
+                    <tr key={admin.id}>
+                      <td style={{ fontWeight: 500 }}>{admin.name}</td>
+                      <td style={{ color: 'var(--text-secondary)' }}>{admin.email}</td>
+                      <td>
+                        <span className={`admin-badge ${admin.role === 'super_admin' ? 'admin-badge--danger' : 'admin-badge--info'}`}>
                           {admin.role === 'super_admin' ? t('admin.dashboard.superAdmin.superAdminOpt') : t('admin.dashboard.superAdmin.adminOpt')}
                         </span>
                       </td>
-                      <td style={{ padding: 'var(--space-12)' }}>
+                      <td>
                         {String(admin.id) !== String(user.id) && (
-                          <button onClick={() => handleDeleteAdmin(admin.id)} style={{ color: '#DC2626', background: 'none', border: 'none', cursor: 'pointer', fontWeight: '500' }}>
+                          <button onClick={() => handleDeleteAdmin(admin.id)} className="admin-btn-sm admin-btn-sm--danger">
                             Revoke
                           </button>
                         )}

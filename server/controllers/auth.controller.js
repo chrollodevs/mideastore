@@ -12,7 +12,7 @@ export async function login(req, res) {
     }
 
     const db = await getDb();
-    const user = await db.get('SELECT * FROM users WHERE email = ?', [email]);
+    const user = await db.get('SELECT * FROM users WHERE email = $1', [email]);
     if (!user) {
       return res.status(401).json({ error: 'Invalid credentials' });
     }
@@ -33,6 +33,7 @@ export async function login(req, res) {
       user: { id: user.id, name: user.name, email: user.email, role: user.role }
     });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error('[auth.login]', err);
+    res.status(500).json({ error: 'Authentication failed.' });
   }
 }

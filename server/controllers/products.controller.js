@@ -43,7 +43,7 @@ async function resolveBrandId(db, payload) {
   }
 
   const brand = await db.get(
-    'SELECT id FROM brands WHERE slug = ? OR LOWER(name) = LOWER(?)',
+    'SELECT id FROM brands WHERE slug = $1 OR LOWER(name) = LOWER($2)',
     [brandValue, brandValue]
   );
   return brand?.id ?? null;
@@ -68,7 +68,8 @@ export async function getAll(req, res) {
 
     res.json(parsedProducts);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error('[products.getAll]', err);
+    res.status(500).json({ error: 'Failed to retrieve products.' });
   }
 }
 
@@ -79,7 +80,7 @@ export async function getById(req, res) {
       SELECT p.*, b.name as brand_name, b.slug as brand_slug
       FROM products p
       JOIN brands b ON p.brand_id = b.id
-      WHERE p.id = ?
+      WHERE p.id = $1
     `, [req.params.id]);
 
     if (!product) return res.status(404).json({ error: 'Product not found' });
@@ -88,7 +89,8 @@ export async function getById(req, res) {
     product.display_sections = parseDisplaySections(product.display_sections);
     res.json(product);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error('[products.getById]', err);
+    res.status(500).json({ error: 'Failed to retrieve product.' });
   }
 }
 
@@ -109,19 +111,21 @@ export async function create(req, res) {
 
     const result = await db.run(`
       INSERT INTO products (name, brand_id, category, price, stock, description, image_url, display_sections)
-      VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+      VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
+      RETURNING id
     `, [name, brandId, category, price, stock || 0, description || '', image_url || '', JSON.stringify(display_sections || [])]);
 
     const product = await db.get(`
       SELECT p.*, b.name as brand_name, b.slug as brand_slug
       FROM products p
       JOIN brands b ON p.brand_id = b.id
-      WHERE p.id = ?
+      WHERE p.id = $1
     `, [result.lastID]);
     product.display_sections = parseDisplaySections(product.display_sections);
     res.status(201).json(product);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error('[products.create]', err);
+    res.status(500).json({ error: 'Failed to create product.' });
   }
 }
 
@@ -129,7 +133,7 @@ export async function update(req, res) {
   try {
     const { name, price, stock, description, image_url, display_sections } = req.body;
     const db = await getDb();
-    const existing = await db.get('SELECT * FROM products WHERE id = ?', [req.params.id]);
+    const existing = await db.get('SELECT * FROM products WHERE id = $1', [req.params.id]);
 
     if (!existing) return res.status(404).json({ error: 'Product not found' });
 
@@ -140,8 +144,8 @@ export async function update(req, res) {
     }
 
     await db.run(`
-      UPDATE products SET name = ?, brand_id = ?, category = ?, price = ?, stock = ?, description = ?, image_url = ?, display_sections = ?
-      WHERE id = ?
+      UPDATE products SET name = $1, brand_id = $2, category = $3, price = $4, stock = $5, description = $6, image_url = $7, display_sections = $8
+      WHERE id = $9
     `, [
       name || existing.name,
       resolvedBrandId || existing.brand_id,
@@ -158,24 +162,29 @@ export async function update(req, res) {
       SELECT p.*, b.name as brand_name, b.slug as brand_slug
       FROM products p
       JOIN brands b ON p.brand_id = b.id
-      WHERE p.id = ?
+      WHERE p.id = $1
     `, [req.params.id]);
     product.display_sections = parseDisplaySections(product.display_sections);
     res.json(product);
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error('[products.update]', err);
+    res.status(500).json({ error: 'Failed to update product.' });
   }
 }
 
 export async function remove(req, res) {
   try {
     const db = await getDb();
-    const existing = await db.get('SELECT * FROM products WHERE id = ?', [req.params.id]);
+    const existing = await db.get('SELECT * FROM products WHERE id = $1', [req.params.id]);
     if (!existing) return res.status(404).json({ error: 'Product not found' });
 
-    await db.run('DELETE FROM products WHERE id = ?', [req.params.id]);
+    // Prevent foreign key constraint failure by unlinking requests
+    await db.run('UPDATE requests SET product_id = NULL WHERE product_id = $1', [req.params.id]);
+
+    await db.run('DELETE FROM products WHERE id = $1', [req.params.id]);
     res.json({ message: 'Product deleted' });
   } catch (err) {
-    res.status(500).json({ error: err.message });
+    console.error('[products.remove]', err);
+    res.status(500).json({ error: 'Failed to delete product.' });
   }
 }

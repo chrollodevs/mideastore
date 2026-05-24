@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useLanguage } from '../context/LanguageContext';
@@ -9,17 +9,26 @@ export default function Cart() {
   const { t } = useLanguage();
   const [submitted, setSubmitted] = useState(false);
   const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+  const submitLockRef = useRef(false); // Ref-based guard — immune to React batching delays
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    // Double-submit guard: ref check is synchronous and immediate
+    if (submitLockRef.current) return;
+    submitLockRef.current = true;
     setSubmitting(true);
+    setSubmitError('');
+
+    const idempotencyKey = crypto.randomUUID();
     const formData = new FormData(e.target);
     const payload = {
       type: 'cart_request',
-      name: formData.get('cart.name'),
-      email: formData.get('contact.email'),
-      phone: formData.get('contact.phone'),
-      message: formData.get('cart.notes') || '',
+      idempotency_key: idempotencyKey,
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      message: formData.get('notes') || '',
       products: items.map(item => ({ id: item.id, name: item.name, quantity: item.quantity, price: item.price })),
     };
     try {
@@ -27,7 +36,8 @@ export default function Cart() {
       setSubmitted(true);
       clearCart();
     } catch (err) {
-      alert('Failed to submit request.');
+      setSubmitError(err.message || t('contactPage.formError') || 'Failed to submit request.');
+      submitLockRef.current = false; // Allow retry on failure
     } finally {
       setSubmitting(false);
     }
@@ -101,13 +111,18 @@ export default function Cart() {
             <h3 style={{ fontSize: '1rem', fontWeight: 600, marginBottom: '8px' }}>{t('cart.checkoutTitle')}</h3>
             <p className="t-body" style={{ fontSize: '0.875rem', marginBottom: '20px' }}>{t('cart.checkoutSubtitle')}</p>
             <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <input name="name" className="input-field" required placeholder={t('cart.name')} />
-              <input name="email" className="input-field" type="email" required placeholder={t('cart.emailField')} />
-              <input name="phone" className="input-field" type="tel" required placeholder={t('cart.phoneField')} />
-              <textarea name="notes" className="input-field" rows="3" placeholder={t('cart.notes')}></textarea>
-              <button type="submit" className="btn btn-primary" disabled={submitting} style={{ width: '100%', marginTop: '8px', padding: '14px' }}>
-                {submitting ? '...' : t('cart.checkout')}
+              <input name="name" className="input-field" required placeholder={t('cart.name')} style={{ padding: '16px', borderRadius: '12px', background: 'var(--bg-surface)', border: '1px solid var(--border-strong)', boxShadow: 'var(--elevation-1)' }} />
+              <input name="email" className="input-field" type="email" required placeholder={t('cart.emailField')} style={{ padding: '16px', borderRadius: '12px', background: 'var(--bg-surface)', border: '1px solid var(--border-strong)', boxShadow: 'var(--elevation-1)' }} />
+              <input name="phone" className="input-field" type="tel" required placeholder={t('cart.phoneField')} style={{ padding: '16px', borderRadius: '12px', background: 'var(--bg-surface)', border: '1px solid var(--border-strong)', boxShadow: 'var(--elevation-1)' }} />
+              <textarea name="notes" className="input-field" rows="3" placeholder={t('cart.notes')} style={{ padding: '16px', borderRadius: '12px', background: 'var(--bg-surface)', border: '1px solid var(--border-strong)', boxShadow: 'var(--elevation-1)', resize: 'vertical' }}></textarea>
+              <button type="submit" className="btn btn-primary" disabled={submitting || submitLockRef.current} style={{ width: '100%', marginTop: '8px', padding: '14px' }}>
+                {submitting ? (t('contactPage.sending') || 'Sending...') : t('cart.checkout')}
               </button>
+              {submitError && (
+                <div style={{ background: '#FEF2F2', color: '#991B1B', border: '1px solid #FECACA', padding: '12px 16px', borderRadius: '10px', fontSize: '0.875rem', fontWeight: 500, marginTop: '4px' }}>
+                  {submitError}
+                </div>
+              )}
             </form>
           </div>
         </div>

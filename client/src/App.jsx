@@ -7,6 +7,9 @@ import PublicLayout from './components/PublicLayout';
 import AdminLayout from './components/AdminLayout';
 import ProtectedRoute from './components/ProtectedRoute';
 
+import { ToastProvider } from './context/ToastContext';
+import { DialogProvider } from './context/DialogContext';
+
 import Home from './pages/Home';
 import BrandPage from './pages/BrandPage';
 import Products from './pages/Products';
@@ -27,31 +30,35 @@ function App() {
     <LanguageProvider>
       <CartProvider>
         <AuthProvider>
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<PublicLayout />}>
-                <Route index element={<Home />} />
-                <Route path="brands/:slug" element={<BrandPage />} />
-                <Route path="products" element={<Products />} />
-                <Route path="product/:id" element={<ProductDetail />} />
-                <Route path="about" element={<About />} />
-                <Route path="contact" element={<Contact />} />
-                <Route path="cart" element={<Cart />} />
-              </Route>
+          <ToastProvider>
+            <DialogProvider>
+              <BrowserRouter>
+                <Routes>
+                  <Route path="/" element={<PublicLayout />}>
+                    <Route index element={<Home />} />
+                    <Route path="brands/:slug" element={<BrandPage />} />
+                    <Route path="products" element={<Products />} />
+                    <Route path="product/:id" element={<ProductDetail />} />
+                    <Route path="about" element={<About />} />
+                    <Route path="contact" element={<Contact />} />
+                    <Route path="cart" element={<Cart />} />
+                  </Route>
 
-              <Route path="/admin/login" element={<AdminLogin />} />
+                  <Route path="/admin/login" element={<AdminLogin />} />
 
-              <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin', 'super_admin']} />}>
-                <Route element={<AdminLayout />}>
-                  <Route index element={<AdminDashboard />} />
-                  <Route path="products" element={<AdminProducts />} />
-                  <Route path="requests" element={<AdminRequests />} />
-                  <Route path="requests/:id" element={<RequestDetails />} />
-                  <Route path="messages" element={<AdminMessages />} />
-                </Route>
-              </Route>
-            </Routes>
-          </BrowserRouter>
+                  <Route path="/admin" element={<ProtectedRoute allowedRoles={['admin', 'super_admin']} />}>
+                    <Route element={<AdminLayout />}>
+                      <Route index element={<AdminDashboard />} />
+                      <Route path="products" element={<AdminProducts />} />
+                      <Route path="requests" element={<AdminRequests />} />
+                      <Route path="requests/:id" element={<RequestDetails />} />
+                      <Route path="messages" element={<AdminMessages />} />
+                    </Route>
+                  </Route>
+                </Routes>
+              </BrowserRouter>
+            </DialogProvider>
+          </ToastProvider>
         </AuthProvider>
       </CartProvider>
     </LanguageProvider>

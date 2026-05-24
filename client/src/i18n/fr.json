@@ -12,7 +12,13 @@
     "subtitle": "Des produits de qualité, des prix justes et un service fiable. Contactez-nous pour vérifier la disponibilité ou visitez notre magasin à El Hamiz.",
     "call": "Appeler",
     "whatsapp": "WhatsApp",
-    "viewProducts": "Voir les produits"
+    "viewProducts": "Voir les produits",
+    "availableAt": "Disponible à El Hamiz",
+    "exploreMidea": "Explorer Midea",
+    "authorizedDealer": "Revendeur Agréé",
+    "officialWarranty": "Garantie Officielle",
+    "fastSupport": "Support Rapide",
+    "deliveryAvailable": "Livraison Disponible"
   },
   "deals": {
     "top": "Nos Meilleures Offres",
@@ -53,11 +59,16 @@
   },
   "reviews": {
     "title": "Avis de nos clients",
+    "subtitle": "Approuvé par des milliers de clients à travers l'Algérie",
     "review1": "Très bons prix et bon service.",
     "review2": "Nous avons contacté avant de venir, tout était prêt.",
-    "review3": "Magasin fiable avec bon service après-vente."
+    "review3": "Magasin fiable avec bon service après-vente.",
+    "review4": "Nous avons acheté un climatiseur pour le salon. L'installation s'est bien passée et l'équipe nous a guidés.",
+    "review5": "Les prix sont compétitifs et les produits sont authentiques. Recommandé pour les familles.",
+    "review6": "Réponse rapide quand nous avons appelé. Ils ont confirmé le stock et nous avons récupéré le jour même."
   },
   "product": {
+    "noImage": "Aucune image disponible",
     "addToCart": "Ajouter au panier",
     "addedToCart": "Ajouté !",
     "description": "Description",
@@ -101,7 +112,14 @@
     "infoTitle": "Informations",
     "about": "À propos de nous",
     "contact": "Nous Contacter",
-    "admin": "Accès Gérant"
+    "admin": "Accès Gérant",
+    "whatsappTitle": "Discuter sur WhatsApp",
+    "quickContact": "Contact Rapide",
+    "messageWhatsapp": "Message sur WhatsApp",
+    "callStore": "Appeler le magasin",
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d'utilisation"
   },
   "products": {
     "pageTitle": "Tous nos produits",
@@ -110,17 +128,33 @@
     "searchPlaceholder": "Rechercher des produits...",
     "allBrands": "Toutes les marques",
     "anyPrice": "Tout prix",
+    "priceUnder30": "Moins de 30 000 DZD",
+    "price30to60": "30 000 - 60 000 DZD",
+    "price60to100": "60 000 - 100 000 DZD",
+    "price100plus": "100 000+ DZD",
+    "sortNewest": "Plus récents",
+    "sortPriceAsc": "Prix : Croissant",
+    "sortPriceDesc": "Prix : Décroissant",
+    "sortNameAsc": "Nom : A à Z",
+    "brandsLabel": "Marques :",
     "clearFilters": "Réinitialiser",
-    "notFound": "Aucun produit ne correspond"
+    "notFound": "Aucun produit ne correspond",
+    "noProductsFound": "Aucun produit trouvé",
+    "noProductsSubtitle": "Essayez d'ajuster vos filtres ou votre recherche.",
+    "lowStock": "Stock Faible"
   },
   "contactPage": {
     "title": "Contactez-nous",
     "subtitle": "Une question sur un produit ou un prix ? Contactez-nous directement.",
     "formName": "Votre Nom",
     "formEmail": "Adresse Email",
+    "formPhone": "Numéro de téléphone",
     "formMessage": "Votre Message",
     "formSubmit": "Envoyer le message",
-    "formSuccess": "Message envoyé avec succès !"
+    "formSuccess": "Message envoyé avec succès !",
+    "formError": "Échec de l'envoi du message. Veuillez réessayer.",
+    "validationError": "Le nom et le message sont obligatoires.",
+    "sending": "Envoi en cours..."
   },
   "aboutPage": {
     "title": "À propos de nous"
@@ -192,6 +226,7 @@
       "dashboard": "Tableau de bord",
       "products": "Produits",
       "requests": "Demandes",
+      "messages": "Messages",
       "logout": "Déconnexion"
     },
     "dashboard": {

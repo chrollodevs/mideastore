@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from 'react';
-import { fetchApi } from '../api/client';
+import { fetchApi, getImageUrl } from '../api/client';
 import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 import { useCart } from '../context/CartContext';
@@ -182,9 +182,10 @@ export default function Products() {
             <div key={product.id} className="product-card-premium">
               <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column', height: '100%' }}>
                 <div className="product-card-image-wrap">
-                  {product.image_url ? (
-                    <img src={product.image_url} alt={product.name} className="product-card-image" loading="lazy" />
-                  ) : (
+                  <div className="product-card-image-container">
+                    <img src={getImageUrl(product.image_url)} alt={product.name} className="product-card-image" loading="lazy" />
+                  </div>
+                  {(!product.image_url) && (
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round" style={{ color: 'var(--text-tertiary)' }}><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                   )}
                   {product.stock > 0 && product.stock <= 5 && (

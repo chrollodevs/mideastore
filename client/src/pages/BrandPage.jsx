@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import { fetchApi } from '../api/client';
+import { fetchApi, getImageUrl } from '../api/client';
 import { useLanguage } from '../context/LanguageContext';
 import { useCart } from '../context/CartContext';
 
@@ -190,7 +190,7 @@ export default function BrandPage() {
                   <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                     <div className="product-card-img-wrapper" style={{ padding: 'var(--space-16)', backgroundColor: '#F1F5F9' }}>
                       {product.image_url ? (
-                        <img src={product.image_url} alt={product.name} className="product-card-img-placeholder" />
+                        <img src={getImageUrl(product.image_url)} alt={product.name} className="product-card-img-placeholder" />
                       ) : (
                         <div style={{ color: 'var(--text-tertiary)', fontSize: '2rem' }}>📦</div>
                       )}
@@ -299,7 +299,7 @@ export default function BrandPage() {
                     <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                       <div className="product-card-img-wrapper" style={{ padding: 'var(--space-16)', backgroundColor: '#f4f4f5' }}>
                         {product.image_url ? (
-                          <img src={product.image_url} alt={product.name} className="product-card-img-placeholder" />
+                          <img src={getImageUrl(product.image_url)} alt={product.name} className="product-card-img-placeholder" />
                         ) : (
                           <div style={{ color: 'var(--text-tertiary)', fontSize: '2rem' }}>📦</div>
                         )}
@@ -402,7 +402,7 @@ export default function BrandPage() {
                     <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                       <div className="product-card-img-wrapper" style={{ padding: 'var(--space-16)', backgroundColor: '#fdf2f8' }}>
                         {product.image_url ? (
-                          <img src={product.image_url} alt={product.name} className="product-card-img-placeholder" />
+                          <img src={getImageUrl(product.image_url)} alt={product.name} className="product-card-img-placeholder" />
                         ) : (
                           <div style={{ color: 'var(--text-tertiary)', fontSize: '2rem' }}>📦</div>
                         )}
@@ -464,7 +464,7 @@ export default function BrandPage() {
               <Link to={`/product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
                 <div className="product-card-img-wrapper" style={{ padding: 'var(--space-16)', backgroundColor: '#F8FAFC' }}>
                   {product.image_url ? (
-                    <img src={product.image_url} alt={product.name} className="product-card-img-placeholder" />
+                    <img src={getImageUrl(product.image_url)} alt={product.name} className="product-card-img-placeholder" />
                   ) : (
                     <div style={{ color: 'var(--text-tertiary)', fontSize: '2rem' }}>📦</div>
                   )}

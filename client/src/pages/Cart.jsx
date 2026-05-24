@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useCart } from '../context/CartContext';
 import { useLanguage } from '../context/LanguageContext';
-import { fetchApi } from '../api/client';
+import { fetchApi, getImageUrl } from '../api/client';
 
 export default function Cart() {
   const { items, removeItem, updateQuantity, clearCart, itemCount, totalPrice } = useCart();
@@ -78,7 +78,7 @@ export default function Cart() {
             <div key={item.id} className="cart-item-card">
               <div className="cart-item-image">
                 {item.image_url ? (
-                  <img src={item.image_url} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+                  <img src={getImageUrl(item.image_url)} alt={item.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
                 ) : (
                   <span style={{ fontSize: '2rem' }}>📦</span>
                 )}

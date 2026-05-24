@@ -1,4 +1,12 @@
-export const API_BASE = '/api';
+const BASE_URL = import.meta.env.VITE_API_URL || '';
+export const API_BASE = `${BASE_URL}/api`;
+
+export function getImageUrl(url) {
+  if (!url) return 'https://placehold.co/600x400/png?text=No+Image';
+  if (url.startsWith('http://') || url.startsWith('https://')) return url;
+  if (url.startsWith('/uploads')) return `${BASE_URL}${url}`;
+  return url;
+}
 
 export async function fetchApi(endpoint, options = {}) {
   const token = localStorage.getItem('token');

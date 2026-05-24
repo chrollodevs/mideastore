@@ -19,6 +19,7 @@ import requestsRoutes from './routes/requests.js';
 import adminRoutes from './routes/admin.js';
 import messagesRoutes from './routes/messages.js';
 
+import fs from 'fs';
 import multer from 'multer';
 import path from 'path';
 import { fileURLToPath } from 'url';
@@ -91,6 +92,10 @@ app.use('/api/auth', authLimiter);
 app.use(express.json({ limit: '1mb' }));
 
 // ── Static Assets ─────────────────────────────────────────────────────────────
+const uploadDir = path.join(__dirname, 'uploads', 'products');
+if (!fs.existsSync(uploadDir)) {
+  fs.mkdirSync(uploadDir, { recursive: true });
+}
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // ── Multer (File Uploads) ─────────────────────────────────────────────────────
@@ -145,8 +150,11 @@ app.post(
     if (!req.file) {
       return res.status(400).json({ error: 'No file provided.' });
     }
-    const imageUrl = `/uploads/products/${req.file.filename}`;
-    res.json({ image_url: imageUrl });
+    const relativeUrl = `/uploads/products/${req.file.filename}`;
+    const isProd = process.env.NODE_ENV === 'production';
+    const baseUrl = process.env.RENDER_EXTERNAL_URL || `${req.protocol}://${req.get('host')}`;
+    const finalUrl = isProd ? `${baseUrl}${relativeUrl}` : relativeUrl;
+    res.json({ image_url: finalUrl });
   }
 );
 

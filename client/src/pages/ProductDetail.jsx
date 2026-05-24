@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { fetchApi } from '../api/client';
+import { fetchApi, getImageUrl } from '../api/client';
 import { useLanguage } from '../context/LanguageContext';
 import { useCart } from '../context/CartContext';
 
@@ -66,7 +66,7 @@ export default function ProductDetail() {
           {/* Left Column: Image */}
           <div className="surface-card" style={{ padding: 'var(--space-32)', height: '100%', minHeight: '500px', display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'var(--bg-surface)' }}>
             {product.image_url ? (
-              <img src={product.image_url} alt={product.name} style={{ width: '100%', maxHeight: '500px', objectFit: 'contain' }} loading="lazy" />
+              <img src={getImageUrl(product.image_url)} alt={product.name} style={{ width: '100%', maxHeight: '500px', objectFit: 'contain' }} loading="lazy" />
             ) : (
               <div style={{ color: 'var(--text-tertiary)', fontSize: '1rem', fontWeight: 500 }}>{t('product.noImage') || 'No Image Available'}</div>
             )}

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from 'react';
-import { fetchApi } from '../api/client';
+import { fetchApi, API_BASE, getImageUrl } from '../api/client';
 import { useLanguage } from '../context/LanguageContext';
 import { useToast } from '../context/ToastContext';
 import { useDialog } from '../context/DialogContext';
@@ -99,7 +99,7 @@ export default function AdminProducts() {
     setUploading(true);
     try {
       const token = localStorage.getItem('token');
-      const res = await fetch('/api/upload', { method: 'POST', headers: { 'Authorization': `Bearer ${token}` }, body: data });
+      const res = await fetch(`${API_BASE}/upload`, { method: 'POST', headers: { 'Authorization': `Bearer ${token}` }, body: data });
       if (!res.ok) throw new Error('Upload failed');
       const result = await res.json();
       setFormData(prev => ({ ...prev, image_url: result.image_url }));
@@ -228,7 +228,7 @@ export default function AdminProducts() {
                 >
                   {uploading && <div style={{ position: 'absolute', inset: 0, display:'flex', alignItems: 'center', justifyContent:'center', background:'rgba(255,255,255,0.9)', zIndex: 10, fontWeight: 600, fontSize: '0.875rem' }}>{t('admin.products.uploading')}</div>}
                   {formData.image_url ? (
-                    <img src={formData.image_url} style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="Preview" />
+                    <img src={getImageUrl(formData.image_url)} style={{ width: '100%', height: '100%', objectFit: 'contain' }} alt="Preview" />
                   ) : (
                     <div style={{ textAlign: 'center', color: 'var(--text-tertiary)' }}>
                       <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ display: 'block', margin: '0 auto 8px' }}>
@@ -330,7 +330,7 @@ export default function AdminProducts() {
                         <td>
                           <div style={{ display: 'flex', alignItems: 'center', gap: 'var(--space-12)' }}>
                             <div style={{ width: '44px', height: '44px', borderRadius: 'var(--admin-radius-xs)', background: '#F8FAFC', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden', flexShrink: 0, border: '1px solid var(--admin-border-light)' }}>
-                              {p.image_url ? <img src={p.image_url} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> : (
+                              {p.image_url ? <img src={getImageUrl(p.image_url)} alt={p.name} style={{ width: '100%', height: '100%', objectFit: 'contain' }} /> : (
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#94A3B8" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
                               )}
                             </div>

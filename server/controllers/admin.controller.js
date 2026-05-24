@@ -15,58 +15,52 @@ async function buildDashboardStats(db) {
   const weekRow = await db.get("SELECT COUNT(*) as count FROM requests WHERE created_at >= CURRENT_DATE - INTERVAL '7 days'");
   const monthRow = await db.get("SELECT COUNT(*) as count FROM requests WHERE created_at >= CURRENT_DATE - INTERVAL '30 days'");
 
-  // Brand request counts using PostgreSQL jsonb_array_elements
-  const brandRequests = await db.all(`
-    WITH request_products AS (
-      SELECT p.brand_id
-      FROM requests r
-      JOIN products p ON p.id = r.product_id
-      WHERE r.product_id IS NOT NULL
-      UNION ALL
-      SELECT p.brand_id
-      FROM requests r
-      CROSS JOIN LATERAL jsonb_array_elements(
-        CASE
-          WHEN r.products IS NOT NULL AND r.products != '' AND r.products::jsonb IS NOT NULL
-          THEN r.products::jsonb
-          ELSE '[]'::jsonb
-        END
-      ) AS j(elem)
-      JOIN products p ON p.id = (j.elem->>'id')::INTEGER
-      WHERE r.type = 'cart_request' AND r.products IS NOT NULL AND r.products != '' AND r.products != '[]'
-    )
-    SELECT b.name, b.slug, COUNT(rp.brand_id) as count
-    FROM brands b
-    LEFT JOIN request_products rp ON rp.brand_id = b.id
-    GROUP BY b.id, b.name, b.slug
-    ORDER BY b.id
-  `);
+  const allRequests = await db.all("SELECT * FROM requests");
+  const allBrands = await db.all("SELECT id, name, slug FROM brands");
+  const allProducts = await db.all("SELECT id, name, brand_id FROM products");
 
-  // Top requested products
-  const topProducts = await db.all(`
-    WITH request_products AS (
-      SELECT r.product_id
-      FROM requests r
-      WHERE r.product_id IS NOT NULL
-      UNION ALL
-      SELECT (j.elem->>'id')::INTEGER as product_id
-      FROM requests r
-      CROSS JOIN LATERAL jsonb_array_elements(
-        CASE
-          WHEN r.products IS NOT NULL AND r.products != '' AND r.products::jsonb IS NOT NULL
-          THEN r.products::jsonb
-          ELSE '[]'::jsonb
-        END
-      ) AS j(elem)
-      WHERE r.type = 'cart_request' AND r.products IS NOT NULL AND r.products != '' AND r.products != '[]'
-    )
-    SELECT p.name, p.id, COUNT(*) as request_count
-    FROM request_products rp
-    JOIN products p ON p.id = rp.product_id
-    GROUP BY p.id, p.name
-    ORDER BY request_count DESC
-    LIMIT 5
-  `);
+  const brandRequestsMap = new Map();
+  const topProductsMap = new Map();
+
+  allBrands.forEach(b => brandRequestsMap.set(b.id, { ...b, count: 0 }));
+
+  allRequests.forEach(req => {
+    if (req.product_id) {
+       const prod = allProducts.find(p => p.id === req.product_id);
+       if (prod) {
+          if (brandRequestsMap.has(prod.brand_id)) {
+            brandRequestsMap.get(prod.brand_id).count++;
+          }
+          topProductsMap.set(prod.id, (topProductsMap.get(prod.id) || 0) + 1);
+       }
+    }
+
+    if (req.type === 'cart_request' && req.products) {
+       let parsed = [];
+       try { parsed = JSON.parse(req.products); } catch (e) {}
+       if (Array.isArray(parsed)) {
+          parsed.forEach(item => {
+             const prodId = Number(item.id);
+             const prod = allProducts.find(p => p.id === prodId);
+             if (prod) {
+                if (brandRequestsMap.has(prod.brand_id)) {
+                  brandRequestsMap.get(prod.brand_id).count++;
+                }
+                topProductsMap.set(prod.id, (topProductsMap.get(prod.id) || 0) + 1);
+             }
+          });
+       }
+    }
+  });
+
+  const brandRequests = Array.from(brandRequestsMap.values());
+  const topProducts = Array.from(topProductsMap.entries())
+    .map(([id, count]) => {
+      const prod = allProducts.find(p => p.id === id);
+      return { id, name: prod?.name, request_count: count };
+    })
+    .sort((a, b) => b.request_count - a.request_count)
+    .slice(0, 5);
 
   const lowStockProducts = await db.all(`
     SELECT id, name, stock FROM products

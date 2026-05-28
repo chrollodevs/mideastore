@@ -4,6 +4,7 @@ services:
     env: node
     plan: free
     region: frankfurt # Change to your preferred region (e.g. oregon, frankfurt)
+    rootDir: server
     buildCommand: npm install
     startCommand: npm start
     envVars:

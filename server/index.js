@@ -24,6 +24,14 @@ import multer from 'multer';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { authenticate, authorize } from './middleware/auth.js';
+import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = process.env.SUPABASE_URL;
+const supabaseKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
+let supabase = null;
+if (supabaseUrl && supabaseKey) {
+  supabase = createClient(supabaseUrl, supabaseKey);
+}
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -35,9 +43,11 @@ const PORT = process.env.PORT || 3001;
 app.use(helmet());
 
 // ── CORS ────────────────────────────────────────────────────────────────────
-const allowedOrigins = process.env.ALLOWED_ORIGINS
-  ? process.env.ALLOWED_ORIGINS.split(',').map(o => o.trim())
-  : ['http://localhost:5173'];
+const allowedOrigins = process.env.FRONTEND_URL
+  ? [process.env.FRONTEND_URL.trim()]
+  : (process.env.ALLOWED_ORIGINS
+      ? process.env.ALLOWED_ORIGINS.split(',').map(o => o.trim())
+      : ['http://localhost:5173']);
 
 app.use(cors({
   origin: (origin, callback) => {
@@ -101,16 +111,7 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 // ── Multer (File Uploads) ─────────────────────────────────────────────────────
 const ALLOWED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.webp', '.gif'];
 
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    cb(null, path.join(__dirname, 'uploads', 'products'));
-  },
-  filename: (req, file, cb) => {
-    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
-    const ext = path.extname(file.originalname).toLowerCase();
-    cb(null, 'prod-' + uniqueSuffix + ext);
-  }
-});
+const storage = multer.memoryStorage();
 
 const upload = multer({
   storage,
@@ -146,15 +147,45 @@ app.post(
   authenticate,
   authorize('admin', 'super_admin'),
   upload.single('image'),
-  (req, res) => {
+  async (req, res) => {
     if (!req.file) {
       return res.status(400).json({ error: 'No file provided.' });
     }
-    const relativeUrl = `/uploads/products/${req.file.filename}`;
-    const isProd = process.env.NODE_ENV === 'production';
-    const baseUrl = process.env.RENDER_EXTERNAL_URL || `${req.protocol}://${req.get('host')}`;
-    const finalUrl = isProd ? `${baseUrl}${relativeUrl}` : relativeUrl;
-    res.json({ image_url: finalUrl });
+
+    try {
+      const ext = path.extname(req.file.originalname).toLowerCase();
+      const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+      const filename = `prod-${uniqueSuffix}${ext}`;
+
+      if (supabase) {
+        const { data, error } = await supabase.storage
+          .from('products')
+          .upload(filename, req.file.buffer, {
+            contentType: req.file.mimetype,
+            upsert: false
+          });
+
+        if (error) throw error;
+
+        const { data: publicUrlData } = supabase.storage
+          .from('products')
+          .getPublicUrl(filename);
+
+        return res.json({ image_url: publicUrlData.publicUrl });
+      } else {
+        // Fallback to local storage if Supabase is not configured (e.g. local dev without env vars)
+        const localPath = path.join(__dirname, 'uploads', 'products', filename);
+        fs.writeFileSync(localPath, req.file.buffer);
+        const relativeUrl = `/uploads/products/${filename}`;
+        const isProd = process.env.NODE_ENV === 'production';
+        const baseUrl = process.env.RENDER_EXTERNAL_URL || `${req.protocol}://${req.get('host')}`;
+        const finalUrl = isProd ? `${baseUrl}${relativeUrl}` : relativeUrl;
+        return res.json({ image_url: finalUrl });
+      }
+    } catch (err) {
+      console.error('[Upload Error]', err);
+      return res.status(500).json({ error: 'Failed to upload image.' });
+    }
   }
 );
 
